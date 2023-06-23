@@ -1,0 +1,54 @@
+.author {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  padding-bottom: 1rem;
+
+  @include media('>phone') {
+    padding: 3rem 1rem;
+  }
+}
+
+.author__info {
+  @extend %center-column;
+
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 1rem;
+  text-align: left;
+
+  @include media('>phone') {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.author__description {
+  @extend %center;
+  gap: 1rem;
+
+  @include media('>phone') {
+    // width: 15rem;
+    flex-shrink: 0;
+    padding-right: 1rem;
+    border-right: solid 1px var(--color-text-primary);
+  }
+}
+
+.author__title {
+  opacity: 0.8;
+}
+
+.author__image-wrapper {
+  width: 2rem;
+}
+
+.author__image {
+  border-radius: 50%;
+}
+
+.author__name {
+  font-weight: 700;
+  line-height: 1.5;
+}

@@ -1,0 +1,111 @@
+.comments-form {
+  position: relative;
+  width: 100%;
+  padding-block: 1rem;
+  padding-bottom: 1rem;
+}
+
+.comments-form__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-block: 1rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  border-bottom: solid 1px var(--color-text-primary);
+}
+
+.comments-form__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.comments-form__comment {
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem;
+
+  min-height: 5rem;
+  max-height: 10rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  border: solid 1px var(--color-divider);
+  background-color: inherit;
+  color: inherit;
+  resize: vertical;
+  transition: border-color 200ms;
+
+  &::placeholder {
+    font-size: 0.8rem;
+    font-family: $font-primary;
+  }
+
+  @include media('>phone') {
+    padding: 1rem;
+  }
+}
+
+.comments-form__top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.comments-form__name,
+.comments-form__email {
+  height: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 0.8rem;
+  background-color: inherit;
+  color: inherit;
+  border: solid 1px var(--color-divider);
+  transition: border-color 200ms;
+
+  &::placeholder {
+    font-size: 0.8rem;
+    font-family: $font-primary;
+  }
+
+  @include media('>phone') {
+    height: 3rem;
+    padding: 0.8rem;
+  }
+}
+
+.comments-form__save-info {
+  margin-bottom: 1.5rem;
+}
+
+.comments-form__checkbox {
+  margin: 0;
+}
+
+.comments-form__checkbox-text {
+  opacity: 0.7;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.comments-form__error {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.comments-form__button-wrapper {
+  margin-top: 1rem;
+}
+
+.comments-form__button {
+  padding-left: 0;
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.comments-form__success {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: green;
+}

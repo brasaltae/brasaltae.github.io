@@ -1,0 +1,236 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.5rem;
+  z-index: 2000;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.header__wrapper {
+  max-width: 65rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  justify-content: center;
+  pointer-events: all;
+  padding: 0;
+  border: none;
+  left: 1.5rem;
+  top: 1.5rem;
+  z-index: 2;
+  color: white;
+  width: 2rem;
+  height: 1.7rem;
+  cursor: pointer;
+
+  @include media('<phone') {
+    height: 1.3rem;
+    width: 1.5rem;
+  }
+
+  svg {
+    color: white;
+  }
+
+  svg polyline,
+  svg line,
+  svg path {
+    transition: d 500ms cubic-bezier(0.7, 0, 0.175, 1);
+  }
+
+  @include media('>phone') {
+    &:hover path {
+      d: path(
+        'M 147 25 L 147 0 L 0 0 L 0 75 L 110 75 L 123 75 L 123 75 L 123 98 L 0 98 L 0 123 L 147 123 L 147 50 L 27.5 50 L 27.5 25 L 147 25 Z'
+      );
+    }
+  }
+
+  @include media('<phone') {
+    path {
+      d: path(
+        'M 147 25 L 147 0 L 0 0 L 0 75 L 110 75 L 123 75 L 123 75 L 123 98 L 0 98 L 0 123 L 147 123 L 147 50 L 27.5 50 L 27.5 25 L 147 25 Z'
+      );
+    }
+  }
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: inherit;
+  pointer-events: all;
+  cursor: pointer;
+
+  span {
+    padding-top: 0;
+  }
+
+  @include media('<phone') {
+    display: none;
+    gap: 2rem;
+  }
+}
+
+.nav__link {
+  margin-right: 1rem;
+}
+
+.nav__sandwich {
+  z-index: 110;
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+  position: absolute;
+  right: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  pointer-events: all;
+
+  .line1,
+  .line2 {
+    position: absolute;
+    content: '';
+    background-color: white;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    transition: transform 500ms $ease-swift, top 500ms $ease-swift;
+  }
+
+  .line2 {
+    top: 60%;
+  }
+
+  &--active {
+    .line1,
+    .line2 {
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      transform: rotate(-135deg);
+    }
+    .line2 {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include media('<phone') {
+    display: block;
+  }
+}
+.nav__menu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: fixed;
+  background-color: var(--color-bg-main);
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: background-color 200ms;
+
+  .theme-switch {
+    opacity: 0;
+    transition: opacity 700ms $ease-swift;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  &--active {
+    // transform: translateY(0%);
+
+    li span {
+      transform: translateY(-5%);
+      opacity: 1;
+      transition-delay: 300ms;
+    }
+  }
+
+  @include media('<phone') {
+    display: flex;
+  }
+}
+.nav__menu__items {
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  z-index: 2;
+}
+.nav__menu__item {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 200ms;
+  overflow: hidden;
+  cursor: pointer;
+
+  .item__wrapper {
+    overflow: hidden;
+  }
+
+  span {
+    display: inline-block;
+    height: 1.8rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 200ms, transform 1s $ease-out-expo;
+    transform-origin: bottom left;
+  }
+  .marker {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-right: 0.2rem;
+    line-height: 1.5;
+  }
+}
+
+.new-tag {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.7rem;
+  transform: rotate(25deg);
+  color: inherit;
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+.nav__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.783);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+
+  &--active {
+    pointer-events: all;
+  }
+
+  @include media('<phone') {
+    display: block;
+  }
+}

@@ -1,0 +1,154 @@
+.contact {
+  @extend %center;
+
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 1rem;
+  padding: 4rem 6vw;
+  padding-bottom: 8rem;
+  height: 100%;
+  color: var(--color-text-primary);
+  transform-origin: top;
+  z-index: 1;
+  background-color: var(--color-bg-accent);
+  transition: background-color 200ms;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: var(--color-bg-accent);
+    z-index: -1;
+    transition: background-color 200ms, color 200ms;
+  }
+
+  @include media('<phone') {
+    padding-bottom: 6rem;
+  }
+}
+
+.contact__wrapper {
+  @extend %center-column;
+
+  width: 100%;
+  max-width: 60rem;
+  gap: 0.5rem;
+  transition: background-color 200ms, color 200ms;
+}
+
+.contact__title {
+  @extend %section-title;
+
+  margin-bottom: 1.5rem;
+}
+
+.contact__paragraph {
+  align-self: flex-start;
+  max-width: 40rem;
+}
+
+.form__wrapper {
+  margin-top: 2rem;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  z-index: 1;
+
+  @include media('<phone') {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+
+  input,
+  textarea {
+    font-size: 1rem;
+    font-family: inherit;
+    color: $color-text-dark;
+    background-color: transparent;
+    border: solid 1px var(--color-text-primary);
+    border-radius: 0;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+    height: 1.9rem;
+    transition: 200ms;
+    width: 100%;
+
+    transition: border 500ms;
+
+    &:focus,
+    &:hover {
+      padding-left: 0.7rem;
+      background: rgba(28, 28, 28, 0.057);
+    }
+
+    &::placeholder {
+      color: var(--color-text-primary);
+      opacity: 0.8;
+      font-size: 0.8rem;
+      font-family: $font-primary;
+      transition: color 200ms;
+    }
+
+    &:-webkit-autofill {
+      background-image: none;
+      -webkit-box-shadow: 0 0 0px 1000px $color-accent-dark inset;
+    }
+  }
+
+  .form__message {
+    resize: none;
+    height: 5rem;
+  }
+}
+
+.form__cta {
+  @extend %center-column;
+
+  @include media('<phone') {
+    width: 100%;
+    align-self: center;
+    gap: 2rem;
+  }
+}
+
+.form__cta__links {
+  @extend %center-column;
+
+  height: 100%;
+  gap: 1rem;
+  justify-content: flex-start;
+
+  @include media('<phone') {
+    flex-direction: row;
+    height: 2rem;
+    width: 100%;
+  }
+}
+
+.form__cta__link {
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

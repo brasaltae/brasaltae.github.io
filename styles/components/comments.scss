@@ -1,0 +1,43 @@
+.comments {
+  padding-top: 1rem;
+  width: 100%;
+  z-index: 2;
+
+  @include media('>phone') {
+    margin-bottom: 2rem;
+  }
+}
+
+.comments__title {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  border-bottom: solid 1px var(--color-text-primary);
+  padding-bottom: 1rem;
+
+  transition: border-color 200ms;
+}
+
+.comment {
+  border-bottom: solid 1px var(--color-divider);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+
+  transition: border-color 200ms;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.comment__name {
+  width: fit-content;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.comment__author {
+  background-color: var(--color-bg-accent);
+}

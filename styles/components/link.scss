@@ -1,0 +1,26 @@
+.link {
+  @include media('<phone') {
+    font-size: 1rem;
+  }
+}
+
+.link__wrapper {
+  @extend %link-button;
+  @extend %center;
+
+  cursor: pointer;
+  position: relative;
+
+  gap: 0.4rem;
+  width: fit-content;
+
+  &--active {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+
+    .link::after {
+      text-decoration: underline;
+      text-underline-offset: 1px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "next-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@graphcms/rich-text-react-renderer": "^0.6.1",
+    "@studio-freight/lenis": "^0.1.18",
+    "embla-carousel-autoplay": "^7.0.0-rc04",
+    "embla-carousel-react": "^7.0.0-rc04",
+    "glob-parent": "^6.0.2",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0",
+    "gsap": "npm:@gsap/shockingly@^3.10.4",
+    "html-react-parser": "^3.0.0",
+    "include-media": "^1.4.10",
+    "moment": "^2.29.4",
+    "next": "12.2.2",
+    "nextjs-progressbar": "^0.0.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-transition-group": "^4.4.2",
+    "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2"
+  }
+}

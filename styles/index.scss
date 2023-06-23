@@ -1,0 +1,48 @@
+@import './base/reset';
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/responsive';
+
+@import './base/base';
+
+// layout
+@import './layout/header';
+@import './layout/preloader';
+
+/*
+COMPONENTS
+*/
+
+// index
+@import './components/hero';
+@import './components/about';
+@import './components/projects';
+@import './components/blogs';
+@import './components/contact';
+
+// blog
+@import './components/postDetail';
+@import './components/breadcrumbs';
+@import './components/author';
+@import './components/comments';
+@import './components/commentsForm';
+@import './components/postCard';
+@import './components/postWidget';
+
+// aesthetics
+@import './components/link';
+@import './components/themeButton';
+
+/*
+PAGES
+*/
+// home
+@import './pages/home';
+
+// blog
+@import './pages/postDetails';
+@import './pages/blog';
+
+//404
+@import './pages/errorPage';

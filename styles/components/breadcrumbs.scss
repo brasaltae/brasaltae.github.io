@@ -1,0 +1,55 @@
+.breadcrumbs {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-inline: auto;
+  font-weight: 500;
+  min-height: 1.5rem;
+}
+
+.crumb {
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+
+  &:last-child {
+    max-width: 40%;
+
+    @include media('>phone') {
+      max-width: 20rem;
+    }
+    @include media('<narrow') {
+      display: none;
+    }
+  }
+}
+
+.crumb__divider {
+  margin-right: 0.5rem;
+  font-size: 0.5rem;
+  line-height: 2.5;
+}
+
+.crumb__last-text {
+  text-transform: capitalize;
+  opacity: 0.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1.5rem;
+}
+
+.crumb__text {
+  cursor: pointer;
+  text-transform: capitalize;
+  a {
+    color: var(--color-text-primary);
+  }
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
