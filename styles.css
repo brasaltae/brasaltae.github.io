@@ -1,0 +1,92 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+main  {
+  margin-top: 4.5em;
+}
+
+.logo svg,
+#menu-btn {
+  width: 4em;
+  height: 4em;
+}
+
+#menu-btn {
+  cursor: pointer;
+}
+
+.navbar {
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+#nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: calc(100% + 10vh);
+  left: 0;
+}
+
+#nav-links.visible {
+  display: block;
+}
+
+#nav-links li {
+  display: block;
+  margin-bottom: 5vh;
+}
+
+#nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 2.5em;
+  padding-left: 6vw; /* Set the left padding to match the section padding */
+}
+
+.visible {
+  display: block !important;
+}
+
+section {
+  padding: 6vw;
+}
+
+/* Styles for tablets and larger screens */
+
+@media (min-width: 768px) {
+  #nav-links li a {
+    font-size: 4em;
+  }
+}/*
+*/
+
+@media (min-width: 1024px) {
+  .logo svg,
+  #menu-btn {
+    width: 3em;
+    height: 3em;
+  }
+
+  #nav-links li a {
+    font-size: 1.5em; /* Adjust the font size for larger screens */
+  }
+}
