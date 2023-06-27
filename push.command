@@ -1,3 +1,7 @@
+cd /Users/tae/Desktop/brasaltae.github.io
+
+git pull
+
 git add .
 
 echo 'Enter the commit message:'
