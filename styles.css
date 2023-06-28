@@ -109,6 +109,8 @@ section {
 
 .section-contact {
   color: black;
+  justify-content: center;
+  align-items: center;
 }
 
 .transparent {
