@@ -7,13 +7,13 @@ let isNavLinksVisible = false;
 
 const sectionColors = {
   about: {
-    backgroundColor: '#D3C17F', // brown
+    backgroundColor: '#CAB565', // brown
   },
   work: {
-    backgroundColor: '#C1D37F', // sage green
+    backgroundColor: '#4D5432', // sage green
   },
   contact: {
-    backgroundColor: '#7FBBD3', // blue grey
+    backgroundColor: '#72A8BD', // blue grey
   },
 };
 
