@@ -109,6 +109,9 @@ section {
 
 .transparent {
   background-color: rgba(0, 0, 0, 0.5); /* Set the background color with transparency */
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 footer {
