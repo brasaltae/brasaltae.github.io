@@ -32,16 +32,17 @@ main {
   color: white; /* Apply white color to menu button and close button */
 }
 
-.logo,
+#logo,
 #menu-btn,
 #menu-btn-x {
   width: 1em;
   height: 1em;
 }
 
+#logo,
 #menu-btn,
 #menu-btn-x {
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .navbar {
@@ -74,6 +75,7 @@ main {
 }
 
 #nav-links li a {
+  cursor: crosshair;
   color: white;
   text-decoration: none;
   font-size: 8vh;
@@ -117,7 +119,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .logo,
+  #logo,
   #menu-btn,
   #menu-btn-x {
     width: 2em;
@@ -128,7 +130,7 @@ footer {
 /* Styles for tablets and larger screens */
 
 @media (min-width: 1024px) {
-  .logo,
+  #logo,
   #menu-btn,
   #menu-btn-x {
     width: 1.5em;

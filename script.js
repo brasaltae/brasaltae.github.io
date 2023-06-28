@@ -6,6 +6,8 @@ const links = navLinks.getElementsByTagName('a');
 const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
 const main = document.querySelector('main');
+const logo = document.getElementById('logo');
+
 let isNavLinksVisible = false;
 
 const sectionColors = {
@@ -19,6 +21,10 @@ const sectionColors = {
     backgroundColor: '#72A8BD', // blue grey
   },
 };
+
+logo.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 function getId() {
   const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
