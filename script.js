@@ -3,11 +3,9 @@ const menuBtnX = document.getElementById('menu-btn-x');
 const navColor = document.getElementById('navbar');
 const navLinks = document.getElementById('nav-links');
 const links = navLinks.getElementsByTagName('a');
-const link1 = links[0];
-const link2 = links[1];
-const link3 = links[2];
 const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
+const main = document.querySelector('main');
 let isNavLinksVisible = false;
 
 const sectionColors = {
@@ -22,12 +20,7 @@ const sectionColors = {
   },
 };
 
-link1.classList.add('black');
-link2.classList.add('black');
-link3.classList.add('black');
-
-// Add scroll event listener to the window
-window.addEventListener('scroll', () => {
+function getId() {
   const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   // Loop through each section and check if it is in the viewport
@@ -42,31 +35,25 @@ window.addEventListener('scroll', () => {
 
     // Check if the scroll position is within the section's range
     if (scrollPosition >= sectionStart && scrollPosition < sectionEnd) {
-      const sectionColor = sectionColors[section.id].backgroundColor;
-      document.body.style.transition = 'background-color 0.45s';
-      document.body.style.backgroundColor = sectionColor;
-
-      // Check if the current section is the "work" section
-      if (section.id === 'work') {
-        // Apply white color to the SVG logo, menu button, and close button
-        navColor.classList.add('white');
-        link1.classList.remove('black');
-        link1.classList.add('white');
-        link2.classList.remove('black');
-        link2.classList.add('white');
-        link3.classList.remove('black');
-        link3.classList.add('white');
-      } else {
-        // Remove white color from the SVG logo, menu button, and close button
-        navColor.classList.remove('white');
-        link1.classList.remove('white');
-        link1.classList.add('black');
-        link2.classList.remove('white');
-        link2.classList.add('black');
-        link3.classList.remove('white');
-        link3.classList.add('black');
-      }
+      return section.id
     }
+  }
+}
+
+// Add scroll event listener to the window
+window.addEventListener('scroll', () => {
+  const s = getId()
+  const sectionColor = sectionColors[s].backgroundColor;
+  document.body.style.transition = 'background-color 0.45s';
+  document.body.style.backgroundColor = sectionColor;
+
+  // Check if the current section is the "work" section
+  if (s === 'work') {
+    // Apply white color to the SVG logo, menu button, and close button
+    navColor.classList.add('white');
+  } else {
+    // Remove white color from the SVG logo, menu button, and close button
+    navColor.classList.remove('white');
   }
 });
 
@@ -80,24 +67,15 @@ for (let i = 0; i < links.length; i++) {
     document.body.style.overflow = '';
     menuBtn.style.display = 'block';
     menuBtnX.style.display = 'none';
+    main.classList.remove('transparent'); // Add this line to restore the text visibility
 
     // Get the target section's ID from the href attribute
-    const targetId = links[i].getAttribute('href').substring(1).toLowerCase();
+    const targetId = links[i].getAttribute('href').substring(1);
 
     // Find the target section element
     const targetSection = document.getElementById(targetId);
-
-    // Show navLinks temporarily to get its offset height
-    navLinks.style.display = 'block';
-
-    // Calculate the offset with navLinks offset height + additional offset
-    const offset = targetId === 'about' ? 0 : targetSection.offsetTop;
-
-    // Hide navLinks again
-    navLinks.style.display = '';
-
     // Scroll to the target section smoothly with offset
-    window.scrollTo({ top: offset, behavior: 'smooth' });
+    window.scrollTo({ top: targetSection.offsetTop, behavior: 'smooth' });
   });
 }
 
@@ -108,13 +86,19 @@ function toggleNavLinks() {
 
   // Toggle the scrolling behavior for the body
   if (isNavLinksVisible) {
+    navColor.classList.add('white');
     document.body.style.overflow = 'hidden';
     menuBtn.style.display = 'none';
     menuBtnX.style.display = 'block';
+    main.classList.add('transparent'); // Add this line to make the text transparent
   } else {
+    if (getId() !== 'work') {
+      navColor.classList.remove('white');
+    }
     document.body.style.overflow = '';
     menuBtn.style.display = 'block';
     menuBtnX.style.display = 'none';
+    main.classList.remove('transparent'); // Add this line to restore the text visibility
   }
 }
 

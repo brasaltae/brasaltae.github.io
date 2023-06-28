@@ -32,11 +32,6 @@ main {
   color: white; /* Apply white color to menu button and close button */
 }
 
-.black {
-  fill: black; /* Apply white color to SVG logo */
-  color: black; /* Apply white color to menu button and close button */
-}
-
 .logo,
 #menu-btn,
 #menu-btn-x {
@@ -79,6 +74,7 @@ main {
 }
 
 #nav-links li a {
+  color: white;
   text-decoration: none;
   font-size: 8vh;
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
@@ -95,6 +91,7 @@ section {
 }
 
 .section-about {
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +99,14 @@ section {
 
 .section-work {
   color: white;
+}
+
+.section-contact {
+  color: black;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0.5); /* Set the background color with transparency */
 }
 
 footer {
