@@ -1,7 +1,9 @@
 const menuBtn = document.getElementById('menu-btn');
+const menuBtnX = document.getElementById('menu-btn-x');
 const navLinks = document.getElementById('nav-links');
 const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
+let isNavLinksVisible = false;
 
 const sectionColors = {
   about: {
@@ -36,20 +38,6 @@ function getActiveSectionId() {
   return sectionColors[targetId].backgroundColor;
 }
 
-
-// Add click event listener to the menu button
-menuBtn.addEventListener('click', () => {
-  // Toggle the "visible" class on the navigation links
-  navLinks.classList.toggle('visible');
-
-  if (navLinks.classList.contains('visible')) {
-    document.body.style.overflow = 'hidden';
-    applySectionBackground(getActiveSectionId()); // Reset navbar background color
-  } else {
-    document.body.style.overflow = '';
-  }
-});
-
 // Add click event listeners to the navigation links
 const links = navLinks.getElementsByTagName('a');
 for (let i = 0; i < links.length; i++) {
@@ -57,7 +45,10 @@ for (let i = 0; i < links.length; i++) {
     event.preventDefault();
 
     navLinks.classList.toggle('visible');
+    isNavLinksVisible = !isNavLinksVisible;
     document.body.style.overflow = '';
+    menuBtn.style.display = 'block';
+    menuBtnX.style.display = 'none';
 
     // Get the target section's ID from the href attribute
     const targetId = links[i].getAttribute('href').substring(1).toLowerCase();
@@ -78,3 +69,24 @@ for (let i = 0; i < links.length; i++) {
     window.scrollTo({ top: offset, behavior: 'smooth' });
   });
 }
+
+// Function to toggle the visibility of the navigation links and change the menu button icon
+function toggleNavLinks() {
+  navLinks.classList.toggle('visible');
+  isNavLinksVisible = !isNavLinksVisible;
+
+  // Toggle the scrolling behavior for the body
+  if (isNavLinksVisible) {
+    document.body.style.overflow = 'hidden';
+    menuBtn.style.display = 'none';
+    menuBtnX.style.display = 'block';
+  } else {
+    document.body.style.overflow = '';
+    menuBtn.style.display = 'block';
+    menuBtnX.style.display = 'none';
+  }
+}
+
+// Add click event listener to the menu button
+menuBtn.addEventListener('click', toggleNavLinks);
+menuBtnX.addEventListener('click', toggleNavLinks);
