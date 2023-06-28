@@ -30,8 +30,8 @@ main {
 .logo,
 #menu-btn,
 #menu-btn-x {
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
 }
 
 #menu-btn,
@@ -41,7 +41,7 @@ main {
 
 .navbar {
   color: #fff;
-  padding: 2em;
+  padding: 1em;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@ main {
 
 section {
   font-size: 1.2em;
-  padding: 5em 2em;
+  padding: 5em 1.8em;
   min-height: calc(100vh - 10em);
 }
 
@@ -98,7 +98,7 @@ section {
 
 footer {
   color: black;
-  font-size: 0.4em;
+  font-size: 0.5em;
   padding: 1em;
   text-align: center;
 }
@@ -107,8 +107,8 @@ footer {
   .logo,
   #menu-btn,
   #menu-btn-x {
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
+    height: 2em;
   }
 }
 
@@ -118,7 +118,7 @@ footer {
   .logo,
   #menu-btn,
   #menu-btn-x {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
