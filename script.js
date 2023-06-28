@@ -1,6 +1,11 @@
 const menuBtn = document.getElementById('menu-btn');
 const menuBtnX = document.getElementById('menu-btn-x');
+const navColor = document.getElementById('navbar');
 const navLinks = document.getElementById('nav-links');
+const links = navLinks.getElementsByTagName('a');
+const link1 = links[0];
+const link2 = links[1];
+const link3 = links[2];
 const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
 let isNavLinksVisible = false;
@@ -16,6 +21,10 @@ const sectionColors = {
     backgroundColor: '#72A8BD', // blue grey
   },
 };
+
+link1.classList.add('black');
+link2.classList.add('black');
+link3.classList.add('black');
 
 // Add scroll event listener to the window
 window.addEventListener('scroll', () => {
@@ -36,12 +45,32 @@ window.addEventListener('scroll', () => {
       const sectionColor = sectionColors[section.id].backgroundColor;
       document.body.style.transition = 'background-color 0.45s';
       document.body.style.backgroundColor = sectionColor;
+
+      // Check if the current section is the "work" section
+      if (section.id === 'work') {
+        // Apply white color to the SVG logo, menu button, and close button
+        navColor.classList.add('white');
+        link1.classList.remove('black');
+        link1.classList.add('white');
+        link2.classList.remove('black');
+        link2.classList.add('white');
+        link3.classList.remove('black');
+        link3.classList.add('white');
+      } else {
+        // Remove white color from the SVG logo, menu button, and close button
+        navColor.classList.remove('white');
+        link1.classList.remove('white');
+        link1.classList.add('black');
+        link2.classList.remove('white');
+        link2.classList.add('black');
+        link3.classList.remove('white');
+        link3.classList.add('black');
+      }
     }
   }
 });
 
 // Add click event listeners to the navigation links
-const links = navLinks.getElementsByTagName('a');
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('click', (event) => {
     event.preventDefault();

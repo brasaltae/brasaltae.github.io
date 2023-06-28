@@ -8,7 +8,7 @@
 }
 
 /* Reset default browser styles */
-body, h1, h2, p, ul, li {
+body, h1, h2, p, ul, li, div {
   margin: 0;
   padding: 0;
   font-family: 'VT323', monospace, sans-serif;
@@ -27,6 +27,16 @@ main {
   flex: 1;
 }
 
+.white {
+  fill: white; /* Apply white color to SVG logo */
+  color: white; /* Apply white color to menu button and close button */
+}
+
+.black {
+  fill: black; /* Apply white color to SVG logo */
+  color: black; /* Apply white color to menu button and close button */
+}
+
 .logo,
 #menu-btn,
 #menu-btn-x {
@@ -40,7 +50,6 @@ main {
 }
 
 .navbar {
-  color: #fff;
   padding: 1em;
   position: fixed;
   top: 0;
@@ -70,7 +79,6 @@ main {
 }
 
 #nav-links li a {
-  color: black;
   text-decoration: none;
   font-size: 8vh;
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
