@@ -83,13 +83,12 @@ main {
 section {
   font-size: 1.2em;
   padding: 5em 3em;
-  min-height: calc(100vh - 16em);
+  min-height: calc(100vh - 10em);
 }
 
 footer {
   padding: 1em;
   text-align: center;
-  background-color: #7FC1D3; /* blue */
 }
 
 @media (min-width: 768px) {
