@@ -13,7 +13,7 @@ const sectionColors = {
     backgroundColor: '#C1D37F', // sage green
   },
   contact: {
-    backgroundColor: '#7FBBD3', // teal
+    backgroundColor: '#7FBBD3', // blue grey
   },
 };
 
