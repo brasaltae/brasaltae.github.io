@@ -17,26 +17,28 @@ const sectionColors = {
   },
 };
 
-function getActiveSectionId() {
-  let maxSection = sections[0];
-  let maxSectionHeight = 0;
+// Add scroll event listener to the window
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  sections.forEach((section) => {
-    const sectionHeight = section.getBoundingClientRect().height;
-    const sectionTop = section.getBoundingClientRect().top;
-    const sectionBottom = section.getBoundingClientRect().bottom;
+  // Loop through each section and check if it is in the viewport
+  for (let i = 0; i < sections.length; i++) {
+    const section = sections[i];
+    const sectionOffset = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
 
-    // Consider the section active if it occupies more than half of the viewport's height
-    if (sectionHeight > maxSectionHeight && sectionTop <= window.innerHeight / 2 && sectionBottom >= window.innerHeight / 2) {
-      maxSection = section;
-      maxSectionHeight = sectionHeight;
+    // Calculate the start and end positions of the section
+    const sectionStart = sectionOffset - sectionHeight / 2;
+    const sectionEnd = sectionOffset + sectionHeight / 2;
+
+    // Check if the scroll position is within the section's range
+    if (scrollPosition >= sectionStart && scrollPosition < sectionEnd) {
+      const sectionColor = sectionColors[section.id].backgroundColor;
+      document.body.style.transition = 'background-color 0.5s';
+      document.body.style.backgroundColor = sectionColor;
     }
-  });
-
-  let targetId = maxSection ? maxSection.getAttribute('id') : '';
-  const section = document.getElementById(targetId);
-  return sectionColors[targetId].backgroundColor;
-}
+  }
+});
 
 // Add click event listeners to the navigation links
 const links = navLinks.getElementsByTagName('a');
