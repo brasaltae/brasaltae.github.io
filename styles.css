@@ -19,6 +19,7 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  font-size: 1.15em;
 }
 
 main {
@@ -37,8 +38,8 @@ main {
 
 .logo,
 #menu-btn {
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
 }
 
 #menu-btn {
@@ -78,7 +79,7 @@ main {
 #nav-links li a {
   color: black;
   text-decoration: none;
-  font-size: 5em;
+  font-size: 4.5em;
   padding-left: 1em; /* Set the left padding to match the section padding */
 }
 
@@ -106,11 +107,11 @@ footer {
 @media (min-width: 1024px) {
   .logo,
   #menu-btn {
-    width: 3.5em;
-    height: 3.5em;
+    width: 3em;
+    height: 3em;
   }
 
   #nav-links li a {
-    font-size: 2.5em; /* Adjust the font size for larger screens */
+    font-size: 2em; /* Adjust the font size for larger screens */
   }
 }
