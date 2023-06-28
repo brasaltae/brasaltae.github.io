@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
     // Check if the scroll position is within the section's range
     if (scrollPosition >= sectionStart && scrollPosition < sectionEnd) {
       const sectionColor = sectionColors[section.id].backgroundColor;
-      document.body.style.transition = 'background-color 0.5s';
+      document.body.style.transition = 'background-color 0.45s';
       document.body.style.backgroundColor = sectionColor;
     }
   }
