@@ -91,12 +91,6 @@ li {
   text-align: center;
 }
 
-#hi {
-  border-radius: 25px;
-  border: 5px solid #ccc;
-  padding: 20px;
-}
-
 .transparent {
   background-color: rgba(0, 0, 0, 0.6); /* Set the background color with transparency */
   color: black !important;
@@ -123,8 +117,15 @@ li {
 }
 
 #computer {
-  width: 0.25em;
-  height: 0.25em;
+  display: block;
+}
+
+#hi {
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 15px;
+  width: 5em;
+  display: inline-block;
 }
 
 section {
