@@ -103,12 +103,19 @@ section {
   align-items: center;
 }
 
-.section-work1, .section-work2 {
+.section-work1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-work2 {
   color: black;
 }
 
 .section-contact {
-  color: black;
+  color: white;
   justify-content: center;
   align-items: center;
 }

@@ -19,10 +19,10 @@ const sectionColors = {
     backgroundColor: '#CAB565', // brown
   },
   work2: {
-    backgroundColor: '#DCDAAB', // cream
+    backgroundColor: '#D8959A', // pink
   },
   contact: {
-    backgroundColor: '#72A8BD', // blue grey
+    backgroundColor: '#4F7584', // blue grey
   },
 };
 
@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
   document.body.style.backgroundColor = sectionColor;
 
   // Check if the current section is the "about" section
-  if (s === 'about') {
+  if ((s === 'about') || (s === 'contact')) {
     // Apply white color to the SVG logo, menu button, and close button
     navColor.classList.add('white');
     icon.setAttribute("href", "assets/waves-w.webp");
@@ -105,7 +105,7 @@ function toggleNavLinks() {
     menuBtnX.style.display = 'block';
     main.classList.add('transparent'); // Add this line to make the text transparent
   } else {
-    if (getId() !== 'about') {
+    if ((getId() !== 'about') || (getId() !== 'contact'))  {
       navColor.classList.remove('white');
       icon.setAttribute("href", "assets/waves-b.webp");
     }
