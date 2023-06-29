@@ -13,10 +13,13 @@ let isNavLinksVisible = false;
 
 const sectionColors = {
   about: {
+    backgroundColor: '#4D5432', // sage green
+  },
+  work1: {
     backgroundColor: '#CAB565', // brown
   },
-  work: {
-    backgroundColor: '#4D5432', // sage green
+  work2: {
+    backgroundColor: '#DCDAAB', // cream
   },
   contact: {
     backgroundColor: '#72A8BD', // blue grey
@@ -54,8 +57,8 @@ window.addEventListener('scroll', () => {
   document.body.style.transition = 'background-color 0.45s';
   document.body.style.backgroundColor = sectionColor;
 
-  // Check if the current section is the "work" section
-  if (s === 'work') {
+  // Check if the current section is the "about" section
+  if (s === 'about') {
     // Apply white color to the SVG logo, menu button, and close button
     navColor.classList.add('white');
     icon.setAttribute("href", "assets/waves-w.webp");
@@ -102,7 +105,7 @@ function toggleNavLinks() {
     menuBtnX.style.display = 'block';
     main.classList.add('transparent'); // Add this line to make the text transparent
   } else {
-    if (getId() !== 'work') {
+    if (getId() !== 'about') {
       navColor.classList.remove('white');
       icon.setAttribute("href", "assets/waves-b.webp");
     }
