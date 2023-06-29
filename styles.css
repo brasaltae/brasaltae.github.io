@@ -101,9 +101,9 @@ li {
 
 .transparent {
   background-color: rgba(0, 0, 0, 0.6); /* Set the background color with transparency */
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
+  -webkit-transition: background-color 450ms linear;
+  -ms-transition: background-color 450ms linear;
+  transition: background-color 450ms linear;
 }
 
 .navbar {
