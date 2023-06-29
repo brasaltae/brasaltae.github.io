@@ -2,21 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
 
 /* Reset default browser styles */
-body, p, ul, li, div,h1, h2, h3, h4 {
+body, p, ul, li, div, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', monospace, sans-serif;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Kosugi Maru', monospace, sans-serif;
 }
 
 /* Global styles */
 body {
   display: flex;
   flex-direction: column;
-  font-size: 2.2em;
   background-color: #4D5432;
 }
 
@@ -24,26 +19,25 @@ main {
   flex: 1;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Kosugi Maru', monospace, sans-serif;
+  padding-bottom: 1em;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
 .white {
   fill: white; /* Apply white color to SVG logo */
   color: white; /* Apply white color to menu button and close button */
 }
 
-#logo,
-#menu-btn,
-#menu-btn-x {
-  width: 1em;
-  height: 1em;
-}
-
-#logo,
-#menu-btn,
-#menu-btn-x {
-  cursor: crosshair;
-}
-
 .navbar {
-  padding: 1em;
   position: fixed;
   top: 0;
   left: 0;
@@ -53,7 +47,6 @@ main {
 }
 
 #nav-links {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   display: none;
@@ -71,10 +64,6 @@ main {
   margin-bottom: 10vh;
 }
 
-li {
-  list-style-type: none;
-}
-
 #nav-links li a {
   cursor: crosshair;
   color: white;
@@ -85,12 +74,6 @@ li {
 
 .visible {
   display: block !important;
-}
-
-section {
-  font-size: 1.2em;
-  padding: 5em 1.8em;
-  min-height: calc(100vh - 10em);
 }
 
 .section-about {
@@ -124,33 +107,59 @@ section {
   transition: background-color 1000ms linear;
 }
 
+.navbar {
+  padding: min(3.5vw, 3.5em);
+}
+
+#logo,
+#menu-btn,
+#menu-btn-x {
+  width: min(12vw, 4em); 
+  height: min(12vw, 4em); 
+}
+
+#logo,
+#menu-btn,
+#menu-btn-x {
+  cursor: crosshair;
+}
+
+section {
+  font-size: min(2.5em,5vw); 
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: max(7vw, 1em); 
+  padding-right: max(7vw, 1em); 
+  min-height: calc(100vh - 6em);
+}
+
 footer {
   color: black;
-  font-size: 0.8em;
+  font-size: min(0.8em,2vw); 
   padding: 1em;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+/*
+@media only screen and (max-width: 20em) {
   #logo,
   #menu-btn,
   #menu-btn-x {
-    width: 2em;
-    height: 2em;
+    width: 5em;
+    height: 5em;
+  }
+
+  section {
+    font-size: 3.5em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+  }
+
+  .navbar {
+    padding: 2.8em;
   }
 
   footer {
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
-}
-
-/* Styles for tablets and larger screens */
-
-@media (min-width: 1024px) {
-  #logo,
-  #menu-btn,
-  #menu-btn-x {
-    width: 1.5em;
-    height: 1.5em;
-  }
-}
+}*/

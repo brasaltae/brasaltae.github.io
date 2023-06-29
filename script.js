@@ -104,7 +104,7 @@ function toggleNavLinks() {
     menuBtnX.style.display = 'block';
     main.classList.add('transparent'); // Add this line to make the text transparent
   } else {
-    if ((getId() !== 'about') || (getId() !== 'contact'))  {
+    if ((getId() !== 'about') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
       icon.setAttribute("href", "assets/waves-b.webp");
     }
