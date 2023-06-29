@@ -53,9 +53,8 @@ function getId() {
 // Add scroll event listener to the window
 window.addEventListener('scroll', () => {
   const s = getId()
-  const sectionColor = sectionColors[s].backgroundColor;
   document.body.style.transition = 'background-color 0.45s';
-  document.body.style.backgroundColor = sectionColor;
+  document.body.style.backgroundColor = sectionColors[s].backgroundColor;
 
   // Check if the current section is the "about" section
   if ((s === 'about') || (s === 'contact')) {
