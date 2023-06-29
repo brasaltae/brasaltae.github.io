@@ -76,21 +76,21 @@ li {
   display: block !important;
 }
 
-.section-about {
+.section-home {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section-work1 {
+.section-about {
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section-work2 {
+.section-work {
   color: black;
 }
 
