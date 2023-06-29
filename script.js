@@ -2,6 +2,7 @@ const menuBtn = document.getElementById('menu-btn');
 const menuBtnX = document.getElementById('menu-btn-x');
 const navColor = document.getElementById('navbar');
 const navLinks = document.getElementById('nav-links');
+const icon = document.getElementById('logo-icon');
 const links = navLinks.getElementsByTagName('a');
 const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
@@ -57,9 +58,11 @@ window.addEventListener('scroll', () => {
   if (s === 'work') {
     // Apply white color to the SVG logo, menu button, and close button
     navColor.classList.add('white');
+    icon.setAttribute("href", "assets/waves-w.svg");
   } else {
     // Remove white color from the SVG logo, menu button, and close button
     navColor.classList.remove('white');
+    icon.setAttribute("href", "assets/waves-b.svg");
   }
 });
 
@@ -93,6 +96,7 @@ function toggleNavLinks() {
   // Toggle the scrolling behavior for the body
   if (isNavLinksVisible) {
     navColor.classList.add('white');
+    icon.setAttribute("href", "assets/waves-w.svg");
     document.body.style.overflow = 'hidden';
     menuBtn.style.display = 'none';
     menuBtnX.style.display = 'block';
@@ -100,6 +104,7 @@ function toggleNavLinks() {
   } else {
     if (getId() !== 'work') {
       navColor.classList.remove('white');
+      icon.setAttribute("href", "assets/waves-b.svg");
     }
     document.body.style.overflow = '';
     menuBtn.style.display = 'block';
