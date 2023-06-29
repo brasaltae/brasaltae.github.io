@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
 
 /* Reset default browser styles */
-body, p, ul, li, div, h1, h2, h3, h4 {
+body, p, ul, li, div, h1, h2, h3, h4, svg, image {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', monospace, sans-serif;
@@ -115,6 +115,11 @@ li {
 #menu-btn,
 #menu-btn-x {
   cursor: crosshair;
+}
+
+#computer {
+  width: 0.25em;
+  height: 0.25em;
 }
 
 section {

@@ -84,6 +84,10 @@ for (let i = 0; i < links.length; i++) {
 
     navLinks.classList.toggle('visible');
     isNavLinksVisible = !isNavLinksVisible;
+    if ((getId() !== 'home') && (getId() !== 'contact'))  {
+      navColor.classList.remove('white');
+      icon.setAttribute("href", "assets/waves-b.webp");
+    }
     document.body.style.overflow = '';
     menuBtn.style.display = 'block';
     menuBtnX.style.display = 'none';
@@ -116,7 +120,6 @@ function toggleNavLinks() {
     main.classList.add('transparent'); // Add this line to make the text transparent
     section1.style.color = "black";
     section4.style.color = "black";
-
   } else {
     if ((getId() !== 'home') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
