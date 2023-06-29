@@ -135,7 +135,7 @@ section {
 
 footer {
   color: black;
-  font-size: min(0.8em,2vw); 
+  font-size: min(0.8em,3vw); 
   padding: 1em;
   text-align: center;
 }
