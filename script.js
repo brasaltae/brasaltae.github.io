@@ -11,6 +11,15 @@ const logo = document.getElementById('logo');
 
 let isNavLinksVisible = false;
 
+var section1 = sections[0];
+var section2 = sections[1];
+var section3 = sections[2];
+var section4 = sections[3];
+section1.style.color = "white";
+section2.style.color = "black";
+section3.style.color = "black";
+section4.style.color = "white";
+
 const sectionColors = {
   home: {
     backgroundColor: '#4D5432', // sage green
@@ -79,6 +88,8 @@ for (let i = 0; i < links.length; i++) {
     menuBtn.style.display = 'block';
     menuBtnX.style.display = 'none';
     main.classList.remove('transparent'); // Add this line to restore the text visibility
+    section1.style.color = "white";
+    section4.style.color = "white";
 
     // Get the target section's ID from the href attribute
     const targetId = links[i].getAttribute('href').substring(1);
@@ -103,6 +114,9 @@ function toggleNavLinks() {
     menuBtn.style.display = 'none';
     menuBtnX.style.display = 'block';
     main.classList.add('transparent'); // Add this line to make the text transparent
+    section1.style.color = "black";
+    section4.style.color = "black";
+
   } else {
     if ((getId() !== 'home') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
@@ -112,6 +126,8 @@ function toggleNavLinks() {
     menuBtn.style.display = 'block';
     menuBtnX.style.display = 'none';
     main.classList.remove('transparent'); // Add this line to restore the text visibility
+    section1.style.color = "white";
+    section4.style.color = "white";
   }
 }
 
