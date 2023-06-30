@@ -64,6 +64,14 @@ txtTypeHome.prototype.tick = function () {
     }, delta);
 };
 
+const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText("hello@bitwaves.ca");
+      document.getElementById("tooltip").innerHTML = "copied"
+    } catch (err) {
+    }
+}
+
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   var el = document.getElementById("typed-main");
