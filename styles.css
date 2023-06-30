@@ -106,8 +106,8 @@ li {
 #logo,
 #menu-btn,
 #menu-btn-x {
-  width: min(12vw, 4em); 
-  height: min(12vw, 4em); 
+  width: min(12vw, 6.5em); 
+  height: min(12vw, 6.5em); 
 }
 
 #logo,
@@ -166,6 +166,3 @@ footer {
   padding: 1em;
   text-align: center;
 }
-
-
-
