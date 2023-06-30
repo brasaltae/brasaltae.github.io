@@ -7,7 +7,7 @@ let isNavLinksVisible = false;
 
 var section1 = sections[0];
 section1.style.color = "white";
-document.body.style.backgroundColor = '#4F7584';
+document.body.style.backgroundColor = '#4D5432';
 
 logo.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
