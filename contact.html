@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BitWaves.</title>
+  <link rel="icon" type="image/x-icon" href="assets/waves-b.webp">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <div id="navbar" class="navbar white">
+    <div id="logo">
+      <!-- SVG logo -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <image id="logo-icon" width="24" height="24" href="assets/waves-w.webp"/>
+      </svg>
+    </div>
+    <svg id="menu-btn-x" onchange="location=this.value" value="index.html" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M3.293 3.293a1 1 0 0 1 1.414 0L12 10.586l7.293-7.293a1 1 0 0 1 1.414 1.414L13.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 0 1-1.414-1.414L10.586 12 3.293 4.707a1 1 0 0 1 0-1.414z"/>
+    </svg>
+  </div>
+
+  <main>
+    <!-- Main Content Section -->
+    <section id="contact" class="section-contact" style="padding-top: 4em;">
+      <div>
+        <h1>Unleash your project's potential</h1>
+        <span class="typewrite" data-period="8888" data-type='["Reach out!", "Connect with us!"]'>
+          <span id="typed-main"></span>
+          <span class="caret">|</span>
+        </span>
+        <div>
+          <br><br>
+          <h4 style="text-align: left;">Montreal, Quebec</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>&copy; 2023 BitWaves. All rights reserved.</div>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script-contact.js"></script>
+</body>
+</html>
