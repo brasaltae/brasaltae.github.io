@@ -190,7 +190,7 @@ li {
 section {
   font-size: min(2.4em,3.6vw); 
   padding: 28px;
-  min-height: calc(100vh - 4em);
+  min-height: calc(100vh - 56px);
 }
 
 @media only screen and (min-width: 600px) {
