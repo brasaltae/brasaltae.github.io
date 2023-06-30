@@ -113,6 +113,7 @@ for (let i = 0; i < links.length; i++) {
 
 // Function to toggle the visibility of the navigation links and change the menu button icon
 function toggleNavLinks() {
+  navbar.classList.toggle('active');
   navLinks.classList.toggle('visible');
   isNavLinksVisible = !isNavLinksVisible;
 
