@@ -3,6 +3,7 @@
 <head>
   <title>BitWaves.</title>
   <link rel="icon" type="image/x-icon" href="assets/waves-b.webp">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -33,13 +34,21 @@
     <!-- Main Content Section -->
     <section id="home" class="section-home">
         <p>
-          <h1>Crafting exceptional interfaces. Igniting growth together. Elevating your brand.</h1>
+          <h1>
+          <span class="typewrite" data-period="8888" data-type='["Coding the World... bit by bit", "Hello!"]'>
+            <span id="typed-main"></span>
+            <span class="caret">|</span>
+          </span>
+        </h1>
         </p>
     </section>
 
     <section id="about" class="section-about">
       <div>
-        <p><h3>What we do.<br>Why we do it.</h3>
+        <p><h1>Crafting exceptional interfaces. Igniting growth together. Elevating your brand.</h1>
+          </p>
+        <p>
+          <h3>What we do.<br>Why we do it.</h3>
           We specialize in creating outstanding interfaces that inspire confidence, ignite joy, and foster unwavering brand dedication.
         </p>
         <p>
@@ -64,7 +73,7 @@
     <section id="contact" class="section-contact">
       <p><h1>Unleash your project's potential</h1>
         <div id="hi" class="border-black">Say Hi!</div>
-        <div id="computer">
+        <div id="computer" data-aos="fade-in">
           <img style="width:38vw;height:auto;" src="assets/computer.webp" alt="Computer">
         </div>
       </p>
@@ -74,7 +83,10 @@
       <p>&copy; 2023 BitWaves. All rights reserved.</p>
     </footer>
   </main>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

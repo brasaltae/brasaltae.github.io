@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
 
 /* Reset default browser styles */
-body, p, ul, li, div, h1, h2, h3, h4, svg, image {
+body, p, ul, li, div, h1, h2, h3, h4, svg, image, span {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', monospace, sans-serif;
@@ -128,6 +128,29 @@ li {
   display: inline-block;
 }
 
+.typewrite span {
+    /* font-family: 'Waiting for the Sunrise', cursive; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.1em; /* Adjust as needed */
+    display: inline;
+}
+
+.caret {
+    color: orange;
+    animation: blink-caret 0.5s step-end infinite;
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: orange;
+    }
+}
+
 section {
   font-size: min(2.5em,5vw); 
   padding-top: 2em;
@@ -144,26 +167,5 @@ footer {
   text-align: center;
 }
 
-/*
-@media only screen and (max-width: 20em) {
-  #logo,
-  #menu-btn,
-  #menu-btn-x {
-    width: 5em;
-    height: 5em;
-  }
 
-  section {
-    font-size: 3.5em;
-    padding-left: 1.3em;
-    padding-right: 1.3em;
-  }
 
-  .navbar {
-    padding: 2.8em;
-  }
-
-  footer {
-    font-size: 0.6em;
-  }
-}*/
