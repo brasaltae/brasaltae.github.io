@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
   document.body.style.backgroundColor = sectionColors[s].backgroundColor;
 
   // Check if the current section is the "about" section
-  if ((s === 'home') || (s === 'contact')) {
+  if ((s === 'home') || (s === 'work2') || (s === 'contact')) {
     // Apply white color to the SVG logo, menu button, and close button
     navColor.classList.add('white');
     icon.setAttribute("href", "assets/waves-w.webp");
