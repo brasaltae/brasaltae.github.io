@@ -66,7 +66,7 @@ txtTypeHome.prototype.tick = function () {
 
 const copyContent = async () => {
     try {
-      await navigator.clipboard.writeText("hello@bitwaves.ca");
+      await navigator.clipboard.writeText("contact@bitwaves.ca");
       document.getElementById("tooltip").innerHTML = "copied"
     } catch (err) {
     }
