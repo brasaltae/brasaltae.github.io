@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru');
+@import url('https://fonts.googleapis.com/css?family=Consolas');
 
 /* Reset default browser styles */
 body, p, ul, li, div, h1, h2, h3, h4, svg, image, span {
@@ -20,7 +20,7 @@ main {
 }
 
 h1, h2, h3, h4, a {
-  font-family: 'Kosugi Maru', monospace, sans-serif;
+  font-family: 'Consolas', monospace, sans-serif;
   padding-bottom: 1em;
   letter-spacing: 0.1em; /* Adjust as needed */
 }
@@ -71,14 +71,14 @@ li {
   text-decoration: none;
   font-size: 8vh;
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
-  font-family: 'Kosugi Maru', monospace, sans-serif;
+  font-family: 'Consolas', monospace, sans-serif;
 }
 
 #email {
   cursor: crosshair;
   color: white;
   text-decoration: underline;
-  font-family: 'Kosugi Maru', monospace, sans-serif;
+  font-family: 'Consolas', monospace, sans-serif;
 }
 
 .tooltip {
