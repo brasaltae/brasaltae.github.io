@@ -2,7 +2,7 @@ const menuBtn = document.getElementById('menu-btn');
 const menuBtnX = document.getElementById('menu-btn-x');
 const navColor = document.getElementById('navbar');
 const navLinks = document.getElementById('nav-links');
-const icon = document.getElementById('logo-icon');
+const bitlogo = document.getElementById('logo-icon');
 const links = navLinks.getElementsByTagName('a');
 const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
@@ -81,11 +81,11 @@ window.addEventListener('scroll', () => {
   if ((s === 'home') || (s === 'work2') || (s === 'contact')) {
     // Apply white color to the SVG logo, menu button, and close button
     navColor.classList.add('white');
-    icon.setAttribute("href", "assets/waves-w.webp");
+    bitlogo.setAttribute("href", "assets/waves-w.webp");
   } else {
     // Remove white color from the SVG logo, menu button, and close button
     navColor.classList.remove('white');
-    icon.setAttribute("href", "assets/waves-b.webp");
+    bitlogo.setAttribute("href", "assets/waves-b.webp");
   }
 });
 
@@ -98,7 +98,7 @@ for (let i = 0; i < links.length; i++) {
     isNavLinksVisible = !isNavLinksVisible;
     if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
-      icon.setAttribute("href", "assets/waves-b.webp");
+      bitlogo.setAttribute("href", "assets/waves-b.webp");
     }
     document.body.style.overflow = '';
     menuBtn.style.display = 'block';
@@ -128,7 +128,7 @@ function toggleNavLinks() {
   // Toggle the scrolling behavior for the body
   if (isNavLinksVisible) {
     navColor.classList.add('white');
-    icon.setAttribute("href", "assets/waves-w.webp");
+    bitlogo.setAttribute("href", "assets/waves-w.webp");
     document.body.style.overflow = 'hidden';
     menuBtn.style.display = 'none';
     menuBtnX.style.display = 'block';
@@ -140,7 +140,7 @@ function toggleNavLinks() {
   } else {
     if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
-      icon.setAttribute("href", "assets/waves-b.webp");
+      bitlogo.setAttribute("href", "assets/waves-b.webp");
     }
     document.body.style.overflow = '';
     menuBtn.style.display = 'block';
