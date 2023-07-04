@@ -266,6 +266,10 @@ footer {
   animation: menu-btn-animation 0.3s forwards;
 }
 
+#menu-btn:hover {
+  animation: menu-btn-animation 0.8s forwards infinite;
+}
+
 @keyframes menu-btn-animation {
   0% {
     transform: rotate(0deg);
