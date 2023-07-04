@@ -294,3 +294,27 @@ footer {
     transform: scale(1);
   }
 }
+
+#planet {
+  animation: toggleAnimation 1s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+ @keyframes toggleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(18deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-18deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
