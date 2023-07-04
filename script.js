@@ -34,13 +34,13 @@ const sectionColors = {
     backgroundColor: '#CAB565', // brown
   },
   work1: {
-    backgroundColor: '#D8959A', // pink
+    backgroundColor: '#CCA2A5', // pink
   },
   work2: {
-    backgroundColor: '#4F7584', // blue grey
+    backgroundColor: '#6B8791', // blue grey
   },
   work3: {
-    backgroundColor: '#4F7584', // blue grey
+    backgroundColor: '#A993BD', // purple
   },
   contact: {
     backgroundColor: '#4D5432', // sage green
