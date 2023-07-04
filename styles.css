@@ -295,26 +295,39 @@ footer {
   }
 }
 
-#planet {
-  animation: toggleAnimation 1s infinite;
-  animation-timing-function: ease-in-out;
+#g895 {
+  animation: fadeInUp 1s;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
 }
 
- @keyframes toggleAnimation {
-  0% {
-    transform: rotate(0deg);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
   }
-  25% {
-    transform: rotate(18deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-18deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+#g958, #g1057 {
+  opacity: 0;
+  animation: dropIn 5.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--order) * 210ms);
+  animation-iteration-count: infinite;
+}
+
+@keyframes dropIn {
+  20% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  30%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
