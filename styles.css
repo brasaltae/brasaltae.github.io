@@ -19,7 +19,7 @@ main {
   flex: 1;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a {
   font-family: 'Kosugi Maru', monospace, sans-serif;
   padding-bottom: 1em;
   letter-spacing: 0.1em; /* Adjust as needed */
@@ -195,23 +195,36 @@ li {
 }
 
 section {
-  font-size: min(2.4em,3.6vw); 
+  font-size: min(2.5em,3.7vw); 
   padding: 28px;
   min-height: calc(100vh - 56px);
 }
 
 @media only screen and (min-width: 600px) {
   section {
+    font-size: min(2.1em,2.3vw);
     padding-left: 65px;
     padding-right: 65px;
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 800px) {
+  section {
+    font-size: min(2.5em,3.7vw);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
   section {
     font-size: min(1.8em,2vw); 
     padding-left: 290px;
     padding-right: 290px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  section {
+    font-size: min(1.7em,1.9vw);
   }
 }
 
