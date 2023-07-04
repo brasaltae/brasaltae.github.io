@@ -8,6 +8,7 @@ const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
 const main = document.querySelector('main');
 const logo = document.getElementById('logo');
+const caret = document.getElementById('caret');
 
 let isNavLinksVisible = false;
 
@@ -16,11 +17,14 @@ var section2 = sections[1];
 var section3 = sections[2];
 var section4 = sections[3];
 var section5 = sections[4];
+var section6 = sections[5];
 section1.style.color = "white";
 section2.style.color = "black";
 section3.style.color = "black";
 section4.style.color = "white";
-section5.style.color = "white";
+section5.style.color = "black";
+section6.style.color = "white";
+caret.style.color = "orange";
 
 const sectionColors = {
   home: {
@@ -33,6 +37,9 @@ const sectionColors = {
     backgroundColor: '#D8959A', // pink
   },
   work2: {
+    backgroundColor: '#4F7584', // blue grey
+  },
+  work3: {
     backgroundColor: '#4F7584', // blue grey
   },
   contact: {
@@ -99,7 +106,8 @@ for (let i = 0; i < links.length; i++) {
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     section1.style.color = "white";
     section4.style.color = "white";
-    section5.style.color = "white";
+    section6.style.color = "white";
+    caret.style.color = "orange";
 
     // Get the target section's ID from the href attribute
     const targetId = links[i].getAttribute('href').substring(1);
@@ -127,7 +135,8 @@ function toggleNavLinks() {
     main.classList.add('transparent'); // Add this line to make the text transparent
     section1.style.color = "black";
     section4.style.color = "black";
-    section5.style.color = "black";
+    section6.style.color = "black";
+    caret.style.color = "black";
   } else {
     if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
@@ -139,7 +148,8 @@ function toggleNavLinks() {
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     section1.style.color = "white";
     section4.style.color = "white";
-    section5.style.color = "white";
+    section6.style.color = "white";
+    caret.style.color = "orange";
   }
 }
 
