@@ -22,6 +22,7 @@ main {
 h1, h2, h3, h4 {
   font-family: 'Kosugi Maru', monospace, sans-serif;
   padding-bottom: 1em;
+  letter-spacing: 0.1em; /* Adjust as needed */
 }
 
 p, div {
