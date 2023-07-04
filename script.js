@@ -136,7 +136,7 @@ function toggleNavLinks() {
     section1.style.color = "black";
     section4.style.color = "black";
     section6.style.color = "black";
-    caret.style.color = "black";
+    caret.style.color = "transparent";
   } else {
     if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
