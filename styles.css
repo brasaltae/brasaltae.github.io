@@ -207,7 +207,7 @@ li {
 section {
   font-size: min(2.5em,3.7vw); 
   padding: 28px;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 10em);
 }
 
 #vid1 {
