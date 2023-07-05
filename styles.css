@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Consolas');
+@import url('https://fonts.googleapis.com/css?family=Manrope');
 
 /* Reset default browser styles */
 body, p, ul, li, div, h1, h2, h3, h4, svg, image, span {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', monospace, sans-serif;
+  font-family: 'Manrope', monospace, sans-serif;
 }
 
 /* Global styles */
@@ -20,7 +19,7 @@ main {
 }
 
 h1, h2, h3, h4, a {
-  font-family: 'Consolas', monospace, sans-serif;
+  font-family: 'Manrope', monospace, sans-serif;
   padding-bottom: 1em;
   letter-spacing: 0.1em; /* Adjust as needed */
 }
@@ -72,14 +71,14 @@ li {
   font-size: max(1.5em,2vw); 
   text-decoration: none;
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
-  font-family: 'Consolas', monospace, sans-serif;
+  font-family: 'Manrope', monospace, sans-serif;
 }
 
 #email {
   cursor: crosshair;
   color: white;
   text-decoration: underline;
-  font-family: 'Consolas', monospace, sans-serif;
+  font-family: 'Manrope', monospace, sans-serif;
 }
 
 .tooltip {
