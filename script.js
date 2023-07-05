@@ -115,8 +115,12 @@ function toggleNavLinks() {
     document.body.style.overflow = 'hidden';
     opacityStrength = "0.4";
   } else {
-    navColor.classList.remove('white');
-    bitlogo.setAttribute("href", "assets/waves-b.webp");
+    const s = getId();
+    if ((s !== 'home') && (s !== 'work2') && (s !== 'contact')) {
+      // Remove white color from the SVG logo, menu button, and close button
+      navColor.classList.remove('white');
+      bitlogo.setAttribute("href", "assets/waves-b.webp");
+    }
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = '';
   }

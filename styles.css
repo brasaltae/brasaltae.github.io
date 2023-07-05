@@ -70,7 +70,7 @@ li {
   cursor: crosshair;
   color: white;
   text-decoration: none;
-  font-size: 5.8vh;
+  font-size: min(15vw, 2em);
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
   font-family: 'Consolas', monospace, sans-serif;
 }
