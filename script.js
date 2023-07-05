@@ -135,59 +135,63 @@ function toggleNavLinks() {
 menuBtn.addEventListener('click', toggleNavLinks);
 menuBtnX.addEventListener('click', toggleNavLinks);
 
-var txtTypeHome = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = "";
-    this.tick();
-    this.isDeleting = false;
-};
 
-txtTypeHome.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+// Binary to word animation
+var binaryElement = document.getElementById("binary");
+var binarySegments = [
+  "01101000", "01100101", "01101100", "01101100", "01101111", "00100000", "01110111"
+];
+var wordSegments = [
+  "Coding", "the", "World", "<br>", "Bit", "by", "Bit."
+];
+var currentSegment = 0;
+var bitIndex = 0;
 
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+function typeBinary() {
+  var binarySegment = binarySegments[currentSegment];
+  var bit = binarySegment[bitIndex];
+
+  binaryElement.innerHTML += bit;
+  bitIndex++;
+
+  if (bitIndex === binarySegment.length) {
+    binaryElement.innerHTML += " ";
+    bitIndex = 0;
+    if (currentSegment < wordSegments.length) {
+      typeWord(currentSegment);
     }
+    currentSegment++;
+  }
 
-    this.el.innerHTML = this.txt;
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) {
-        delta /= 2;
-    }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-
-    setTimeout(function () {
-        that.tick();
-    }, delta);
-};
-
-window.onload = function () {
-  var elements = document.getElementsByClassName("typewrite");
-  var el = document.getElementById("typed-main");
-  if (el) {
-      for (var i = 0; i < elements.length; i++) {
-          var toRotate = elements[i].getAttribute("data-type");
-          var period = elements[i].getAttribute("data-period");
-          if (toRotate) {
-              new txtTypeHome(el, JSON.parse(toRotate), period);
-          }
-      }
+  if (currentSegment === binarySegments.length && bitIndex === 0) {
+    setTimeout(deleteSentence, 4000); // Wait before deleting the sentence
+  } else {
+    setTimeout(typeBinary, 69); // Adjust the typing speed for binary segments here (in milliseconds)
   }
 }
+
+function typeWord(index) {
+  binaryElement.innerHTML = wordSegments.slice(0, index + 1).join(" ") + " ";
+}
+
+function deleteSentence() {
+  var sentence = binaryElement.innerHTML;
+  var intervalId = setInterval(function() {
+    sentence = sentence.slice(0, -1);
+    binaryElement.innerHTML = sentence;
+    if (sentence === "") {
+      clearInterval(intervalId);
+      setTimeout(startAnimation, 2000); // Wait before restarting the animation
+    }
+  }, 50); // Adjust the deletion speed here (in milliseconds)
+}
+
+function startAnimation() {
+  currentSegment = 0;
+  bitIndex = 0;
+  binaryElement.innerHTML = "";
+  typeBinary();
+}
+
+// Start the binary to word typing animation
+startAnimation();
