@@ -69,7 +69,6 @@ li {
   cursor: crosshair;
   color: white;
   text-decoration: none;
-  padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
   font-family: 'Manrope', monospace, sans-serif;
 }
 
@@ -201,7 +200,7 @@ li {
   }
 }
 
-section {
+section, #nav-links {
   font-size: min(2.5em,3.7vw); 
   padding: 28px;
   min-height: calc(100vh - 6em);
@@ -213,7 +212,7 @@ section {
 }
 
 @media only screen and (min-width: 600px) {
-  section {
+  section, #nav-links {
     font-size: min(2.1em,2.3vw);
     padding-left: 65px;
     padding-right: 65px;
@@ -221,13 +220,13 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  section {
+  section, #nav-links {
     font-size: min(2.5em,3.7vw);
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  section {
+  section, #nav-links {
     font-size: min(1.8em,2vw); 
     padding-left: 290px;
     padding-right: 290px;
@@ -235,7 +234,7 @@ section {
 }
 
 @media only screen and (min-width: 1150px) {
-  section {
+  section, #nav-links {
     font-size: min(1.7em,1.9vw);
   }
 }
