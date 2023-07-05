@@ -8,23 +8,16 @@ const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
 const main = document.querySelector('main');
 const logo = document.getElementById('logo');
-const caret = document.getElementById('caret');
 
 let isNavLinksVisible = false;
 
 var section1 = sections[0];
-var section2 = sections[1];
-var section3 = sections[2];
 var section4 = sections[3];
-var section5 = sections[4];
 var section6 = sections[5];
-section1.style.color = "white";
-section2.style.color = "black";
-section3.style.color = "black";
-section4.style.color = "white";
-section5.style.color = "black";
-section6.style.color = "white";
-caret.style.color = "orange";
+section1.classList.toggle('white');
+section4.classList.toggle('white');
+section6.classList.toggle('white');
+menuBtn.classList.toggle('visible');
 
 const sectionColors = {
   home: {
@@ -66,7 +59,7 @@ function getId() {
 
     // Check if the scroll position is within the section's range
     if (scrollPosition >= sectionStart && scrollPosition < sectionEnd) {
-      return section.id
+      return section.id;
     }
   }
 }
@@ -93,21 +86,20 @@ window.addEventListener('scroll', () => {
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('click', (event) => {
     event.preventDefault();
+    const s = getId();
 
     navLinks.classList.toggle('visible');
     isNavLinksVisible = !isNavLinksVisible;
-    if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
-      navColor.classList.remove('white');
+    if ((s !== 'home') && (s !== 'work2') && (s !== 'contact'))  {
+      navColor.classList.toggle('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
     }
     document.body.style.overflow = '';
-    menuBtn.style.display = 'block';
-    menuBtnX.style.display = 'none';
-    main.classList.remove('transparent'); // Add this line to restore the text visibility
-    section1.style.color = "white";
-    section4.style.color = "white";
-    section6.style.color = "white";
-    caret.style.color = "orange";
+    menuBtn.classList.toggle('visible');
+    menuBtnX.classList.toggle('visible');
+    section1.classList.toggle('white');
+    section4.classList.toggle('white');
+    section6.classList.toggle('white');
 
     // Get the target section's ID from the href attribute
     const targetId = links[i].getAttribute('href').substring(1);
@@ -124,32 +116,42 @@ function toggleNavLinks() {
   navbar.classList.toggle('active');
   navLinks.classList.toggle('visible');
   isNavLinksVisible = !isNavLinksVisible;
+  
+  // Select all SVG elements within the main section
+  var svgs = main.getElementsByTagName("div");
 
   // Toggle the scrolling behavior for the body
   if (isNavLinksVisible) {
     navColor.classList.add('white');
     bitlogo.setAttribute("href", "assets/waves-w.webp");
     document.body.style.overflow = 'hidden';
-    menuBtn.style.display = 'none';
-    menuBtnX.style.display = 'block';
-    main.classList.add('transparent'); // Add this line to make the text transparent
-    section1.style.color = "black";
-    section4.style.color = "black";
-    section6.style.color = "black";
-    caret.style.color = "transparent";
+    menuBtn.classList.toggle('visible');
+    menuBtnX.classList.toggle('visible');
+    section1.classList.toggle('white');
+    section4.classList.toggle('white');
+    section6.classList.toggle('white');
+
+    // Loop through each SVG element and set the opacity to 0.6
+    for (var i = 0; i < svgs.length; i++) {
+      svgs[i].style.opacity = "0.4";
+      main.classList.add('transparent'); // Add this line to restore the text visibility
+    }
   } else {
     if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
       navColor.classList.remove('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
     }
     document.body.style.overflow = '';
-    menuBtn.style.display = 'block';
-    menuBtnX.style.display = 'none';
-    main.classList.remove('transparent'); // Add this line to restore the text visibility
-    section1.style.color = "white";
-    section4.style.color = "white";
-    section6.style.color = "white";
-    caret.style.color = "orange";
+    menuBtn.classList.toggle('visible');
+    menuBtnX.classList.toggle('visible');
+    section1.classList.toggle('white');
+    section4.classList.toggle('white');
+    section6.classList.toggle('white');
+
+    for (var i = 0; i < svgs.length; i++) {
+      svgs[i].style.opacity = "1";
+      main.classList.remove('transparent'); // Add this line to restore the text visibility
+    }
   }
 }
 

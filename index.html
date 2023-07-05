@@ -16,7 +16,7 @@
       </svg>
     </div>
     
-    <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
       <path d="M0 0h24v24H0z" fill="none"/>
       <path id="menu-icon" d="M4 18h16v-2H4v2zM4 6h16V4H4v2z"/>
     </svg>
@@ -32,39 +32,43 @@
     </ul>
   </div>
 
-  <main>
+  <main id="main">
     <!-- Main Content Section -->
     <section id="home" class="section-home">
         <div>
           <h1>
-            <span class="typewrite" data-period="8888" data-type='["Coding the World... Bit by Bit", "Hello BitWaves World!"]'>
-              <span id="typed-main"></span>
-              <span id="caret">|</span>
-            </span>
+            <div>
+              <span class="typewrite" data-period="8888" data-type='["Coding the World... Bit by Bit", "Hello BitWaves World!"]'>
+                <span id="typed-main"></span>
+                <span id="caret">|</span>
+              </span>
+            </div>
           </h1>
         </div>
     </section>
 
     <section id="about" class="section-about">
       <div data-aos="fade-up" data-aos-easing="ease-in-sine">
-        <div><h1>Crafting exceptional interfaces. Igniting growth together. Elevating your brand.</h1>
+        <div>
+          <div><h1>Crafting exceptional interfaces. Igniting growth together. Elevating your brand.</h1>
+            </div>
+          <div>
+            <h3>What we do.<br>Why we do it.</h3>
+            We specialize in creating outstanding interfaces that inspire confidence, ignite joy, and foster unwavering brand dedication.
           </div>
-        <div>
-          <h3>What we do.<br>Why we do it.</h3>
-          We specialize in creating outstanding interfaces that inspire confidence, ignite joy, and foster unwavering brand dedication.
-        </div>
-        <div>
-          We believe in the power of seamless digital experiences. Empowering your digital presence is the top one priority of our in-house team of developers and designers.
-        </div>
-        <div>
-          <h3>One place.<br>Everything you need.</h3>
-          <ul>
-            <li>Web Development</li>
-            <li>IOS/Android App Development</li>
-            <li>Logo Designing</li>
-            <li>IT Support Services</li>
-            <li>Social Media Marketing</li>
-          </ul>
+          <div>
+            We believe in the power of seamless digital experiences. Empowering your digital presence is the top one priority of our in-house team of developers and designers.
+          </div>
+          <div>
+            <h3>One place.<br>Everything you need.</h3>
+            <ul>
+              <li>Web Development</li>
+              <li>IOS/Android App Development</li>
+              <li>Logo Designing</li>
+              <li>IT Support Services</li>
+              <li>Social Media Marketing</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -107,7 +111,6 @@
         <div>
           <h3>IOS/Android App Development</h3>
           Building immersive mobile experiences that enhance user engagement and drive results.
-          <canvas class="zdog-canvas"></canvas>
         </div>
       </div>
     </section>
@@ -123,11 +126,13 @@
 
     <section id="contact" class="section-contact">
       <div data-aos="fade-up" data-aos-easing="ease-in-sine">
-        <h1>Unleash your project's potential</h1>
-        <div id="computer">
-          <img style="width:34vw;height:auto;" src="assets/computer.webp" alt="Computer">
+        <div>
+          <h1>Unleash your project's potential</h1>
+          <div id="computer">
+            <img style="width:34vw;height:auto;" src="assets/computer.webp" alt="Computer">
+          </div>
+          <div id="hi" class="border-black" onclick="location.href='contact.html';">Say Hi!</div>
         </div>
-        <div id="hi" class="border-black" onclick="location.href='contact.html';">Say Hi!</div>
       </div>
     </section>
 

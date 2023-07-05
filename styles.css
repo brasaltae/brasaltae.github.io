@@ -45,6 +45,7 @@ li {
   right: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 #nav-links {
@@ -69,7 +70,7 @@ li {
   cursor: crosshair;
   color: white;
   text-decoration: none;
-  font-size: 8vh;
+  font-size: 5.8vh;
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
   font-family: 'Consolas', monospace, sans-serif;
 }
@@ -129,8 +130,7 @@ li {
 }
 
 .transparent {
-  background-color: rgba(0, 0, 0, 0.6); /* Set the background color with transparency */
-  color: black !important;
+  background-color: rgba(1, 1, 1, 0.78); /* Set the background color with transparency */
   -webkit-transition: background-color 450ms linear;
   -ms-transition: background-color 450ms linear;
   transition: background-color 450ms linear;
@@ -179,6 +179,7 @@ li {
 }
 
 #caret {
+    color: orange;
     animation: blink-caret 0.5s step-end infinite;
 }
 
