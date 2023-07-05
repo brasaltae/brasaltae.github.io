@@ -68,7 +68,6 @@ li {
 #nav-links li a {
   cursor: crosshair;
   color: white;
-  font-size: max(1.5em,2vw); 
   text-decoration: none;
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
   font-family: 'Manrope', monospace, sans-serif;
@@ -136,7 +135,7 @@ li {
 }
 
 .navbar {
-  padding: min(3.5vw, 3.5em);
+  padding: min(2.8vw, 2.8em);
 }
 
 #logo,
@@ -172,9 +171,7 @@ li {
 }
 
 #binary {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
     letter-spacing: 0.1em; /* Adjust as needed */
-    display: inline;
 }
 
 #caret {
