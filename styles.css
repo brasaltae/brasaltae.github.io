@@ -62,7 +62,6 @@ li {
 
 #nav-links li {
   display: block;
-  margin-bottom: 10vh;
 }
 
 #nav-links li a {
@@ -134,7 +133,7 @@ li {
 }
 
 .navbar {
-  padding: min(2.8vw, 2.8em);
+  padding: min(2.5vw, 2.5em);
 }
 
 #logo,
@@ -203,7 +202,7 @@ li {
 section, #nav-links {
   font-size: min(2.5em,3.7vw); 
   padding: 28px;
-  min-height: calc(100vh - 6em);
+  min-height: calc(100vh - 56px);
 }
 
 #vid1 {
@@ -221,7 +220,7 @@ section, #nav-links {
 
 @media only screen and (min-width: 800px) {
   section, #nav-links {
-    font-size: min(2.5em,3.7vw);
+    font-size: min(2.4em,3.5vw);
   }
 }
 
