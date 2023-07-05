@@ -8,8 +8,7 @@ const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section');
 const main = document.querySelector('main');
 const logo = document.getElementById('logo');
-
-let isNavLinksVisible = false;
+const mainDivs = main.getElementsByTagName("div");
 
 var section1 = sections[0];
 var section4 = sections[3];
@@ -21,7 +20,7 @@ menuBtn.classList.toggle('visible');
 
 const sectionColors = {
   home: {
-    backgroundColor: '#4D5432', // sage green
+    backgroundColor: '#4D5432', // sage green WHITE
   },
   about: {
     backgroundColor: '#CAB565', // brown
@@ -30,14 +29,14 @@ const sectionColors = {
     backgroundColor: '#CCA2A5', // pink
   },
   work2: {
-    backgroundColor: '#6B8791', // blue grey
+    backgroundColor: '#6B8791', // blue grey WHITE
   },
   work3: {
     backgroundColor: '#A993BD', // purple
   },
   contact: {
-    backgroundColor: '#4D5432', // sage green
-  },
+    backgroundColor: '#4D5432', // sage green WHITE
+  }
 };
 
 logo.addEventListener('click', () => {
@@ -68,6 +67,7 @@ function getId() {
 window.addEventListener('scroll', () => {
   const s = getId();
   document.body.style.transition = 'background-color 0.45s';
+  console.log(s);
   document.body.style.backgroundColor = sectionColors[s].backgroundColor;
 
   // Check if the current section is the "about" section
@@ -85,27 +85,11 @@ window.addEventListener('scroll', () => {
 // Add click event listeners to the navigation links
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('click', (event) => {
-    event.preventDefault();
-    const s = getId();
-
-    navLinks.classList.toggle('visible');
-    isNavLinksVisible = !isNavLinksVisible;
-    if ((s !== 'home') && (s !== 'work2') && (s !== 'contact'))  {
-      navColor.classList.toggle('white');
-      bitlogo.setAttribute("href", "assets/waves-b.webp");
-    }
-    document.body.style.overflow = '';
-    menuBtn.classList.toggle('visible');
-    menuBtnX.classList.toggle('visible');
-    section1.classList.toggle('white');
-    section4.classList.toggle('white');
-    section6.classList.toggle('white');
-
-    // Get the target section's ID from the href attribute
-    const targetId = links[i].getAttribute('href').substring(1);
+    event.preventDefault();    
+    toggleNavLinks();
 
     // Find the target section element
-    const targetSection = document.getElementById(targetId);
+    const targetSection = document.getElementById(links[i].getAttribute('href').substring(1));
     // Scroll to the target section smoothly with offset
     window.scrollTo({ top: targetSection.offsetTop, behavior: 'smooth' });
   });
@@ -113,45 +97,33 @@ for (let i = 0; i < links.length; i++) {
 
 // Function to toggle the visibility of the navigation links and change the menu button icon
 function toggleNavLinks() {
+  var opacityStrength = "1";
   navbar.classList.toggle('active');
   navLinks.classList.toggle('visible');
-  isNavLinksVisible = !isNavLinksVisible;
-  
-  // Select all SVG elements within the main section
-  var svgs = main.getElementsByTagName("div");
 
+  menuBtn.classList.toggle('visible');
+  menuBtnX.classList.toggle('visible');
+  section1.classList.toggle('white');
+  section4.classList.toggle('white');
+  section6.classList.toggle('white');
+  
   // Toggle the scrolling behavior for the body
-  if (isNavLinksVisible) {
+  if (navLinks.classList.contains("visible")) {
     navColor.classList.add('white');
     bitlogo.setAttribute("href", "assets/waves-w.webp");
+    main.classList.add('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = 'hidden';
-    menuBtn.classList.toggle('visible');
-    menuBtnX.classList.toggle('visible');
-    section1.classList.toggle('white');
-    section4.classList.toggle('white');
-    section6.classList.toggle('white');
-
-    // Loop through each SVG element and set the opacity to 0.6
-    for (var i = 0; i < svgs.length; i++) {
-      svgs[i].style.opacity = "0.4";
-      main.classList.add('transparent'); // Add this line to restore the text visibility
-    }
+    opacityStrength = "0.4";
   } else {
-    if ((getId() !== 'home') && (getId() !== 'work2') && (getId() !== 'contact'))  {
-      navColor.classList.remove('white');
-      bitlogo.setAttribute("href", "assets/waves-b.webp");
-    }
+    navColor.classList.remove('white');
+    bitlogo.setAttribute("href", "assets/waves-b.webp");
+    main.classList.remove('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = '';
-    menuBtn.classList.toggle('visible');
-    menuBtnX.classList.toggle('visible');
-    section1.classList.toggle('white');
-    section4.classList.toggle('white');
-    section6.classList.toggle('white');
+  }
 
-    for (var i = 0; i < svgs.length; i++) {
-      svgs[i].style.opacity = "1";
-      main.classList.remove('transparent'); // Add this line to restore the text visibility
-    }
+  //console.log(navLinks.classList.contains("visible"));
+  for (var i = 0; i < mainDivs.length; i++) {
+    mainDivs[i].style.opacity = opacityStrength;
   }
 }
 
