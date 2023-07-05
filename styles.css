@@ -69,8 +69,8 @@ li {
 #nav-links li a {
   cursor: crosshair;
   color: white;
+  font-size: max(1.5em,2vw); 
   text-decoration: none;
-  font-size: min(5em,6.4vw);
   padding-left: min(15vw, 2em); /* Set the left padding to match the section padding */
   font-family: 'Consolas', monospace, sans-serif;
 }
