@@ -28,10 +28,6 @@ p, div {
   padding-bottom: 1em;
 }
 
-li {
-  list-style-type: none;
-}
-
 .white {
   fill: white; /* Apply white color to SVG logo */
   color: white; /* Apply white color to menu button and close button */
