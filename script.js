@@ -29,7 +29,7 @@ const sectionColors = {
     backgroundColor: '#CCA2A5', // pink
   },
   work2: {
-    backgroundColor: '#6B8791', // blue grey WHITE
+    backgroundColor: '#0C3157', // blue grey WHITE #6B8791
   },
   work3: {
     backgroundColor: '#A993BD', // purple
@@ -66,7 +66,7 @@ function getId() {
 // Add scroll event listener to the window
 window.addEventListener('scroll', () => {
   const s = getId();
-  document.body.style.transition = 'background-color 0.45s';
+  document.body.style.transition = 'background-color 0.8s';
   console.log(s);
   document.body.style.backgroundColor = sectionColors[s].backgroundColor;
 

@@ -137,10 +137,6 @@ p, div {
   background-color: transparent;
 }
 
-#computer {
-  display: block;
-}
-
 .border-black {
   border-radius: 50px;
   border: 2px solid black;
@@ -288,51 +284,11 @@ footer {
   }
 }
 
-#web {
-  text-align: center;
-  width: 80%;
-  height: auto;
-}
 
-#g895 {
-  animation: fadeInUp 1s;
-  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#g958, #g1057 {
-  opacity: 0;
-  animation: dropIn 5.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: calc(var(--order) * 210ms);
-  animation-iteration-count: infinite;
-}
-
-@keyframes dropIn {
-  20% {
-    opacity: 0;
-    transform: translateY(-20%);
-  }
-  30%, 100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .parallax {
   /* The image used */
-  background-image: url("assets/animation-waves.svg");
+  background-image: url("assets/marketing.svg");
 
   /* Set a specific height */
   height: 50vh; 
