@@ -133,6 +133,7 @@ p, div {
 #menu-btn,
 #menu-btn-x,
 #hi {
+  display: block;
   cursor: crosshair;
   background-color: transparent;
 }
@@ -143,6 +144,11 @@ p, div {
   padding: 15px;
   width: 5em;
   display: inline-block;
+}
+
+#hi {
+  margin: auto;
+  text-align: center;
 }
 
 #hi:hover {
@@ -241,14 +247,21 @@ footer {
 
 @keyframes rotateIn {
   0% {
-    transform: rotate(-8deg);
+    transform: rotate( 0deg ) scale( 1 );
+  }
+  10% {
+    transform: rotate( 15deg ) scale( 0.95 );
   }
   50% {
-    transform: rotate(0deg);
+    transform: rotate( -180deg ) scale( 1.15 );
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate( -360deg ) scale( 0.95 );
   }
+}
+
+#hi:hover {
+  animation: rotateIn 2s forwards infinite;
 }
 
 #menu-btn {
