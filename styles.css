@@ -277,11 +277,11 @@ footer {
 }
 .parallax {
   /* The image used */
-  background-image: url("assets/para-banner.png");
+  background-image: url("assets/doodle.avif");
 
   /* Set a specific height */
   width: 100vw;
-  height: 25vh;
+  height: 60vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
