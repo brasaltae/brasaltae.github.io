@@ -133,7 +133,7 @@ p, div {
 #menu-btn,
 #menu-btn-x,
 #hi {
-  display: inline-block;
+  display: block;
   cursor: crosshair;
   background-color: transparent;
 }
