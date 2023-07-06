@@ -284,7 +284,17 @@ footer {
   }
 }
 
+.imgsvg {
+  text-align: center;
+  width: 80%;
+  height: auto;
+}
 
+.imgsvgSmall {
+  text-align: center;
+  width: 70%;
+  height: auto;
+}
 
 .parallax {
   /* The image used */
