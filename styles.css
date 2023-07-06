@@ -132,28 +132,9 @@ p, div {
 #logo,
 #menu-btn,
 #menu-btn-x,
-#hi {
-  display: block;
+.hi {
   cursor: crosshair;
   background-color: transparent;
-}
-
-.border-black {
-  border-radius: 50px;
-  border: 2px solid black;
-  padding: 15px;
-  width: 5em;
-  display: inline-block;
-}
-
-#hi {
-  margin: auto;
-  text-align: center;
-}
-
-#hi:hover {
-  color: #DCDAAB;
-  background-color: black;
 }
 
 #binary {
@@ -245,25 +226,6 @@ footer {
   text-align: center;
 }
 
-@keyframes rotateIn {
-  0% {
-    transform: rotate( 0deg ) scale( 1 );
-  }
-  10% {
-    transform: rotate( 15deg ) scale( 0.95 );
-  }
-  50% {
-    transform: rotate( -180deg ) scale( 1.15 );
-  }
-  80%,100% {
-    transform: rotate( -360deg ) scale( 0.95 );
-  }
-}
-
-#hi:hover {
-  animation: rotateIn 2s forwards infinite;
-}
-
 #menu-btn {
   animation: menu-btn-animation 0.3s forwards;
 }
@@ -318,4 +280,91 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hi {
+  padding: 15px 28px;
+  margin: 8px;
+  display: block;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.border-black {
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.hi:hover{
+  color: black;
+  background-color: white;
+}
+
+/*===================*/
+/* HANG
+/*===================*/
+
+@-webkit-keyframes hang-on-hover {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hang-on-hover {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hang-on-hover-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hang-on-hover-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hang-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hang-on-hover {
+  -webkit-animation-name: hang-on-hover-sink, hang-on-hover;
+  animation-name: hang-on-hover-sink, hang-on-hover;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
