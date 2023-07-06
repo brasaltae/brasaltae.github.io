@@ -175,9 +175,13 @@ section, #nav-links {
   min-height: calc(100vh - 2 * min(2.5em,3.7vw));
 }
 
-.section-home, .section-about, .section-work1, .section-work2, .section-work3 {
+.section-home, .section-about, .section-work1, .section-work3 {
   display: flex;
   align-items: center;
+}
+
+.section-work2 {
+  display: flex;
 }
 
 .section-contact {
