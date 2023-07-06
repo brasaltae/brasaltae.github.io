@@ -29,7 +29,7 @@ const sectionColors = {
     backgroundColor: '#CCA2A5', // pink
   },
   work2: {
-    backgroundColor: '#0C3157', // blue grey WHITE #6B8791
+    backgroundColor: '#6B8791', // blue grey WHITE
   },
   work3: {
     backgroundColor: '#A993BD', // purple
