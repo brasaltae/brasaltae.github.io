@@ -9,7 +9,7 @@ const sections = document.querySelectorAll('section');
 const main = document.querySelector('main');
 const logo = document.getElementById('logo');
 const mainDivs = main.getElementsByTagName("div");
-
+//pics from https://www.webdew.com/blog/best-digital-marketing-tactics
 var section1 = sections[0];
 var section4 = sections[3];
 var section6 = sections[5];
