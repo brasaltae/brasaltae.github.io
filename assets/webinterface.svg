@@ -18,7 +18,7 @@
 
     #g958, #g1057 {
       opacity: 0;
-      animation: dropIn 5s;
+      animation: dropIn 3s;
       animation-timing-function: ease;
       animation-fill-mode: forwards;
       animation-delay: calc(var(--order) * 180ms);
