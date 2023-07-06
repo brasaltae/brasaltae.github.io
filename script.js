@@ -195,3 +195,11 @@ function startAnimation() {
 
 // Start the binary to word typing animation
 startAnimation();
+
+var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+if (ismobile){
+  const para1 = document.getElementById('para1');
+  para1.remove();
+  const para2 = document.getElementById('para2');
+  para2.remove();
+}
