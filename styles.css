@@ -271,13 +271,17 @@ footer {
   height: auto;
 }
 
+#banner {
+  width: 100vw;
+  height: auto;
+}
 .parallax {
   /* The image used */
-  background-image: url("assets/para.png");
+  background-image: url("assets/para-banner.png");
 
   /* Set a specific height */
-  height: 50vh; 
-  width: auto;
+  width: 100vw;
+  height: 25vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
