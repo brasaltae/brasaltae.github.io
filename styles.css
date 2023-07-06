@@ -271,10 +271,29 @@ footer {
   height: auto;
 }
 
-#banner {
+.imgdef {
+  display: block;
+  margin: auto;
+  text-align: center;
   width: 100vw;
   height: auto;
 }
+
+.parallax2 {
+  /* The image used */
+  background-image: url("assets/seo-optimization.avif");
+
+  /* Set a specific height */
+  width: 100vw;
+  height: 30vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .parallax {
   /* The image used */
   background-image: url("assets/doodle.avif");
