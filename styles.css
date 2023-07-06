@@ -329,3 +329,18 @@ footer {
     transform: translateY(0);
   }
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("assets/animation-waves.svg");
+
+  /* Set a specific height */
+  height: 50vh; 
+  width: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
