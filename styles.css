@@ -67,7 +67,7 @@ p, div {
 }
 
 #nav-links li a {
-  cursor: crosshair;
+  cursor: pointer;
   color: white;
   text-decoration: none;
   font-family: 'Manrope', monospace, sans-serif;
@@ -141,7 +141,7 @@ p, div {
 #menu-btn,
 #menu-btn-x,
 .hi {
-  cursor: crosshair;
+  cursor: pointer;
   background-color: transparent;
 }
 
