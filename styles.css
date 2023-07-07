@@ -433,3 +433,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+
+.nopadding {
+  padding: 0;
+}
