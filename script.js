@@ -5,7 +5,7 @@ const navLinks = document.getElementById('nav-links');
 const bitlogo = document.getElementById('logo-icon');
 const links = navLinks.getElementsByTagName('a');
 const navbar = document.querySelector('.navbar');
-const sections = document.querySelectorAll('section, #para1, #para2');
+const sections = document.querySelectorAll('section');
 const main = document.querySelector('main');
 const logo = document.getElementById('logo');
 const mainDivs = main.getElementsByTagName("div");
@@ -31,14 +31,8 @@ const sectionColors = {
   home: {
     backgroundColor: '#4D5432', // sage green WHITE
   },
-  para1: {
-    backgroundColor: '#CAB565', // brown
-  },
   about: {
     backgroundColor: '#CAB565', // brown
-  },
-  para2: {
-    backgroundColor: '#CCA2A5', // pink
   },
   work1: {
     backgroundColor: '#CCA2A5', // pink
@@ -96,8 +90,6 @@ window.addEventListener('scroll', () => {
       bitlogo.setAttribute("href", "assets/waves-w.webp");
     }
   }
-
-
 });
 
 // Add click event listeners to the navigation links
