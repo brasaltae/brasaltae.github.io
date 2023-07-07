@@ -5,10 +5,13 @@ const navLinks = document.getElementById('nav-links');
 const bitlogo = document.getElementById('logo-icon');
 const links = navLinks.getElementsByTagName('a');
 const navbar = document.querySelector('.navbar');
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section, #para1, #para2');
 const main = document.querySelector('main');
 const logo = document.getElementById('logo');
 const mainDivs = main.getElementsByTagName("div");
+const para1 = document.getElementById('para1');
+const para2 = document.getElementById('para2');
+
 //pics from https://www.webdew.com/blog/best-digital-marketing-tactics
 var section1 = sections[0];
 var section4 = sections[3];
@@ -20,9 +23,7 @@ menuBtn.classList.toggle('visible');
 
 var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 if (ismobile){
-  const para1 = document.getElementById('para1');
   para1.remove();
-  const para2 = document.getElementById('para2');
   para2.remove();
 }
 
@@ -30,8 +31,14 @@ const sectionColors = {
   home: {
     backgroundColor: '#4D5432', // sage green WHITE
   },
+  para1: {
+    backgroundColor: '#CAB565', // brown
+  },
   about: {
     backgroundColor: '#CAB565', // brown
+  },
+  para2: {
+    backgroundColor: '#CCA2A5', // pink
   },
   work1: {
     backgroundColor: '#CCA2A5', // pink
@@ -74,19 +81,23 @@ function getId() {
 // Add scroll event listener to the window
 window.addEventListener('scroll', () => {
   const s = getId();
-  document.body.style.transition = 'background-color 0.8s';
-  document.body.style.backgroundColor = sectionColors[s].backgroundColor;
-
-  // Check if the current section is the "about" section
-  if ((s === 'home') || (s === 'work2') || (s === 'contact')) {
-    // Apply white color to the SVG logo, menu button, and close button
-    navColor.classList.add('white');
-    bitlogo.setAttribute("href", "assets/waves-w.webp");
-  } else {
-    // Remove white color from the SVG logo, menu button, and close button
-    navColor.classList.remove('white');
-    bitlogo.setAttribute("href", "assets/waves-b.webp");
+  if (sectionColors.hasOwnProperty(s)) {
+    console.log(s);
+    document.body.style.transition = 'background-color 0.8s';
+    document.body.style.backgroundColor = sectionColors[s].backgroundColor;
+    // Check if the current section is the "about" section
+    if ((s !== 'home') && (s !== 'work2') && (s !== 'contact')) {
+      // Remove white color from the SVG logo, menu button, and close button
+      navColor.classList.remove('white');
+      bitlogo.setAttribute("href", "assets/waves-b.webp");
+    } else {
+      // Apply white color to the SVG logo, menu button, and close button
+      navColor.classList.add('white');
+      bitlogo.setAttribute("href", "assets/waves-w.webp");
+    }
   }
+
+
 });
 
 // Add click event listeners to the navigation links
