@@ -16,6 +16,20 @@ li {
   padding-left: 0.8em;
 }
 
+#nav-links li:hover {
+  animation: movebitch 0.3s forwards linear;
+  animation-iteration-count: 1
+}
+
+@keyframes movebitch {
+  0% {
+    transform: translateX(0em);
+  }
+  100% {
+    transform: translateX(0.8em);
+  }
+}
+
 /* Global styles */
 body {
   background-color: #4D5432;
