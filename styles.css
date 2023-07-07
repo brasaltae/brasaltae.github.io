@@ -41,6 +41,14 @@ h1, h2, h3, h4, a {
   letter-spacing: 0.1em; /* Adjust as needed */
 }
 
+.toright {
+  text-align: right;
+}
+
+.nopadding {
+  padding: 0;
+}
+
 .start {
   padding-top: 1em;
 }
@@ -428,13 +436,4 @@ footer {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
-}
-
-.toright {
-  float: right;
-  text-align: right;
-}
-
-.nopadding {
-  padding: 0;
 }
