@@ -193,13 +193,18 @@ p, div {
 }
 
 #binary {
-    letter-spacing: 0.1em; /* Adjust as needed */
+  letter-spacing: 0.1em; /* Adjust as needed */
 }
 
 #caret {
     font-size: 1.3em;
     color: orange;
     animation: blink-caret 0.5s step-end infinite;
+}
+
+.overlayText {
+  position: absolute;
+  z-index: 1;
 }
 
 /* The typewriter cursor effect */
@@ -238,6 +243,7 @@ section {
 }
 
 .section-home {
+  background-image: url("assets/vid1.mp4");
   display: flex;
   align-items: center;
   min-height: 100vh;
