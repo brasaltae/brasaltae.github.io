@@ -15,9 +15,11 @@ const para2 = document.getElementById('para2');
 //pics from https://www.webdew.com/blog/best-digital-marketing-tactics
 var section1 = sections[0];
 var section4 = sections[3];
+var section5 = sections[4];
 var section6 = sections[5];
 section1.classList.toggle('white');
 section4.classList.toggle('white');
+section5.classList.toggle('white');
 section6.classList.toggle('white');
 menuBtn.classList.toggle('visible');
 
@@ -41,7 +43,7 @@ const sectionColors = {
     backgroundColor: '#6B8791', // blue grey WHITE
   },
   work3: {
-    backgroundColor: '#A993BD', // purple
+    backgroundColor: '#655871', // purple
   },
   contact: {
     backgroundColor: '#4D5432', // sage green WHITE
@@ -80,7 +82,7 @@ window.addEventListener('scroll', () => {
     document.body.style.transition = 'background-color 0.8s';
     document.body.style.backgroundColor = sectionColors[s].backgroundColor;
     // Check if the current section is the "about" section
-    if ((s !== 'home') && (s !== 'work2') && (s !== 'contact')) {
+    if ((s !== 'home') && (s !== 'work2') && (s !== 'work3') && (s !== 'contact')) {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
@@ -115,6 +117,7 @@ function toggleNavLinks() {
   menuBtnX.classList.toggle('visible');
   section1.classList.toggle('white');
   section4.classList.toggle('white');
+  section5.classList.toggle('white');
   section6.classList.toggle('white');
   
   // Toggle the scrolling behavior for the body
@@ -129,7 +132,7 @@ function toggleNavLinks() {
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = '';
     const s = getId();
-    if ((s !== 'home') && (s !== 'work2') && (s !== 'contact')) {
+    if ((s !== 'home') && (s !== 'work2') && (s !== 'work3') && (s !== 'contact')) {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
