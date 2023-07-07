@@ -8,8 +8,12 @@ body, p, ul, li, div, h1, h2, h3, h4, svg, image, span {
 }
 
 ul {
-  list-style: '\2713\1';
-  padding-left: 1em;
+  list-style: '\2713';
+  padding-left: 0.8em;
+}
+
+li {
+  padding-left: 0.8em;
 }
 
 /* Global styles */
