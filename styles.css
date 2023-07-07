@@ -241,6 +241,8 @@ section {
 @media only screen and (min-width: 1150px) {
   section, #nav-links {
     font-size: min(1.7em,1.9vw);
+    padding-left: 310px;
+    padding-right: 310px;
   }
 }
 
