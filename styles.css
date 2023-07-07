@@ -299,7 +299,7 @@ footer {
   animation: menu-btn-animation 0.8s forwards;
 }
 
-#menu-btn:hover {
+#menu-btn:hover, #menu-btn-x:hover {
   animation: menu-btn-animation 0.8s forwards infinite;
 }
 

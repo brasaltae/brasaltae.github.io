@@ -116,13 +116,15 @@ function toggleNavLinks() {
   
   // Toggle the scrolling behavior for the body
   if (navbar.classList.contains("active")) {
-    navColor.classList.add('white');
-    bitlogo.setAttribute("href", "assets/waves-w.webp");
     console.log("lit");
     main.classList.add('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = 'hidden';
     opacityStrength = "0.4";
+    navColor.classList.add('white');
+    bitlogo.setAttribute("href", "assets/waves-w.webp");
   } else {
+    main.classList.remove('transparent'); // Add this line to restore the text visibility
+    document.body.style.overflow = '';
     const s = getId();
     if ((s !== 'home') && (s !== 'work2') && (s !== 'contact')) {
       // Remove white color from the SVG logo, menu button, and close button
@@ -130,8 +132,6 @@ function toggleNavLinks() {
       bitlogo.setAttribute("href", "assets/waves-b.webp");
       console.log("lit2");
     }
-    main.classList.remove('transparent'); // Add this line to restore the text visibility
-    document.body.style.overflow = '';
   }
 
   //console.log(navLinks.classList.contains("visible"));
