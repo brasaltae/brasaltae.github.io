@@ -263,7 +263,7 @@ footer {
 }
 
 #menu-btn {
-  animation: menu-btn-animation 0.3s forwards;
+  animation: menu-btn-animation 0.8s forwards;
 }
 
 #menu-btn:hover {
@@ -282,7 +282,7 @@ footer {
   }
 }
 
-#navbar.active #menu-btn-x {
+#menu-btn-x {
   animation: menu-btn-x-animation 0.3s forwards;
 }
 
