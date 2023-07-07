@@ -18,6 +18,14 @@ section4.classList.toggle('white');
 section6.classList.toggle('white');
 menuBtn.classList.toggle('visible');
 
+var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+if (ismobile){
+  const para1 = document.getElementById('para1');
+  para1.remove();
+  const para2 = document.getElementById('para2');
+  para2.remove();
+}
+
 const sectionColors = {
   home: {
     backgroundColor: '#4D5432', // sage green WHITE
@@ -67,7 +75,6 @@ function getId() {
 window.addEventListener('scroll', () => {
   const s = getId();
   document.body.style.transition = 'background-color 0.8s';
-  console.log(s);
   document.body.style.backgroundColor = sectionColors[s].backgroundColor;
 
   // Check if the current section is the "about" section
@@ -108,9 +115,10 @@ function toggleNavLinks() {
   section6.classList.toggle('white');
   
   // Toggle the scrolling behavior for the body
-  if (navLinks.classList.contains("visible")) {
+  if (navbar.classList.contains("active")) {
     navColor.classList.add('white');
     bitlogo.setAttribute("href", "assets/waves-w.webp");
+    console.log("lit");
     main.classList.add('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = 'hidden';
     opacityStrength = "0.4";
@@ -120,6 +128,7 @@ function toggleNavLinks() {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
+      console.log("lit2");
     }
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = '';
@@ -196,10 +205,4 @@ function startAnimation() {
 // Start the binary to word typing animation
 startAnimation();
 
-var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-if (ismobile){
-  const para1 = document.getElementById('para1');
-  para1.remove();
-  const para2 = document.getElementById('para2');
-  para2.remove();
-}
+
