@@ -8,7 +8,7 @@ body, p, ul, li, div, h1, h2, h3, h4, svg, image, span {
 }
 
 ul {
-  list-style: '\2713';
+  list-style: '\2714';
   padding-left: 0.8em;
 }
 
@@ -121,7 +121,7 @@ p, div {
 }
 
 #email {
-  cursor: crosshair;
+  cursor: pointer;
   color: white;
   text-decoration: underline;
   font-family: 'Manrope', monospace, sans-serif;
