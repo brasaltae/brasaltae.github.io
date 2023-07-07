@@ -413,3 +413,22 @@ footer {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
+
+
+
+form {
+  max-width: 400px;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
