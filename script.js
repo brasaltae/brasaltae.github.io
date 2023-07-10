@@ -208,6 +208,10 @@ function startAnimation() {
   typeBinary();
 }
 
+function contactus() {
+  window.location = "contact.html";
+}
+
 // Start the binary to word typing animation
 startAnimation();
 
