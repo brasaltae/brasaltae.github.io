@@ -16,6 +16,15 @@ li {
   padding-left: 0.8em;
 }
 
+.bold {
+  font-weight: 900;
+}
+
+.minpadding {
+  padding: 0;
+  padding-bottom: 0.3em;
+}
+
 #nav-links li {
   opacity: 0;
 }
