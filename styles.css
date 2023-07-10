@@ -243,11 +243,6 @@ section {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  z-index: 1;
-}
-
-.layer {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #typewrite {
@@ -260,9 +255,9 @@ section {
 }
 
 #caret {
-    font-size: 1.3em;
-    color: orange;
-    animation: blink-caret 0.5s step-end infinite;
+  font-size: 1.3em;
+  color: orange;
+  animation: blink-caret 0.5s step-end infinite;
 }
 
 .section-about, .section-work1, .section-work3 {
