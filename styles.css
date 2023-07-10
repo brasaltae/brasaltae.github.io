@@ -414,11 +414,10 @@ footer {
   text-decoration: none;
   border-radius: 20px;
   border: 2px solid black;
-}
-
-.hi:hover {
-  color: black;
-  background-color: white;
+  &:not(.disable):hover {
+    color: black;
+    background-color: white;
+  }   
 }
 
 /*===================*/
