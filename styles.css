@@ -9,6 +9,7 @@ body, p, ul, li, div, h1, h2, h3, h4, svg, image, span {
 }
 
 ul {
+  font-family: 'Source Code Pro', monospace;
   list-style: '\2714';
   padding-left: 0.8em;
 }
