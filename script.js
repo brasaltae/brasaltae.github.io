@@ -208,6 +208,10 @@ function startAnimation() {
   typeBinary();
 }
 
+$("#hi").on("touchend", function(event) {
+  window.location.href = $(this).attr("href");
+});
+
 // Start the binary to word typing animation
 startAnimation();
 
