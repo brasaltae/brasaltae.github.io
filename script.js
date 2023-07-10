@@ -31,6 +31,12 @@ if (ismobile){
   hi.classList.add("disable");
 }
 
+function contactus() {
+  window.location.href = "contact.html"
+}
+
+hi.addEventListener('click', contactus);
+
 const sectionColors = {
   home: {
     backgroundColor: '#4D5432', // sage green WHITE
