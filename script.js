@@ -154,7 +154,7 @@ menuBtnX.addEventListener('click', toggleNavLinks);
 // Binary to word animation
 var binaryElement = document.getElementById("binary");
 var binarySegments = [
-  "01101000", "01100101", "01101100", "01101111", "00100000", "01110111"
+  "0110001", "0110", "001101", "0110", "010", "0101"
 ];
 var wordSegments = [
   "Coding", "the", "World", "Bit", "by", "Bit."
@@ -181,7 +181,7 @@ function typeBinary() {
   if (currentSegment === binarySegments.length && bitIndex === 0) {
     setTimeout(deleteSentence, 4000); // Wait before deleting the sentence
   } else {
-    setTimeout(typeBinary, 69); // Adjust the typing speed for binary segments here (in milliseconds)
+    setTimeout(typeBinary, 155); // Adjust the typing speed for binary segments here (in milliseconds)
   }
 }
 
@@ -196,7 +196,7 @@ function deleteSentence() {
     binaryElement.innerHTML = sentence;
     if (sentence === "") {
       clearInterval(intervalId);
-      setTimeout(startAnimation, 2000); // Wait before restarting the animation
+      setTimeout(startAnimation, 2300); // Wait before restarting the animation
     }
   }, 50); // Adjust the deletion speed here (in milliseconds)
 }
