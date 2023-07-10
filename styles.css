@@ -177,7 +177,7 @@ p, div {
 }
 
 .navbar {
-  padding: min(2.5vw, 2.5em);
+  padding: min(2vw, 2em);
 }
 
 #logo,
@@ -302,8 +302,8 @@ section {
   #logo,
   #menu-btn,
   #menu-btn-x {
-    width: min(9.8vw, 5.5em); 
-    height: min(9.8vw, 5.5em); 
+    width: min(9.6vw, 5.3em); 
+    height: min(9.6vw, 5.3em); 
   }
 
   section, #nav-links {
