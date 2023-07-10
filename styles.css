@@ -502,14 +502,14 @@ footer {
 .card {
   width: 700px;
   height: 400px;
-  padding: 0.8rem;
+  padding: min(1.9em,4.5vw);
   font-family: 'Source Code Pro', monospace;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    width: calc(var(--card-size) * 1.586);
    height: var(--card-size);
-   border-radius: 0.75rem;
+   border-radius: min(2.2em,2.8vw);
    box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
    background: black;
    color: white;
