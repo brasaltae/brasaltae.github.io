@@ -375,12 +375,15 @@ footer {
   height: auto;
 }
 
-.parallax2 {
+#para* {
+  width: 100%;
+}
+
+#para2 {
   /* The image used */
   background-image: url("assets/seo-optimization.avif");
 
   /* Set a specific height */
-  width: 100%;
   height: 30vh;
 
   /* Create the parallax scrolling effect */
@@ -390,12 +393,11 @@ footer {
   background-size: cover;
 }
 
-.parallax {
+#para1 {
   /* The image used */
   background-image: url("assets/doodle.avif");
 
   /* Set a specific height */
-  width: 100%;
   height: 60vh;
 
   /* Create the parallax scrolling effect */
@@ -491,7 +493,13 @@ footer {
   font-family: 'Manrope', monospace, sans-serif;
 }
 
+.card h4, .card p, .card div, .card a {
+  font-family: 'Source Code Pro', monospace;
+}
+
 .card {
+  margin-top: min(1.9em,4.5vw);
+  margin-bottom: min(1.9em,4.5vw);
   width: 700px;
   height: 400px;
   padding: min(1.9em,4.5vw);
