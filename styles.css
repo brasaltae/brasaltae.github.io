@@ -126,13 +126,7 @@ p, div {
   font-family: 'Manrope', monospace, sans-serif;
 }
 
-#email {
-  cursor: pointer;
-  color: white;
-  text-decoration: underline;
-  font-family: 'Manrope', monospace, sans-serif;
-}
-
+/*
 .tooltip {
   position: relative;
   display: inline-block;
@@ -141,12 +135,12 @@ p, div {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 150px;
+  width: 6em;
   background-color: white;
   color: #4D5432;
   text-align: center;
   border-radius: 4px;
-  padding: 3px 0;
+  padding: 0.2em;
   position: absolute;
   z-index: 1;
   left: 110%;
@@ -157,15 +151,15 @@ p, div {
   position: absolute;
   top: 50%;
   right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
+  margin-top: -4px;
+  border-width: 4px;
   border-style: solid;
   border-color: transparent white transparent transparent;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
+*/
 .visible {
   display: block !important;
 }
@@ -497,11 +491,12 @@ footer {
   animation-direction: normal, alternate;
 }
 
-
 #email {
   cursor: pointer;
+  color: white;
   text-decoration: none;
   padding-bottom: 0.2em;
+  font-family: 'Manrope', monospace, sans-serif;
 }
 
 .card {

@@ -19,11 +19,11 @@ function toggleNavLinks() {
 
 // Add click event listener to the menu button
 menuBtnX.addEventListener('click', toggleNavLinks);
-
+/*
 const copyContent = async () => {
     try {
       await navigator.clipboard.writeText("contact@bitwaves.ca");
       document.getElementById("tooltip").innerHTML = "copied"
     } catch (err) {
     }
-}
+}*/
