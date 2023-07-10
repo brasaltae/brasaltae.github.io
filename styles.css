@@ -507,17 +507,11 @@ footer {
 .card {
   width: 700px;
   height: 400px;
-  width: 100%;
-  height: auto;
-  display: grid;
-  place-items: center;
+  padding: 2rem;
   font-family: 'Source Code Pro', monospace;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.card { 
    width: calc(var(--card-size) * 1.586);
    height: var(--card-size);
    border-radius: 0.75rem;
@@ -531,8 +525,4 @@ footer {
 .card:hover {
   transform: scale(1.1);
   box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
-}
-
-.card {
-  padding: 2rem;
 }
