@@ -16,15 +16,6 @@ li {
   padding-left: 0.8em;
 }
 
-.bold {
-  font-weight: 900;
-}
-
-.minpadding {
-  padding: 0;
-  padding-bottom: 0.3em;
-}
-
 #nav-links li {
   opacity: 0;
 }
@@ -81,6 +72,15 @@ h1, h2, h3, h4, a {
 
 .nopadding {
   padding: 0;
+}
+
+.minpadding {
+  padding: 0;
+  padding-bottom: 0.3em;
+}
+
+.bold {
+  font-weight: 900;
 }
 
 .start {
@@ -201,6 +201,10 @@ p, div {
   background-color: transparent;
 }
 
+#typewrite {
+  text-align: left;
+}
+
 #binary {
   letter-spacing: 0.1em; /* Adjust as needed */
 }
@@ -212,7 +216,6 @@ p, div {
 }
 
 .overlayText {
-  position: absolute;
   z-index: 1;
 }
 
