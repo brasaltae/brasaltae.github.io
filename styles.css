@@ -243,6 +243,7 @@ section {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .layer {
@@ -261,10 +262,6 @@ section {
     font-size: 1.3em;
     color: orange;
     animation: blink-caret 0.5s step-end infinite;
-}
-
-.overlayText {
-  z-index: 1;
 }
 
 .section-about, .section-work1, .section-work3 {
