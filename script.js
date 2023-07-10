@@ -11,7 +11,6 @@ const logo = document.getElementById('logo');
 const mainDivs = main.getElementsByTagName("div");
 const para1 = document.getElementById('para1');
 const para2 = document.getElementById('para2');
-const hi = document.getElementById('hi');
 
 //pics from https://www.webdew.com/blog/best-digital-marketing-tactics
 var section1 = sections[0];
@@ -28,15 +27,7 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
 if (ismobile){
   para1.remove();
   para2.remove();
-  hi.classList.add("disable");
-  hi.focus();
 }
-
-function contactus() {
-  window.location.href = "contact.html"
-}
-
-hi.addEventListener('click', contactus);
 
 const sectionColors = {
   home: {
