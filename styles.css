@@ -502,7 +502,7 @@ footer {
 .card {
   width: 700px;
   height: 400px;
-  padding: 2rem;
+  padding: 0.8rem;
   font-family: 'Source Code Pro', monospace;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
