@@ -412,14 +412,11 @@ footer {
   color: white;
   background-color: black;
   text-decoration: none;
-}
-
-.border-black {
   border-radius: 20px;
   border: 2px solid black;
 }
 
-.hi:hover{
+.hi:hover {
   color: black;
   background-color: white;
 }
