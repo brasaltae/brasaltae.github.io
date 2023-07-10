@@ -248,13 +248,13 @@ section {
 }
 
 .overlayText {
+  text-align: center;
+  width: 100%;
   padding: 0;
   z-index: 1;
 }
 
 #typewrite {
-  display: inline-block;
-  items-align: center;
   font-size: min(1.7em,4.5vw);
 }
 
