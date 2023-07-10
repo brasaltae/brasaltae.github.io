@@ -29,6 +29,7 @@ if (ismobile){
   para1.remove();
   para2.remove();
   hi.classList.add("disable");
+  hi.focus();
 }
 
 function contactus() {
