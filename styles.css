@@ -262,7 +262,7 @@ section {
 }
 
 #caret {
-  font-size: 1.3em;
+  font-size: 1.7em;
   color: orange;
   animation: blink-caret 0.5s step-end infinite;
 }
