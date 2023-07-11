@@ -256,6 +256,7 @@ section {
 }
 
 #binary {
+  font-size: 1.5em;
   text-shadow: 2px 2px 4px green, 0 0 0.1em green, 0 0 0.2em green;
   letter-spacing: 0.11em; /* Adjust as needed */
 }
@@ -284,14 +285,14 @@ section {
 @media only screen and (min-width: 600px) {
   section, #nav-links {
     font-size: min(2.1em,2.3vw);
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media only screen and (min-width: 800px) {
   section, #nav-links {
-    font-size: min(2.4em,3.5vw);
+    font-size: min(2.3em,3.1vw);
   }
 }
 
