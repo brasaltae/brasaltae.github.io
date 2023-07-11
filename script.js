@@ -154,10 +154,10 @@ menuBtnX.addEventListener('click', toggleNavLinks);
 // Binary to word animation
 var binaryElement = document.getElementById("binary");
 var binarySegments = [
-  "0110001", "0110", "001101", "0110", "010", "0101"
+  "0110001", "0110", "001101", "01101", "0110", "010", "0101"
 ];
 var wordSegments = [
-  "Coding", "the", "World", "Bit", "by", "Bit."
+  "Coding", "the", "World", "<br>", "Bit", "by", "Bit."
 ];
 var currentSegment = 0;
 var bitIndex = 0;
