@@ -112,7 +112,7 @@ p, div {
   padding: 0;
   display: none;
   position: absolute;
-  top: 24vh;
+  top: 7.5em; 
   left: 0;
 }
 
@@ -381,10 +381,6 @@ footer {
   height: auto;
 }
 
-#para* {
-  width: 100vw;
-  z-index: 0;
-}
 
 #para2 {
   /* The image used */
@@ -392,6 +388,7 @@ footer {
 
   /* Set a specific height */
   height: 30vh;
+  width: 100vw;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -406,6 +403,7 @@ footer {
 
   /* Set a specific height */
   height: 60vh;
+  width: 100vw;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
