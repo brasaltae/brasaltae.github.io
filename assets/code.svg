@@ -11,14 +11,23 @@
     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
     style="fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision"
     xml:space="preserve"
-    viewBox="0 0 16239 8252"
+    viewBox="0 0 16239 8650"
   >
  <defs
     >
-  <style
-        type="text/css"
-      >
-    .fil0 {fill:white;fill-rule:nonzero}
+  <style type="text/css">
+    .fil0 {fill:white;fill-rule:nonzero;animation: move-forever 2s cubic-bezier(.55,.5,.45,.5) infinite;}
+    @keyframes move-forever {=
+      0%,100% {
+        transform: translate(0%) rotate(0deg);
+      }
+      25%,75% {
+        transform: translate(2%, -2.7%) rotate(3deg);
+      }
+      50% {
+        transform: translate(0%, 0%) rotate(1deg);
+      }
+    }
   </style
     >
  </defs
