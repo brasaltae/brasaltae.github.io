@@ -181,8 +181,8 @@ p, div {
 #menu-btn-x {
   margin: 0;
   padding: 0;
-  width: min(10.5vw, 6.5em); 
-  height: min(10.5vw, 6.5em); 
+  width: min(10.4vw, 6.4em); 
+  height: min(10.4vw, 6.4em); 
 }
 
 #logo,
@@ -295,8 +295,8 @@ section {
   #logo,
   #menu-btn,
   #menu-btn-x {
-    width: min(9.6vw, 5.3em); 
-    height: min(9.6vw, 5.3em); 
+    width: min(9.4vw, 5.2em); 
+    height: min(9.4vw, 5.2em); 
   }
 
   section, #nav-links {
@@ -341,7 +341,7 @@ footer {
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -511,7 +511,7 @@ footer {
    width: calc(var(--card-size) * 1.586);
    height: var(--card-size);
    border-radius: min(2.2em,2.8vw);
-   box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+   box-shadow:  0 25px 70px 4px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
    background: black;
    color: white;
    will-change: transform;
