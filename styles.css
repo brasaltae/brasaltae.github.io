@@ -407,7 +407,7 @@ img {
 
 #para2 {
   /* The image used */
-  background-image: url("assets/seo-optimization.avif");
+  background-image: url("assets/seo-optimization.webp");
 
   /* Set a specific height */
   height: 30vh;
@@ -421,7 +421,7 @@ img {
 
 #para1 {
   /* The image used */
-  background-image: url("assets/doodle.avif");
+  background-image: url("assets/doodle.webp");
 
   /* Set a specific height */
   height: 60vh;
