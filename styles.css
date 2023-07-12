@@ -401,7 +401,7 @@ footer {
 
   /* Set a specific height */
   height: 30vh;
-  width: 100vw;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -416,7 +416,7 @@ footer {
 
   /* Set a specific height */
   height: 60vh;
-  width: 100vw;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
