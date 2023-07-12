@@ -23,13 +23,35 @@ section5.classList.toggle('white');
 section6.classList.toggle('white');
 menuBtn.classList.toggle('visible');
 
+function browserType() { 
+  if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 )  {
+    return 1;
+  } else if(navigator.userAgent.indexOf("Edg") != -1 ) {
+    return 2;
+  } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+    return 3;
+  } else if(navigator.userAgent.indexOf("Safari") != -1) {
+    return 4;
+  } else if(navigator.userAgent.indexOf("Firefox") != -1 )  {
+    return 5;
+  } else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {
+    return 6;
+  } else {
+    return 0;
+  }
+}
+
 var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 if (ismobile){
-  para1.remove();
-  para2.remove();
+  //para1.remove();
+  //para2.remove();
   if (sections.length > 1) {
     if (sections[1].id === "about") {
-      sections[1].classList.add("notopmargin");
+      if (browserType() === 3) {
+        sections[1].classList.add("androidchrome");
+      } else if (browserType() === 4) {
+        sections[1].classList.add("iossafari");
+      }
     }
   }
 }
