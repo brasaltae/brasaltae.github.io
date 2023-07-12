@@ -84,7 +84,7 @@ h1, h2, h3, h4, a {
 }
 
 .notopmargin {
-  margin-top: min(-18.8vw + 1em, -9.4em);
+  margin-top: min(-18.8vw + 2em, -8.4em);
 }
 
 .minpadding {
@@ -242,6 +242,15 @@ section {
   min-height: 100vh;
 }
 
+.section-about, .section-work1, .section-work3 {
+  align-items: center;
+}
+
+.section-contact {
+  align-items: center;
+  text-align: center;
+}
+
 #home > video {
   top: 0;
   left: 0;
@@ -269,21 +278,6 @@ section {
   font-size: 1.7em;
   color: orange;
   animation: blink-caret 0.5s step-end infinite;
-}
-
-.section-about, .section-work1, .section-work3 {
-  align-items: center;
-}
-
-.section-contact {
-  align-items: center;
-  text-align: center;
-  min-height: calc(100vh - 8 * min(2.5em,3.7vw));
-}
-
-#vid1 {
-  width: 100%;
-  height: auto;
 }
 
 @media only screen and (min-width: 600px) {

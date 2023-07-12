@@ -1,19 +1,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-viewBox="0 0 1186.4 662.8" style="enable-background:new 0 0 1186.4 662.8;" xml:space="preserve">
-  <g id="background">
-    <rect x="-9.7" y="0" fill="none" width="1197.1" height="662.8"/>
-  </g>
+viewBox="0 150 1186.4 500" style="enable-background:new 0 150 1186.4 500" xml:space="preserve">
   <g id="table_legs">
     <g>
-      <defs>
-        <rect id="SVGID_1_" x="-9.7" y="0" width="1197.1" height="662.8"/>
-      </defs>
-      <clipPath id="SVGID_2_">
-        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-      </clipPath>
-      
-        <rect x="47.2" y="626.1" style="clip-path:url(#SVGID_2_);fill:peru;stroke:#0B0B0B;stroke-miterlimit:10;" width="34" height="56.4"/>
-      
+      <rect x="47.2" y="626.1" style="clip-path:url(#SVGID_2_);fill:peru;stroke:#0B0B0B;stroke-miterlimit:10;" width="34" height="56.4"/>
         <rect x="850.5" y="626.6" style="clip-path:url(#SVGID_2_);fill:peru;stroke:#0B0B0B;stroke-miterlimit:10;" width="281.4" height="49.9"/>
       <path style="clip-path:url(#SVGID_2_);fill:#FFCF0A;" d="M273.8,586.3"/>
     </g>
