@@ -81,7 +81,8 @@ h1, h2, h3, h4, a {
 }
 
 .notopmargin {
-  margin-top: cal(min(-18.8vw, -10.4em) + 1em);
+  margin-top: min(-18.8vw, -10.4em);
+  padding-top: 1em;
 }
 
 .nobotmargin {
