@@ -30,7 +30,7 @@ if (ismobile){
   if (sections.length > 1) {
     if (sections[1].id === "about") {
       sections[1].classList.add("notopmargin");
-      sections[0].classList.add("notopmargin");
+      navbar.classList.add("nobotmargin");
     }
   }
 }
