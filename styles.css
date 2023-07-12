@@ -80,8 +80,8 @@ h1, h2, h3, h4, a {
   padding: 0;
 }
 
-.notoppadding {
-  margin-top: min(-9.4vw, -5.2em);
+.notopmargin {
+  margin-top: min(-18.8vw, -10.4em);
 }
 
 .minpadding {

@@ -29,7 +29,7 @@ if (ismobile){
   para2.remove();
   if (sections.length > 1) {
     if (sections[1].id === "about") {
-      sections[1].classList.add("notoppadding");
+      sections[1].classList.add("notopmargin");
     }
   }
 }
