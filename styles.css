@@ -9,7 +9,16 @@
 }
 
 /* Reset default browser styles */
-
+  #line1, #line2, #line3 {
+    transform: scale(0.5);
+  }
+  #line2 {
+    transform: translateY(20px) scale(0.5);
+  }
+  #line3 {
+    transform: translateY(40px) scale(0.5);
+  }
+  
 ul {
   font-family: 'Source Code Pro', monospace;
   list-style: '\2714';
@@ -138,7 +147,6 @@ p, div {
   font-family: 'Manrope', monospace, sans-serif;
 }
 
-/*
 .tooltip {
   position: relative;
   display: inline-block;
@@ -151,7 +159,7 @@ p, div {
   background-color: white;
   color: #4D5432;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 0.2em;
   position: absolute;
   z-index: 1;
@@ -161,17 +169,17 @@ p, div {
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 25%;
   right: 100%;
-  margin-top: -4px;
-  border-width: 4px;
+  border-width: 10px;
   border-style: solid;
   border-color: transparent white transparent transparent;
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-*/
+
 .visible {
   display: block !important;
 }

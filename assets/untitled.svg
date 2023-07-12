@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>BitWaves.</title>
-  <link rel="icon" type="image/x-icon" href="assets/waves-b.webp">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <!-- Header Section -->
-  <div id="navbar" class="navbar white">
-    <div id="logo">
-      <!-- SVG logo -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <image id="logo-icon" width="24" height="24" href="assets/waves-w.webp"/>
-      </svg>
-    </div>
-    <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" height="800px" width="800px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;"
-       viewBox="20 0 85 175" xml:space="preserve">
+<svg id="menu -btn" xmlns ="http://www.w3.org/2000/svg" height="800px" width="800px" 
+version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 255" xml:space="preserve">
+<style type="text/css">
+  #line1, #line2, #line3 {
+    transform: scale(0.5);
+  }
+  #line2 {
+    transform: translateY(20px) scale(0.5);
+  }
+  #line3 {
+    transform: translateY(40px) scale(0.5);
+  }
+</style>
   <g>
     <path id="line1" d="
     M 75.067, 2.72
@@ -336,165 +330,3 @@
     "/>
   </g>
 </svg>
-    <svg id="menu-btn-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path d="M3.293 3.293a1 1 0 0 1 1.414 0L12 10.586l7.293-7.293a1 1 0 0 1 1.414 1.414L13.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 0 1-1.414-1.414L10.586 12 3.293 4.707a1 1 0 0 1 0-1.414z"/>
-    </svg>
-    <ul id="nav-links">
-      <li><h1><a href="#about">About</a></h1></li>
-      <li><h1><a href="#work1">Services</a></h1></li>
-      <li><h1><a href="#contact">Contact</a></h1></li>
-    </ul>
-  </div>
-      
-  <main>
-    <!-- Main Content Section -->
-    <section id="home" class="section-home">
-      <video autoplay loop muted playsinline>
-        <source src="assets/vid1.mp4" type="video/mp4">
-      </video>
-      <div class="overlayText">
-        <h1 class="nopadding">
-          <span id="typewrite">
-            <span id="binary"></span>
-            <span id="caret">|</span>
-          </span>
-        </h1>
-      </div>
-    </section>
-    <div id="para1" class="nopadding"></div>
-    <section id="about" class="section-about">
-      <div>
-        <div><h1>A Seamless Digital Experience.</h1>
-          <h3 class="nopadding">What we do.<br>Why we do it.</h3>
-          <div class="card">
-            <p>
-            Based in Montreal, QC.<br>We design interfaces that are<br>both reliable and creative.
-            </p>
-            <p class="nopadding toright">We craft for your audience and...<br>We do it all for you &#x2728;<br>because we like browsing<br>and we know you do too.</p>
-          </div>
-        </div>
-        <h3>One place.<br>Everything you need.</h3>
-        <ul>
-          <li>Web Development</li>
-          <li>IOS/Android App Development</li>
-          <li>Logo Designing</li>
-          <li>IT Support Services</li>
-          <li>Digital Marketing</li>
-        </ul>
-      </div>
-    </section>
-    <div id="para2" class="nopadding"></div>
-    <section id="work1" class="section-work1">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <div>
-          <h1>WHAT WE OFFER</h1>
-          <h3 class="nopadding">Web Development.</h3>
-          <div class="card">
-            <p>Starting from scratch<br>or well established?</p>
-            <p class="nopadding toright">Our team of developers &#128161;<br>have you covered.</p>
-          </div>
-          <div>
-            <ul>
-              <li>Corporate Websites</li>
-              <li>Ecommerce businesses</li>
-              <li>Portfolios</li>
-            </ul>
-            <br>
-            <img class="imgsvg" style="float: right;" src="assets/rebrand.svg" alt="rebranding">
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <div>
-      <img class="imgdef" src="assets/animate-waves1.svg" alt="animate-waves">
-    </div>
-    <section id="work2" class="section-work2">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <h3 class="nopadding">IOS/Android App Development.</h3>
-        The immersive mobile experience<br>they want.
-        <img class="imgweb" src="assets/webinterface.svg" alt="webinterface">
-        <div class="toright">The user engagement<br>you want!</div>
-      </div>
-    </section>
-    <section id="work3" class="section-work3">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <div>
-          <div>
-            <h1>INCLUDES</h1>
-            <h3 class="nopadding">Logo Designing.</h3>
-            <div class="card">
-              <p>Trademark... Update?<br>Revamp? Rebrand? &#127991;</p>
-              <p class="nopadding toright">Our local designers &#127912;<br>bring <b>your vision</b><br>to life!</p>
-            </div>
-            <div>
-              <ul>
-                <li>Corporate Logos</li>
-                <li>Gaming Logos</li>
-                <li>Minimalistic Logos</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Reliable IT Support Services.</h3>
-              <ul>
-                <li>Web and Mobile Support</li>
-                <li>Replies in Under a Day</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h1>OPT IN FOR</h1>
-            <h3 class="nopadding">Digital Marketing.</h3>
-            <div class="card">
-              <p>Maximize your reach &#128200;<br>with social media<br>and ads.</p>
-              <p class="nopadding toright">Yes, we do &#x2714; that too.</p>
-            </div>
-            <ul>
-              <li>Video Production</li>
-              <li>Product Ads</li>
-              <li>Services Promotion</li>
-            </ul>
-            <br>
-            <img class="imgseo" style="float: right;" src="assets/seo.svg" alt="seo">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="section-contact">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <div>
-          <h1>Surf With BitWaves!</h1>
-          <img id="code" src="assets/code.svg" alt="code">
-          <br>Because, why not?<br>
-          <h1 class="nopadding">Say Hello!</h1>
-          <div class="card" style="text-align: left;">
-            <h4 class="minpadding bold">BitWaves &#x21b4;</h4>
-            <a id="email" title="email" class="tooltip" href="mailto:contact@bitwaves.ca?subject=Inquiry&body=Hello!%0D%0A%0D%0AWe're%20here%20to%20listen%20and%20execute.%0D%0ALet's%20discuss%20over%20a%20cup%20of%20coffee%20☕" class="yellow" title="email">contact@bitwaves.ca
-              <span id="tooltip" class="tooltiptext">email us</span>
-                <!--<div onclick="copyContent()" id="email" title="email" class="tooltip">contact@bitwaves.ca
-                  <span id="tooltip" class="tooltiptext">copy</span>
-                </div>-->
-            </a>
-            <h4 class="minpadding bold"><br>Office &#x21b4;</h4>
-            <p class="nopadding">Suite 1700
-              <br>2001 Boulevard Robert Bourassa
-              <br>Montreal, QC, H3A 2A6.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <img class="nopadding imgdef" src="assets/computer.svg" alt="computer">
-      <div class="nopadding">&copy; 2023 BitWaves. <b>All rights reserved.</b></div>
-    </footer>
-  </main>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="script.js"></script>
-</body>
-</html>
