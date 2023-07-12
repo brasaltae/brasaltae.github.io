@@ -28,7 +28,7 @@ if (ismobile){
   para1.remove();
   para2.remove();
   if (sections.length > 1) {
-    if (sections[1].id == "about") {
+    if (sections[1].id === "about") {
       sections[1].classList.add("notoppadding");
     }
   }
