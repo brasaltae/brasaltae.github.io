@@ -8,13 +8,13 @@
 	.st2{fill:#ff4500;}
 	.st3{fill:#FFFFFF;}
 	.st4{fill:#EFF9F8;}
-	.st5{fill:#CCA2A5;}
+	.st5{fill:#263137;}
 	.st6{fill:#263238;}
 	.st7{fill:#CBD6E2;}
 	.st8{fill:#00BDA5;}
 	.st9{opacity:0.3;}
 	.st10{fill:#253342;}
-	.st11{fill:#455A64;}
+	.st11{fill:beige;}
 	.st12{fill:#FAFAFA;}
 	.st13{fill:#F5F5F5;}
 	.st14{fill:#EBEBEB;}
@@ -55,7 +55,7 @@
 	.st49{fill:#E5936E;}
 	.st50{opacity:0.2;}
 	.st51{fill:#E9AF9D;}
-	.st52{fill:#CCA2A5;enable-background:new    ;}
+	.st52{fill:#263137;enable-background:new    ;}
 	.st53{fill:none;}
 	.st54{fill-rule:evenodd;clip-rule:evenodd;fill:#6A78CB;}
 	.st55{fill:#EFEFEF;}
@@ -93,7 +93,7 @@
 	.st87{fill:url(#SVGID_8_);}
 	.st88{fill:url(#SVGID_9_);}
 	.st89{fill:url(#SVGID_10_);}
-	.st90{fill:#F5C26B;}
+	.st90{fill:skyblue;}
 	.st91{fill:#00A9FA;}
 	.st92{fill:#E0F5FE;}
 	.st93{fill:#F2545B;}
