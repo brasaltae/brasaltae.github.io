@@ -66,7 +66,7 @@ li a {
 /* Global styles */
 body {
   font-family: 'Manrope', monospace, sans-serif;
-  background-color: #4D5432;
+  background-color: black;
 }
 
 h1, h2, h3, h4, a {
@@ -90,10 +90,6 @@ h1, h2, h3, h4, a {
 .minpadding {
   padding: 0;
   padding-bottom: 0.3em;
-}
-
-.start {
-  padding-top: 1em;
 }
 
 p, div {
@@ -227,7 +223,8 @@ p, div {
 }
 
 section {
-  font-size: min(2.5em,3.7vw); 
+  font-size: min(2.5em,3.7vw);
+  padding: 1em;
   padding-left: 28px;
   padding-right: 28px;
 } 

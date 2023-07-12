@@ -36,7 +36,7 @@ if (ismobile){
 
 const sectionColors = {
   home: {
-    backgroundColor: '#4D5432', // sage green WHITE
+    backgroundColor: 'black', // sage green WHITE
   },
   about: {
     backgroundColor: '#CAB565', // brown
