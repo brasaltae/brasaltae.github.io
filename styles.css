@@ -389,15 +389,15 @@ img {
 }
 
 .imgsvg {
-  width: 88%;
+  width: min(88%, 70vh);
 }
 
 .imgseo {
-  width: 75%;
+  width: min(75%, 60vh);
 }
 
 .imgweb {
-  width: 69%;
+  width: min(69%, 55vh);
 }
 
 .imgdef {
