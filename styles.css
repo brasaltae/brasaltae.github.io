@@ -81,7 +81,7 @@ h1, h2, h3, h4, a {
 }
 
 .notoppadding {
-  padding-top: calc(-min(9.4vw, 5.2em));
+  margin-top: calc(-min(9.4vw, 5.2em));
 }
 
 .minpadding {
