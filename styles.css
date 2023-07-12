@@ -405,7 +405,7 @@ footer {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -420,7 +420,7 @@ footer {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
