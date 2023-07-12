@@ -27,6 +27,11 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
 if (ismobile){
   para1.remove();
   para2.remove();
+  if (sections.length > 1) {
+    if (sections[1].id == "about") {
+      sections[1].classList.add("notoppadding");
+    }
+  }
 }
 
 const sectionColors = {
