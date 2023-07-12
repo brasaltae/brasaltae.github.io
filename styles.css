@@ -411,13 +411,12 @@ img {
 
   /* Set a specific height */
   height: 30vh;
-  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 #para1 {
@@ -426,13 +425,12 @@ img {
 
   /* Set a specific height */
   height: 60vh;
-  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 .hi {
