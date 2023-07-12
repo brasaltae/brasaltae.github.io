@@ -280,11 +280,23 @@ section {
   animation: blink-caret 0.5s step-end infinite;
 }
 
+footer {
+  color: black;
+  font-size: min(1.5em,2vw); 
+  padding: 1em;
+  text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
   section, #nav-links {
     font-size: min(2.1em,2.3vw);
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  footer {
+    padding-left: 40px;
+    padding-right: 40px; 
   }
 }
 
@@ -311,6 +323,11 @@ section {
   .section-home {
     font-size: min(1.9em,4.5vw);
   }
+
+  footer {
+    padding-left: 290px;
+    padding-right: 290px;
+  }
 }
 
 @media only screen and (min-width: 1150px) {
@@ -319,13 +336,11 @@ section {
     padding-left: 310px;
     padding-right: 310px;
   }
-}
 
-footer {
-  color: black;
-  font-size: min(1.5em,2vw); 
-  padding: 1em;
-  text-align: center;
+  footer {
+    padding-left: 310px;
+    padding-right: 310px;
+  }
 }
 
 #menu-btn {
