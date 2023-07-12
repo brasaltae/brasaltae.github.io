@@ -148,6 +148,7 @@ p, div {
 }
 
 .tooltip {
+  letter-spacing: 0;
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
@@ -159,7 +160,7 @@ p, div {
   background-color: white;
   color: #4D5432;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 0.2em;
   position: absolute;
   z-index: 1;
@@ -171,7 +172,7 @@ p, div {
   position: absolute;
   top: 25%;
   right: 100%;
-  border-width: 10px;
+  border-width: 4px;
   border-style: solid;
   border-color: transparent white transparent transparent;
 }
