@@ -496,10 +496,10 @@ footer {
 
 #email {
   cursor: pointer;
-  color: white;
+  color: #ddf7dc;
   text-decoration: none;
   padding-bottom: 0.2em;
-  font-family: 'Manrope', monospace, sans-serif;
+  text-shadow: 0 0 0.5px #ddf7dc;
 }
 
 .card h4, .card p, .card div, .card a {
@@ -513,6 +513,7 @@ footer {
   height: 400px;
   padding: min(1.9em,4.5vw);
   font-family: 'Source Code Pro', monospace;
+  text-shadow: 0 0 0.5px #ddf7dc;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -521,7 +522,7 @@ footer {
    border-radius: min(2.2em,2.8vw);
    box-shadow:  0 25px 70px 4px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
    background: black;
-   color: white;
+   color: #ddf7dc;
    will-change: transform;
    transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
