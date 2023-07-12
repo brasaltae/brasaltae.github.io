@@ -12,17 +12,17 @@ viewBox="0 0 1186.4 662.8" style="enable-background:new 0 0 1186.4 662.8;" xml:s
         <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
       </clipPath>
       
-        <rect x="47.2" y="626.1" style="clip-path:url(#SVGID_2_);fill:#EDCF94;stroke:#0B0B0B;stroke-miterlimit:10;" width="34" height="56.4"/>
+        <rect x="47.2" y="626.1" style="clip-path:url(#SVGID_2_);fill:peru;stroke:#0B0B0B;stroke-miterlimit:10;" width="34" height="56.4"/>
       
-        <rect x="850.5" y="626.6" style="clip-path:url(#SVGID_2_);fill:#EDCF94;stroke:#0B0B0B;stroke-miterlimit:10;" width="281.4" height="49.9"/>
+        <rect x="850.5" y="626.6" style="clip-path:url(#SVGID_2_);fill:peru;stroke:#0B0B0B;stroke-miterlimit:10;" width="281.4" height="49.9"/>
       <path style="clip-path:url(#SVGID_2_);fill:#FFCF0A;" d="M273.8,586.3"/>
     </g>
   </g>
   <g id="table">
-    <path style="fill:#EDCF94;stroke:#0B0B0B;stroke-miterlimit:10;" d="M1172,626.1H18.4c-2.7,0-5-1.1-5-2.5v-14.3
+    <path style="fill:peru;stroke:#0B0B0B;stroke-miterlimit:10;" d="M1172,626.1H18.4c-2.7,0-5-1.1-5-2.5v-14.3
       c0-1.4,2.2-2.5,5-2.5H1172c2.7,0,5,1.1,5,2.5v14.3C1177,625,1174.8,626.1,1172,626.1z"/>
-    <rect x="851" y="627.2" style="fill:#D7B476;" width="280.4" height="10.5"/>
-    <rect x="47.7" y="626.7" style="fill:#D7B476;" width="33" height="6.6"/>
+    <rect x="851" y="627.2" style="fill:sienna;" width="280.4" height="10.5"/>
+    <rect x="47.7" y="626.7" style="fill:sienna;" width="33" height="6.6"/>
   </g>
   <g id="computer">
     <polygon style="fill:#888889;stroke:#050606;stroke-miterlimit:10;" points="548.7,548.3 544.4,575.1 643.1,575.1 637.8,548.3  "/>
@@ -103,7 +103,7 @@ viewBox="0 0 1186.4 662.8" style="enable-background:new 0 0 1186.4 662.8;" xml:s
         <ellipse style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" cx="193.8" cy="347.5" rx="18.5" ry="19.3"/>
         <path style="fill:#E8DF9A;stroke:#0B0B0B;stroke-miterlimit:10;" d="M225.9,393.2c0,0,13,10.9,26.6,2.5c2.4-1.5,4.4-3.9,5.7-6.6
   c3.3-6.8,7.6-20.6-5-31.8L225.9,393.2z"/>
-        <path style="fill:#3FBDA4;stroke:#0B0B0B;stroke-miterlimit:10;" d="M270.5,319.1c-20.6-7.9-47.5-7.3-64.6,4.4
+        <path style="fill:#5a8796;stroke:#0B0B0B;stroke-miterlimit:10;" d="M270.5,319.1c-20.6-7.9-47.5-7.3-64.6,4.4
           c-11.4,7.8-20,19-24.3,33.7c-8.6,29.1,1.8,61,22.5,79.4c1.3,1.2,3.3,1,4.3-0.5L285.7,330c0.7-0.9,0.5-2.3-0.4-2.9
           C280.8,323.8,275.9,321.1,270.5,319.1z"/>
       </g>
@@ -112,13 +112,13 @@ viewBox="0 0 1186.4 662.8" style="enable-background:new 0 0 1186.4 662.8;" xml:s
         <polyline style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" points="69.7,432.6 74.6,426.3 125.8,567.8 119.5,572.6 69.7,432.6  "/>
         <polyline style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" points="81.6,429.1 87.5,422.9 138.2,561.8 132,566 81.6,429.1  "/>
       </g>
-      <ellipse id="lamp-circle" style="fill:#3FBDA4;stroke:#0B0B0B;stroke-miterlimit:10;" cx="80.2" cy="422.9" rx="19.7" ry="20.5"/>
+      <ellipse id="lamp-circle" style="fill:#5a8796;stroke:#0B0B0B;stroke-miterlimit:10;" cx="80.2" cy="422.9" rx="19.7" ry="20.5"/>
     </g>
    
     <path class="lamp-leg" style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" d="M193.8,606.2H66.2v-11.6c0-1.6,2.1-2.9,4.7-2.9h121.2
       c1,0,1.7,0.5,1.7,1.1V606.2z"/>
     <g id="lamp-bottom">
-      <path style="fill:#3FBDA4;stroke:#0B0B0B;stroke-miterlimit:10;" d="M81.6,591.6c0,0,10.6-32.8,48.4-31.4c0,0,39,2.3,48.7,31.4
+      <path style="fill:#5a8796;stroke:#0B0B0B;stroke-miterlimit:10;" d="M81.6,591.6c0,0,10.6-32.8,48.4-31.4c0,0,39,2.3,48.7,31.4
 H81.6z"/>
       <path style="fill:#70BAAF;stroke:#0B0B0B;stroke-miterlimit:10;" d="M147.9,564c0,0,8.8,4.6,17-0.4c0.5-0.3,1,0.1,1,0.8v9.2
       C165.9,573.6,152.1,565.3,147.9,564z"/>
@@ -126,11 +126,11 @@ H81.6z"/>
     
     <polyline class="light" style="opacity:0;fill:#FCF1C4;" points="276.4,343 781.8,605.3 312.8,606.8 223,418.9  "/>
     <g id="lamp-line">
-      <path style="fill:#2FAF97;" d="M182.3,357.8c-8.4,28.4,1.9,61.2,23.2,78.5c1.2-0.5-1.2,0.5,0,0l-3.4-108.7
+      <path style="fill:#517c8a;" d="M182.3,357.8c-8.4,28.4,1.9,61.2,23.2,78.5c1.2-0.5-1.2,0.5,0,0l-3.4-108.7
       C192.9,335.1,186,345.2,182.3,357.8z"/>
-      <path style="fill:#2FAF97;" d="M61.3,422.9c0,10.7,8.4,19.6,18.2,19.6c0.2,0,0.4,0,0.6,0L74,404.3
+      <path style="fill:#517c8a;" d="M61.3,422.9c0,10.7,8.4,19.6,18.2,19.6c0.2,0,0.4,0,0.6,0L74,404.3
         C66.8,406.8,61.3,414.2,61.3,422.9z"/>
-      <path style="fill:#2FAF97;" d="M83,590.7H122l-8.3-27.8C90.4,569.8,83,590.7,83,590.7z"/>
+      <path style="fill:#517c8a;" d="M83,590.7H122l-8.3-27.8C90.4,569.8,83,590.7,83,590.7z"/>
       <path style="fill:none;stroke:#BFE4E2;stroke-linecap:round;stroke-miterlimit:10;" d="M220.9,321.6c-0.4-0.1,26.1-7,46,3.5"/>
       <line style="fill:none;stroke:#BFE4E2;stroke-linecap:round;stroke-miterlimit:10;" x1="271.7" y1="328.3" x2="274.8" y2="330"/>
       <path style="fill:none;stroke:#BFE4E2;stroke-linecap:round;stroke-miterlimit:10;" d="M88.5,409.4c0,0,9.3,7.1,6.2,16.8"/>
@@ -147,18 +147,18 @@ H81.6z"/>
     <polyline style="fill:#F9EFE5;stroke:#0D0D0D;stroke-miterlimit:10;" points="849.8,516.5 865.1,606.8 908,606.8 922.4,516.5 
       853.7,516.5   "/>
     <polygon style="fill:#F3E5D4;" points="921.2,519.5 886.1,516.5 885.7,605.9 907.4,605.9  "/>
-    <polygon style="fill:#BE5532;stroke:#0D0D0D;stroke-miterlimit:10;" points="853.3,546.7 859.7,581.7 912.8,581.7 918.9,546.7  "/>
-    <polygon style="fill:#AD4025;" points="917.8,547.7 886.2,547.7 886.1,580.9 912.2,580.9  "/>
+    <polygon style="fill:#fa4ba3;stroke:#0D0D0D;stroke-miterlimit:10;" points="853.3,546.7 859.7,581.7 912.8,581.7 918.9,546.7  "/>
+    <polygon style="fill:#e94196;" points="917.8,547.7 886.2,547.7 886.1,580.9 912.2,580.9  "/>
     <line style="fill:none;stroke:#9B3021;stroke-linecap:round;stroke-miterlimit:10;" x1="858.3" y1="551.2" x2="914.7" y2="551.2"/>
     <line style="fill:none;stroke:#9B3021;stroke-linecap:round;stroke-miterlimit:10;" x1="860.1" y1="557.9" x2="913.7" y2="557.9"/>
     <line style="fill:none;stroke:#9B3021;stroke-linecap:round;stroke-miterlimit:10;" x1="861.1" y1="565.8" x2="911.6" y2="565.8"/>
     <line style="fill:none;stroke:#9B3021;stroke-linecap:round;stroke-miterlimit:10;" x1="862.1" y1="573.1" x2="910.5" y2="573.1"/>
     <line style="fill:none;stroke:#9B3021;stroke-linecap:round;stroke-miterlimit:10;" x1="862" y1="578.7" x2="909.5" y2="578.7"/>
-    <polygon style="fill:#BE5532;stroke:#0B0B0B;stroke-miterlimit:10;" points="845.3,524.5 926.2,524.5 926.2,516.5 849.8,516.5 
+    <polygon style="fill:#fa4ba3;stroke:#0B0B0B;stroke-miterlimit:10;" points="845.3,524.5 926.2,524.5 926.2,516.5 849.8,516.5 
       845.3,516.5   "/>
-    <polygon style="fill:#BE5532;stroke:#070808;stroke-miterlimit:10;" points="851.8,505.9 849.8,516.5 921.2,516.5 918.9,505.9  "/>
-    <polygon style="fill:#AD4025;" points="925.2,517.5 920,517.5 886.7,517.5 886.7,523.6 925.2,523.8  "/>
-    <polygon style="fill:#AD4025;" points="920,515.7 918.2,506.7 886.8,506.8 886.8,515.7  "/>
+    <polygon style="fill:#fa4ba3;stroke:#070808;stroke-miterlimit:10;" points="851.8,505.9 849.8,516.5 921.2,516.5 918.9,505.9  "/>
+    <polygon style="fill:#e94196;" points="925.2,517.5 920,517.5 886.7,517.5 886.7,523.6 925.2,523.8  "/>
+    <polygon style="fill:#e94196;" points="920,515.7 918.2,506.7 886.8,506.8 886.8,515.7  "/>
     <polygon style="fill:#9B3021;" points="850.9,515.7 851.2,513.7 919.6,513.7 920,515.7  "/>
   </g>
 </svg>

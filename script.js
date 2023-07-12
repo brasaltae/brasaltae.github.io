@@ -39,19 +39,19 @@ const sectionColors = {
     backgroundColor: 'black', // sage green WHITE
   },
   about: {
-    backgroundColor: '#CAB565', // brown
+    backgroundColor: '#CAB565', // yellow brown
   },
   work1: {
-    backgroundColor: '#CCA2A5', // pink
+    backgroundColor: '#a37e80', // pink
   },
   work2: {
-    backgroundColor: '#6B8791', // blue grey WHITE
+    backgroundColor: '#446570', // blue grey WHITE
   },
   work3: {
-    backgroundColor: '#655871', // purple
+    backgroundColor: '#58426b', // purple
   },
   contact: {
-    backgroundColor: '#4D5432', // sage green WHITE
+    backgroundColor: '#42472a', // sage green WHITE
   }
 };
 
