@@ -201,8 +201,19 @@ p, div {
 #menu-btn-x {
   margin: 0;
   padding: 0;
+}
+
+#logo,
+#menu-btn,
+#menu-btn-x {
   width: min(10.4vw, 6.4em); 
-  height: min(10.4vw, 6.4em); 
+  height: min(10.4vw, 6.4em);
+}
+
+#menu-btn,
+#menu-btn-x {
+  width: min(8vw, 3.6em);
+  height: min(8vw, 3.6em);
 }
 
 #logo,
@@ -323,9 +334,15 @@ footer {
 @media only screen and (min-width: 1000px) {
   #logo,
   #menu-btn,
-  #menu-btn-x {
+  #menu-btn-x  {
     width: min(9.4vw, 5.2em); 
     height: min(9.4vw, 5.2em); 
+  }
+
+  #menu-btn,
+  #menu-btn-x {
+    width: 3em;
+    height: 3em; 
   }
 
   section, #nav-links {
