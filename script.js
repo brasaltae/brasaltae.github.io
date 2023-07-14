@@ -13,14 +13,6 @@ const para1 = document.getElementById('para1');
 const para2 = document.getElementById('para2');
 
 //pics from https://www.webdew.com/blog/best-digital-marketing-tactics
-var section1 = sections[0];
-var section4 = sections[3];
-var section5 = sections[4];
-var section6 = sections[5];
-section1.classList.toggle('white');
-section4.classList.toggle('white');
-section5.classList.toggle('white');
-section6.classList.toggle('white');
 menuBtn.classList.toggle('visible');
 
 function browserType() { 
@@ -67,13 +59,13 @@ const sectionColors = {
     backgroundColor: '#a37e80', // pink
   },
   work2: {
-    backgroundColor: '#446570', // blue grey WHITE
+    backgroundColor: '#42472a', // sage green WHITE
   },
   work3: {
-    backgroundColor: '#58426b', // purple
+    backgroundColor: '#58426b', // purple WHITE
   },
   contact: {
-    backgroundColor: '#42472a', // sage green WHITE
+    backgroundColor: '#446570', // blue grey WHITE
   }
 };
 
@@ -142,17 +134,13 @@ function toggleNavLinks() {
 
   menuBtn.classList.toggle('visible');
   menuBtnX.classList.toggle('visible');
-  section1.classList.toggle('white');
-  section4.classList.toggle('white');
-  section5.classList.toggle('white');
-  section6.classList.toggle('white');
   
   // Toggle the scrolling behavior for the body
   if (navbar.classList.contains("active")) {
     console.log("lit");
     main.classList.add('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = 'hidden';
-    opacityStrength = "0.4";
+    opacityStrength = "0.15";
     navColor.classList.add('white');
     bitlogo.setAttribute("href", "assets/waves-w.webp");
   } else {

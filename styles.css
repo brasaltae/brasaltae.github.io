@@ -20,17 +20,22 @@
   }
   
 ul {
-  font-family: 'Source Code Pro', monospace;
-  list-style: '\2714';
-  padding-left: 1.2em;
+  list-style: '';
 }
 
 li {
   padding-left: 1em;
 }
 
-li a {
-  display: block;
+.body-list li {
+  padding: 0;
+}
+
+.body-list li::before {
+  content: "\2714";
+  font-family: 'Source Code Pro', monospace;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
 }
 
 #nav-links li {
@@ -186,7 +191,7 @@ p, div {
 }
 
 .transparent {
-  background-color: rgba(1, 1, 1, 0.78); /* Set the background color with transparency */
+  background-color: rgba(1, 1, 1, 0.8); /* Set the background color with transparency */
   -webkit-transition: background-color 450ms linear;
   -ms-transition: background-color 450ms linear;
   transition: background-color 450ms linear;

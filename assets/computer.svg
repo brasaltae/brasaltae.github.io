@@ -83,31 +83,31 @@ viewBox="0 260 1186.4 400" style="enable-background:new 0 260 1186.4 400" xml:sp
     <g id="lamp-body">
       <g id="lamp-header">
         <g id="lamp-line-t">
-         <polyline style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" points="187.9,333.9 194.8,337.7 70.9,417.1 65.2,411.6 
+         <polyline style="fill:#9eb0c7;stroke:#0B0B0B;stroke-miterlimit:10;" points="187.9,333.9 194.8,337.7 70.9,417.1 65.2,411.6 
           187.9,333.9   "/>
-        <polyline style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" points="198.6,342.1 205.5,346.9 84.1,425.2 79,419.7 
+        <polyline style="fill:#9eb0c7;stroke:#0B0B0B;stroke-miterlimit:10;" points="198.6,342.1 205.5,346.9 84.1,425.2 79,419.7 
           198.6,342.1   "/>        
       </g>
         <g id="lamp-head">
-        <ellipse style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" cx="193.8" cy="347.5" rx="18.5" ry="19.3"/>
+        <ellipse style="fill:#9eb0c7;stroke:#0B0B0B;stroke-miterlimit:10;" cx="193.8" cy="347.5" rx="18.5" ry="19.3"/>
         <path style="fill:#E8DF9A;stroke:#0B0B0B;stroke-miterlimit:10;" d="M225.9,393.2c0,0,13,10.9,26.6,2.5c2.4-1.5,4.4-3.9,5.7-6.6
   c3.3-6.8,7.6-20.6-5-31.8L225.9,393.2z"/>
-        <path style="fill:#5a8796;stroke:#0B0B0B;stroke-miterlimit:10;" d="M270.5,319.1c-20.6-7.9-47.5-7.3-64.6,4.4
+        <path style="fill:lightsteelblue;stroke:#0B0B0B;stroke-miterlimit:10;" d="M270.5,319.1c-20.6-7.9-47.5-7.3-64.6,4.4
           c-11.4,7.8-20,19-24.3,33.7c-8.6,29.1,1.8,61,22.5,79.4c1.3,1.2,3.3,1,4.3-0.5L285.7,330c0.7-0.9,0.5-2.3-0.4-2.9
           C280.8,323.8,275.9,321.1,270.5,319.1z"/>
       </g>
       </g>
       <g id="lamp-line-b">
-        <polyline style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" points="69.7,432.6 74.6,426.3 125.8,567.8 119.5,572.6 69.7,432.6  "/>
-        <polyline style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" points="81.6,429.1 87.5,422.9 138.2,561.8 132,566 81.6,429.1  "/>
+        <polyline style="fill:#9eb0c7;stroke:#0B0B0B;stroke-miterlimit:10;" points="69.7,432.6 74.6,426.3 125.8,567.8 119.5,572.6 69.7,432.6  "/>
+        <polyline style="fill:#9eb0c7;stroke:#0B0B0B;stroke-miterlimit:10;" points="81.6,429.1 87.5,422.9 138.2,561.8 132,566 81.6,429.1  "/>
       </g>
-      <ellipse id="lamp-circle" style="fill:#5a8796;stroke:#0B0B0B;stroke-miterlimit:10;" cx="80.2" cy="422.9" rx="19.7" ry="20.5"/>
+      <ellipse id="lamp-circle" style="fill:lightsteelblue;stroke:#0B0B0B;stroke-miterlimit:10;" cx="80.2" cy="422.9" rx="19.7" ry="20.5"/>
     </g>
    
-    <path class="lamp-leg" style="fill:#228370;stroke:#0B0B0B;stroke-miterlimit:10;" d="M193.8,606.2H66.2v-11.6c0-1.6,2.1-2.9,4.7-2.9h121.2
+    <path class="lamp-leg" style="fill:#9eb0c7;stroke:#0B0B0B;stroke-miterlimit:10;" d="M193.8,606.2H66.2v-11.6c0-1.6,2.1-2.9,4.7-2.9h121.2
       c1,0,1.7,0.5,1.7,1.1V606.2z"/>
     <g id="lamp-bottom">
-      <path style="fill:#5a8796;stroke:#0B0B0B;stroke-miterlimit:10;" d="M81.6,591.6c0,0,10.6-32.8,48.4-31.4c0,0,39,2.3,48.7,31.4
+      <path style="fill:lightsteelblue;stroke:#0B0B0B;stroke-miterlimit:10;" d="M81.6,591.6c0,0,10.6-32.8,48.4-31.4c0,0,39,2.3,48.7,31.4
 H81.6z"/>
       <path style="fill:#70BAAF;stroke:#0B0B0B;stroke-miterlimit:10;" d="M147.9,564c0,0,8.8,4.6,17-0.4c0.5-0.3,1,0.1,1,0.8v9.2
       C165.9,573.6,152.1,565.3,147.9,564z"/>
@@ -115,11 +115,11 @@ H81.6z"/>
     
     <polyline class="light" style="opacity:0;fill:#FCF1C4;" points="276.4,343 781.8,605.3 312.8,606.8 223,418.9  "/>
     <g id="lamp-line">
-      <path style="fill:#517c8a;" d="M182.3,357.8c-8.4,28.4,1.9,61.2,23.2,78.5c1.2-0.5-1.2,0.5,0,0l-3.4-108.7
+      <path style="fill:#9eb0c7;" d="M182.3,357.8c-8.4,28.4,1.9,61.2,23.2,78.5c1.2-0.5-1.2,0.5,0,0l-3.4-108.7
       C192.9,335.1,186,345.2,182.3,357.8z"/>
-      <path style="fill:#517c8a;" d="M61.3,422.9c0,10.7,8.4,19.6,18.2,19.6c0.2,0,0.4,0,0.6,0L74,404.3
+      <path style="fill:#9eb0c7;" d="M61.3,422.9c0,10.7,8.4,19.6,18.2,19.6c0.2,0,0.4,0,0.6,0L74,404.3
         C66.8,406.8,61.3,414.2,61.3,422.9z"/>
-      <path style="fill:#517c8a;" d="M83,590.7H122l-8.3-27.8C90.4,569.8,83,590.7,83,590.7z"/>
+      <path style="fill:#9eb0c7;" d="M83,590.7H122l-8.3-27.8C90.4,569.8,83,590.7,83,590.7z"/>
       <path style="fill:none;stroke:#BFE4E2;stroke-linecap:round;stroke-miterlimit:10;" d="M220.9,321.6c-0.4-0.1,26.1-7,46,3.5"/>
       <line style="fill:none;stroke:#BFE4E2;stroke-linecap:round;stroke-miterlimit:10;" x1="271.7" y1="328.3" x2="274.8" y2="330"/>
       <path style="fill:none;stroke:#BFE4E2;stroke-linecap:round;stroke-miterlimit:10;" d="M88.5,409.4c0,0,9.3,7.1,6.2,16.8"/>
