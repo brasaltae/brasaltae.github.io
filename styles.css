@@ -607,12 +607,12 @@ img {
   padding: 0;
   padding-bottom: 0.1em;
   bottom: 0;
-  opacity: 0.88;
+  opacity: 0.6;
 }
 
 .content h1:nth-child(1) {
-  color: #446570;
-  -webkit-text-stroke: 1.5px #446570;
+  color: #D1E0FF;
+  -webkit-text-stroke: 1.5px #D1E0FF;
 }
 
 .content h1:nth-child(2) {

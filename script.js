@@ -221,3 +221,17 @@ function startAnimation() {
 startAnimation();
 
 
+$( document ).ready(function() {
+  var currentIndex = 0;
+$(".rain:not(:eq("+ currentIndex +"))").hide();
+
+var totalDiv = $(".rain").length;
+
+setInterval(function(){
+     currentIndex = (currentIndex + 1) % totalDiv;
+    
+    $(".rain").hide();
+     $(".rain").eq(currentIndex).show();
+    
+},300);
+});
