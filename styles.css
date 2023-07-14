@@ -277,7 +277,8 @@ section {
 }
 
 #nav-links {
-  font-size: min(2.5em,3.7vw); 
+  font-size: min(2.5em,3.7vw);
+  text-shadow: 2px 2px 4px black, 0 0 0.1em black, 0 0 0.2em black;
   padding-left: 28px;
   padding-right: 28px;
   min-height: 100vh;
