@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+html { 
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Reset default browser styles */
   #line1, #line2, #line3 {
     transform: scale(0.5);
