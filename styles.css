@@ -611,12 +611,12 @@ img {
 }
 
 .content h1:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 1.5px #03a9f4;
+  color: #446570;
+  -webkit-text-stroke: 1.5px #446570;
 }
 
 .content h1:nth-child(2) {
-  color: #03a9f4;
+  color: #0C3157;
   animation: animate 2.8s ease-in-out infinite;
 }
 
