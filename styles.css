@@ -271,13 +271,6 @@ section {
   padding: 0;
 }
 
-#nav-links {
-  font-size: min(2.5em,3.7vw); 
-  padding-left: 28px;
-  padding-right: 28px;
-  min-height: 100vh;
-}
-
 .section-home {
   display: flex;
   align-items: center;
@@ -291,6 +284,13 @@ section {
 .section-contact {
   align-items: center;
   text-align: center;
+}
+
+#nav-links {
+  font-size: min(2.5em,3.7vw); 
+  padding-left: 28px;
+  padding-right: 28px;
+  min-height: 100vh;
 }
 
 #home > video {
