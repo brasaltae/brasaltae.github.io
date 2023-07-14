@@ -157,7 +157,6 @@ p, div {
 .tooltip {
   letter-spacing: 0;
   position: relative;
-  display: inline-block;
   border-bottom: 1px dotted black;
 }
 
@@ -168,7 +167,7 @@ p, div {
   color: #4D5432;
   text-align: center;
   border-radius: 3px;
-  padding: 0.2em;
+  padding: 0.1em;
   position: absolute;
   z-index: 1;
   left: 110%;
@@ -434,6 +433,12 @@ img {
 }
 
 .imgdef {
+  max-height: 25vh;
+  width: 100%;
+}
+
+.imgcode {
+  max-height: 25vh;
   width: 100%;
 }
 
@@ -572,14 +577,14 @@ img {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   width: calc(var(--card-size) * 1.586);
-   height: var(--card-size);
-   border-radius: min(2.2em,2.8vw);
-   box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
-   background: black;
-   color: #ddf7dc;
-   will-change: transform;
-   transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  width: calc(var(--card-size) * 1.586);
+  height: var(--card-size);
+  border-radius: min(2.2em,2.8vw);
+  box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  background: black;
+  color: #ddf7dc;
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .card:hover {
