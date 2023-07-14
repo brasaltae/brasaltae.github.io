@@ -49,29 +49,29 @@ li {
 }
 
 #nav-links li {
-  opacity: 0;
+  opacity: 0.08;
 }
 
 #nav-links.visible li:nth-child(1) {
-  animation: showbitch 0.3s forwards linear;
+  animation: showbitch 0.35s forwards linear;
   animation-iteration-count: 1;
 }
 
 #nav-links.visible li:nth-child(2) {
-  animation: showbitch 0.3s forwards linear;
+  animation: showbitch 0.35s forwards linear;
   animation-iteration-count: 1;
-  animation-delay: 0.1s;
+  animation-delay: 0.12s;
 }
 
 #nav-links.visible li:nth-child(3){
-  animation: showbitch 0.3s forwards linear;
+  animation: showbitch 0.35s forwards linear;
   animation-iteration-count: 1;
-  animation-delay: 0.2s;
+  animation-delay: 0.24s;
 }
 
 #nav-links.visible li:hover {
   opacity: 1;
-  animation: movebitch 0.3s forwards linear;
+  animation: movebitch 0.28s forwards linear;
   animation-iteration-count: 1;
 }
 
@@ -382,7 +382,7 @@ footer {
 }
 
 #menu-btn {
-  animation: menu-btn-x-animation 1s forwards;
+  animation: menu-btn-x-animation 0.6s forwards;
 }
 
 /*
@@ -404,7 +404,7 @@ footer {
 }
 
 #menu-btn-x {
-  animation: menu-btn-x-animation 1s forwards;
+  animation: menu-btn-x-animation 0.6s forwards;
 }
 
 @keyframes menu-btn-x-animation {
