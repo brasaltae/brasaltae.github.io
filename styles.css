@@ -262,12 +262,13 @@ p, div {
 section {
   font-size: min(2.5em,3.7vw);
   clear: both;
-}
-
-.section-about, .section-work1, .section-work3, .section-contact {
   padding: 2em;
   padding-left: 28px;
   padding-right: 28px;
+}
+
+.section-home {
+  padding: 0;
 }
 
 #nav-links {
