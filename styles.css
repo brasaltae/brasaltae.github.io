@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+:root { background-attachment: fixed; }
+
 html { 
   background: no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -443,13 +445,12 @@ img {
   width: 100%;
 }
 
-
-#para2 {
+#para1 {
   /* The image used */
-  background-image: url("assets/seo-optimization.webp");
+  background-image: url("assets/doodle.webp");
 
   /* Set a specific height */
-  height: 30vh;
+  height: 60vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -461,12 +462,12 @@ img {
   background-size: cover;
 }
 
-#para1 {
+#para2 {
   /* The image used */
-  background-image: url("assets/doodle.webp");
+  background-image: url("assets/seo-optimization.webp");
 
   /* Set a specific height */
-  height: 60vh;
+  height: 30vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
