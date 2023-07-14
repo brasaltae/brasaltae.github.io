@@ -50,19 +50,22 @@ if (ismobile) {
 
 const sectionColors = {
   home: {
-    backgroundColor: 'black', // sage green WHITE
+    backgroundColor: 'black',
   },
   about: {
-    backgroundColor: '#CAB565', // yellow brown
+    backgroundColor: '#CAB565', // yellow
   },
   work1: {
-    backgroundColor: '#a37e80', // pink
+    backgroundColor: '#caa365', // pink
   },
   work2: {
-    backgroundColor: '#42472a', // sage green WHITE
+    backgroundColor: '#a37e80', // purple WHITE
   },
   work3: {
-    backgroundColor: '#58426b', // purple WHITE
+    backgroundColor: '#484470', // brown
+  },
+  work4: {
+    backgroundColor: '#6e7044', // brown
   },
   contact: {
     backgroundColor: '#446570', // blue grey WHITE
@@ -101,7 +104,7 @@ window.addEventListener('scroll', () => {
     document.body.style.transition = 'background-color 0.8s';
     document.body.style.backgroundColor = sectionColors[s].backgroundColor;
     // Check if the current section is the "about" section
-    if ((s !== 'home') && (s !== 'work2') && (s !== 'work3') && (s !== 'contact')) {
+    if ((s === 'about') || (s === 'work1')) {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
@@ -147,7 +150,7 @@ function toggleNavLinks() {
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = '';
     const s = getId();
-    if ((s !== 'home') && (s !== 'work2') && (s !== 'work3') && (s !== 'contact')) {
+    if ((s === 'about') || (s === 'work1')) {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
       bitlogo.setAttribute("href", "assets/waves-b.webp");
