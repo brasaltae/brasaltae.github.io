@@ -384,9 +384,11 @@ footer {
   animation: menu-btn-x-animation 1s forwards;
 }
 
+/*
 #menu-btn:hover, #menu-btn-x:hover {
   animation: menu-btn-animation 1.6s forwards infinite;
 }
+*/
 
 @keyframes menu-btn-animation {
   0% {
