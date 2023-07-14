@@ -35,8 +35,8 @@ function browserType() {
 
 var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 if (ismobile) {
-  //para1.remove();
-  //para2.remove();
+  para1.remove();
+  para2.remove();
   if (sections.length > 1) {
     if (sections[1].id === "about") {
       if (browserType() === 3) {
