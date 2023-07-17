@@ -447,6 +447,43 @@ img {
   width: 100%;
 }
 
+.inline-game {
+  display: inline-block;
+  text-align: center;
+}
+
+.imggame {
+  display: inline;
+  margin: 1%;
+  width: 30%;
+  height: auto;
+  border-radius: min(2.2em,2.8vw);
+  box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.imggame:hover {
+  transform: scale(1.1);
+  box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.imgproduct {
+  display: inline;
+  margin: 2%;
+  width: 45%;
+  height: auto;
+  border-radius: min(2.2em,2.8vw);
+  box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.imgproduct:hover {
+  transform: scale(1.1);
+  box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
 #para1 {
   /* The image used */
   background-image: url("assets/doodle.webp");
