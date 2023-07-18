@@ -102,7 +102,7 @@ h1, h2, h3, h4, a {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .toright {
@@ -309,6 +309,7 @@ section {
 
 #binary {
   font-size: 1.5em;
+  font-weight: 600;
   text-shadow: 2px 2px 4px green, 0 0 0.1em green, 0 0 0.2em green;
   letter-spacing: 0.11em; /* Adjust as needed */
 }
