@@ -10,6 +10,14 @@
 
 :root { background-attachment: fixed; }
 
+.bg {
+   background-image: url( 'assets/waves-b.svg' );
+   background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+   object-fit: contain;
+}
+
 html { 
   background: no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -91,7 +99,7 @@ li {
 /* Global styles */
 body {
   font-family: 'Montserrat', monospace, sans-serif;
-  background-color: black;
+  background-color: darkslategray;
 }
 
 h1, h2, h3, h4, a {

@@ -41,7 +41,7 @@ if (ismobile) {
 
 const sectionColors = {
   home: {
-    backgroundColor: 'black',
+    backgroundColor: 'darkslategray',
   },
   about: {
     backgroundColor: '#CAB565', // yellow
