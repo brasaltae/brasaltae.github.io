@@ -10,14 +10,6 @@
 
 :root { background-attachment: fixed; }
 
-.bg {
-   background-image: url( 'assets/waves-b.svg' );
-   background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-   object-fit: contain;
-}
-
 html { 
   background: no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -305,6 +297,14 @@ section {
   height: 100vh;
   width: 100%;
   object-fit: initial;
+}
+
+#home > img {
+  top: 5%;
+  left: 0;
+  position: absolute;
+  height: 85%;
+  width: 100%;
 }
 
 .overlayText {
