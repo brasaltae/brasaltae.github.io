@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Manrope:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500');
 *,
 *:before,
@@ -90,12 +90,12 @@ li {
 
 /* Global styles */
 body {
-  font-family: 'Manrope', monospace, sans-serif;
+  font-family: 'Montserrat', monospace, sans-serif;
   background-color: black;
 }
 
 h1, h2, h3, h4, a {
-  font-family: 'Manrope', monospace, sans-serif;
+  font-family: 'Montserrat', monospace, sans-serif;
   font-weight: 400;
   padding-bottom: 1em;
   letter-spacing: 0.1em; /* Adjust as needed */
@@ -157,7 +157,7 @@ p, div {
   cursor: pointer;
   color: white;
   text-decoration: none;
-  font-family: 'Manrope', monospace, sans-serif;
+  font-family: 'Montserrat', monospace, sans-serif;
 }
 
 .tooltip {
@@ -641,7 +641,7 @@ img {
 
 
 .content h1 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 2.5em;
   text-shadow: 5px 5px 10px black;
