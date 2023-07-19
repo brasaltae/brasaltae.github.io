@@ -352,6 +352,10 @@ footer {
   section, #nav-links {
     font-size: min(2.3em,3.1vw);
   }
+
+  .imgproduct {
+    max-width: 35%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -366,6 +370,10 @@ footer {
   #menu-btn-x {
     width: 3em;
     height: 3em; 
+  }
+
+  .imgproduct {
+    max-width: 25%;
   }
 
   section, #nav-links {
@@ -468,7 +476,7 @@ img {
 
 .imgproduct {
   display: inline;
-  margin: 2%;
+  margin: 1px;
   width: 45%;
   height: auto;
   border-radius: min(2.2em,2.8vw);
