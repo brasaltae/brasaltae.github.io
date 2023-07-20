@@ -354,7 +354,7 @@ footer {
   }
 
   .imgproduct {
-    max-width: 35%;
+    max-width: 33%;
   }
 }
 
@@ -370,10 +370,6 @@ footer {
   #menu-btn-x {
     width: 3em;
     height: 3em; 
-  }
-
-  .imgproduct {
-    max-width: 25%;
   }
 
   section, #nav-links {
@@ -397,6 +393,10 @@ footer {
     font-size: min(1.7em,1.9vw);
     padding-left: 310px;
     padding-right: 310px;
+  }
+
+  .imgproduct {
+    max-width: 28%;
   }
 
   footer {
@@ -476,7 +476,7 @@ img {
 
 .imgproduct {
   display: inline;
-  margin: 1px;
+  margin: 1%;
   width: 45%;
   height: auto;
   border-radius: min(2.2em,2.8vw);
