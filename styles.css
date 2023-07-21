@@ -346,15 +346,15 @@ footer {
     padding-left: 40px;
     padding-right: 40px; 
   }
+
+  .webvid {
+    max-width: min(38%, 38vh) !important;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   section, #nav-links {
     font-size: min(2.3em,3.1vw);
-  }
-
-  .imgproduct {
-    max-width: 33%;
   }
 }
 
@@ -393,10 +393,6 @@ footer {
     font-size: min(1.7em,1.9vw);
     padding-left: 310px;
     padding-right: 310px;
-  }
-
-  .imgproduct {
-    max-width: 28%;
   }
 
   footer {
@@ -447,7 +443,7 @@ img {
   height: auto;
 }
 
-.imgsvg {
+.imgrebrand {
   width: min(88%, 70vh);
 }
 
@@ -469,6 +465,28 @@ img {
   width: 100%;
 }
 
+.webvid {
+  display: inline-block;
+  margin: 2% 1%;
+  text-align: center;
+  height: auto;
+  max-height: 75vh;
+  max-width: min(30%, 40vh);
+  border-radius: min(2.2em,2.8vw);
+  box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.webvid:hover {
+  transform: scale(1.1);
+  box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.webvid:first-child(), .webvid:nth-last-child() {
+  margin: 2% 0;
+}
+
 .inline-product {
   display: inline-block;
   text-align: center;
@@ -477,7 +495,7 @@ img {
 .imgproduct {
   display: inline;
   margin: 1%;
-  width: 45%;
+  max-width: min(45%, 35vh);
   height: auto;
   border-radius: min(2.2em,2.8vw);
   box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
