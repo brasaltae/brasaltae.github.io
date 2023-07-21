@@ -1,533 +1,526 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BitWaves.</title>
-  <link rel="icon" type="image/x-icon" href="assets/waves-b.webp">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <!-- Header Section -->
-  <div id="navbar" class="navbar white">
-    <div id="logo">
-      <!-- SVG logo -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <image id="logo-icon" width="24" height="24" href="assets/waves-w.webp"/>
+  <head>
+    <title>BitWaves.</title>
+    <link rel="icon" type="image/x-icon" href="assets/waves-b.webp">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="navbar" class="navbar white">
+      <div id="logo">
+        <!-- SVG logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <image id="logo-icon" width="24" height="24" href="assets/waves-w.webp"/>
+        </svg>
+      </div>
+      <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" height="800px" width="800px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;"
+        viewBox="20 0 85 175" xml:space="preserve">
+        <g>
+          <path id="line1" d="
+            M 75.067, 2.72
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.975, 1.93 -2.012, 5.096 -0.082, 7.071
+            c 1.93, 1.975, 5.096, 2.012, 7.071, 0.082
+            c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
+            l 6.463 -6.463
+            v 42.928
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929s 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.535, 0.088, 1.08, 0.088, 1.615, 0
+            h 9.203
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929s  -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
+            C 75.163, 2.718, 75.115, 2.719, 75.067, 2.72
+            z
+            M 130.21, 2.72
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.992, 1.913 -2.057, 5.078 -0.144, 7.07s 5.078, 2.057, 7.07, 0.144
+            c 0.049 -0.047, 0.097 -0.095, 0.144 -0.144
+            l 6.465 -6.465
+            v 42.93
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
+            C 130.306, 2.718, 130.258, 2.719, 130.21, 2.72
+            z
+            M 17.571, 2.754
+            c -9.609, 0 -17.5, 7.891 -17.5, 17.5
+            v 35
+            c 0, 9.609, 7.891, 17.5, 17.5, 17.5s 17.5 -7.891, 17.5 -17.5
+            v -35
+            C 35.071, 10.645, 27.18, 2.754, 17.571, 2.754
+            z
+            M 182.999, 2.754
+            c -9.609, 0 -17.5, 7.891 -17.5, 17.5
+            v 35
+            c 0, 9.609, 7.891, 17.5, 17.5, 17.5s 17.5 -7.891, 17.5 -17.5
+            v -35
+            C 200.499, 10.645, 192.607, 2.754, 182.999, 2.754
+            z
+            M 238.142, 2.754
+            c -9.609, 0 -17.5, 7.891 -17.5, 17.5
+            v 35
+            c 0, 9.609, 7.891, 17.5, 17.5, 17.5
+            c 9.609, 0, 17.5 -7.891, 17.5 -17.5
+            v -35
+            C 255.642, 10.645, 247.75, 2.754, 238.142, 2.754
+            z
+            M 17.571, 12.754
+            c 4.241, 0, 7.5, 3.259, 7.5, 7.5
+            v 35
+            c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
+            v -35
+            C 10.071, 16.012, 13.33, 12.754, 17.571, 12.754
+            z
+            M 182.999, 12.754
+            c 4.241, 0, 7.5, 3.259, 7.5, 7.5
+            v 35
+            c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
+            v -35
+            C 175.499, 16.012, 178.757, 12.754, 182.999, 12.754
+            z
+            M 238.142, 12.754
+            c 4.241, 0, 7.5, 3.259, 7.5, 7.5
+            v 35
+            c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
+            v -35
+            C 230.642, 16.012, 233.9, 12.754, 238.142, 12.754
+            z
+            "/>
+          <path id="line2" d="
+            M 19.925, 92.791
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.952, 1.954 -1.949, 5.121, 0.005, 7.072
+            c 1.952, 1.95, 5.115, 1.95, 7.067, 0
+            l 6.463 -6.463
+            v 42.928
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c 0 -2.762 -2.239 -5 -5.001 -5
+            C 20.022, 92.789, 19.973, 92.789, 19.925, 92.791
+            z
+            M 130.21, 92.791
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
+            c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
+            c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
+            l 6.465 -6.465
+            v 42.93
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c 0 -2.762 -2.239 -5 -5.001 -5
+            C 130.307, 92.789, 130.258, 92.789, 130.21, 92.791
+            z
+            M 185.352, 92.791
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
+            c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
+            c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
+            l 6.465 -6.465
+            v 42.93
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c 0 -2.762 -2.239 -5 -5.001 -5
+            C 185.45, 92.789, 185.401, 92.789, 185.352, 92.791
+            z
+            M 72.714, 92.824
+            c -9.609, 0 -17.5, 7.891 -17.5, 17.5
+            v 35
+            c 0, 9.609, 7.891, 17.5, 17.5, 17.5s 17.5 -7.891, 17.5 -17.5
+            v -35
+            C 90.214, 100.715, 82.322, 92.824, 72.714, 92.824
+            z
+            M 238.142, 92.824
+            c -9.609, 0 -17.5, 7.891 -17.5, 17.5
+            v 35
+            c 0, 9.609, 7.891, 17.5, 17.5, 17.5
+            c 9.609, 0, 17.5 -7.891, 17.5 -17.5
+            v -35
+            C 255.642, 100.715, 247.75, 92.824, 238.142, 92.824
+            z
+            M 72.714, 102.824
+            c 4.241, 0, 7.5, 3.259, 7.5, 7.5
+            v 35
+            c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
+            v -35
+            C 65.214, 106.082, 68.472, 102.824, 72.714, 102.824
+            z
+            M 238.142, 102.824
+            c 4.241, 0, 7.5, 3.259, 7.5, 7.5
+            v 35
+            c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
+            v -35
+            C 230.642, 106.082, 233.9, 102.824, 238.142, 102.824
+            z
+            "/>
+          <path id="line3" d="
+            M 19.925, 182.861
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.953, 1.953 -1.953, 5.119, 0, 7.072s 5.119, 1.953, 7.072, 0
+            l 6.463 -6.463
+            v 42.926
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
+            C 20.021, 182.859, 19.973, 182.86, 19.925, 182.861
+            z
+            M 75.067, 182.861
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.953, 1.953 -1.953, 5.119, 0, 7.072s 5.119, 1.953, 7.072, 0
+            l 6.463 -6.463
+            v 42.926
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.535, 0.088, 1.08, 0.088, 1.615, 0
+            h 9.203
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
+            C 75.163, 182.859, 75.115, 182.86, 75.067, 182.861
+            z
+            M 130.21, 182.861
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
+            c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
+            c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
+            l 6.465 -6.465
+            v 42.928
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
+            C 130.306, 182.859, 130.258, 182.86, 130.21, 182.861
+            z
+            M 185.352, 182.861
+            c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
+            l -15, 15
+            c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
+            c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
+            c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
+            l 6.465 -6.465
+            v 42.928
+            h -10
+            c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
+            c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
+            c 0.047, 0.001, 0.094, 0.001, 0.141, 0
+            h 14.182
+            c 0.537, 0.088, 1.084, 0.088, 1.621, 0
+            h 9.197
+            c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
+            c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
+            c -0.047 -0.001 -0.094 -0.001 -0.141, 0
+            h -5
+            v -55
+            c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
+            C 185.448, 182.859, 185.4, 182.86, 185.352, 182.861
+            z
+            M 238.142, 182.894
+            c -9.609, 0 -17.5, 7.891 -17.5, 17.5
+            v 35
+            c 0, 9.609, 7.891, 17.5, 17.5, 17.5
+            c 9.609, 0, 17.5 -7.891, 17.5 -17.5
+            v -35
+            C 255.642, 190.786, 247.75, 182.894, 238.142, 182.894
+            z
+            M 238.142, 192.894
+            c 4.241, 0, 7.5, 3.259, 7.5, 7.5
+            v 35
+            c 0, 4.241 -3.259, 7.5 -7.5, 7.5
+            s  -7.5 -3.259 -7.5 -7.5
+            v -35
+            C 230.642, 196.153, 233.9, 192.894, 238.142, 192.894
+            z
+            "/>
+        </g>
       </svg>
+      <svg id="menu-btn-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3.293 3.293a1 1 0 0 1 1.414 0L12 10.586l7.293-7.293a1 1 0 0 1 1.414 1.414L13.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 0 1-1.414-1.414L10.586 12 3.293 4.707a1 1 0 0 1 0-1.414z"/>
+      </svg>
+      <ul id="nav-links">
+        <li>
+          <h1><a href="#about">About</a></h1>
+        </li>
+        <li>
+          <h1><a href="#work1">Services</a></h1>
+        </li>
+        <li>
+          <h1><a href="#contact">Contact</a></h1>
+        </li>
+      </ul>
     </div>
-    <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" height="800px" width="800px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;"
-       viewBox="20 0 85 175" xml:space="preserve">
-  <g>
-    <path id="line1" d="
-    M 75.067, 2.72
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.975, 1.93 -2.012, 5.096 -0.082, 7.071
-    c 1.93, 1.975, 5.096, 2.012, 7.071, 0.082
-    c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
-    l 6.463 -6.463
-    v 42.928
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929s 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.535, 0.088, 1.08, 0.088, 1.615, 0
-    h 9.203
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929s  -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
-    C 75.163, 2.718, 75.115, 2.719, 75.067, 2.72
-    z
-
-    M 130.21, 2.72
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.992, 1.913 -2.057, 5.078 -0.144, 7.07s 5.078, 2.057, 7.07, 0.144
-    c 0.049 -0.047, 0.097 -0.095, 0.144 -0.144
-    l 6.465 -6.465
-    v 42.93
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
-    C 130.306, 2.718, 130.258, 2.719, 130.21, 2.72
-    z
-
-    M 17.571, 2.754
-    c -9.609, 0 -17.5, 7.891 -17.5, 17.5
-    v 35
-    c 0, 9.609, 7.891, 17.5, 17.5, 17.5s 17.5 -7.891, 17.5 -17.5
-    v -35
-    C 35.071, 10.645, 27.18, 2.754, 17.571, 2.754
-    z
-
-    M 182.999, 2.754
-    c -9.609, 0 -17.5, 7.891 -17.5, 17.5
-    v 35
-    c 0, 9.609, 7.891, 17.5, 17.5, 17.5s 17.5 -7.891, 17.5 -17.5
-    v -35
-    C 200.499, 10.645, 192.607, 2.754, 182.999, 2.754
-    z
-
-    M 238.142, 2.754
-    c -9.609, 0 -17.5, 7.891 -17.5, 17.5
-    v 35
-    c 0, 9.609, 7.891, 17.5, 17.5, 17.5
-    c 9.609, 0, 17.5 -7.891, 17.5 -17.5
-    v -35
-    C 255.642, 10.645, 247.75, 2.754, 238.142, 2.754
-    z
-
-    M 17.571, 12.754
-    c 4.241, 0, 7.5, 3.259, 7.5, 7.5
-    v 35
-    c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
-    v -35
-    C 10.071, 16.012, 13.33, 12.754, 17.571, 12.754
-    z
-
-    M 182.999, 12.754
-    c 4.241, 0, 7.5, 3.259, 7.5, 7.5
-    v 35
-    c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
-    v -35
-    C 175.499, 16.012, 178.757, 12.754, 182.999, 12.754
-    z
-
-    M 238.142, 12.754
-    c 4.241, 0, 7.5, 3.259, 7.5, 7.5
-    v 35
-    c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
-    v -35
-    C 230.642, 16.012, 233.9, 12.754, 238.142, 12.754
-    z
-    "/>
-
-    <path id="line2" d="
-    M 19.925, 92.791
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.952, 1.954 -1.949, 5.121, 0.005, 7.072
-    c 1.952, 1.95, 5.115, 1.95, 7.067, 0
-    l 6.463 -6.463
-    v 42.928
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c 0 -2.762 -2.239 -5 -5.001 -5
-    C 20.022, 92.789, 19.973, 92.789, 19.925, 92.791
-    z
-
-    M 130.21, 92.791
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
-    c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
-    c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
-    l 6.465 -6.465
-    v 42.93
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c 0 -2.762 -2.239 -5 -5.001 -5
-    C 130.307, 92.789, 130.258, 92.789, 130.21, 92.791
-    z
-
-    M 185.352, 92.791
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
-    c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
-    c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
-    l 6.465 -6.465
-    
-    v 42.93
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c 0 -2.762 -2.239 -5 -5.001 -5
-    C 185.45, 92.789, 185.401, 92.789, 185.352, 92.791
-    z
-
-    M 72.714, 92.824
-    c -9.609, 0 -17.5, 7.891 -17.5, 17.5
-    v 35
-    c 0, 9.609, 7.891, 17.5, 17.5, 17.5s 17.5 -7.891, 17.5 -17.5
-    v -35
-    C 90.214, 100.715, 82.322, 92.824, 72.714, 92.824
-    z
-
-    M 238.142, 92.824
-    c -9.609, 0 -17.5, 7.891 -17.5, 17.5
-    v 35
-    c 0, 9.609, 7.891, 17.5, 17.5, 17.5
-    c 9.609, 0, 17.5 -7.891, 17.5 -17.5
-    v -35
-    C 255.642, 100.715, 247.75, 92.824, 238.142, 92.824
-    z
-
-    M 72.714, 102.824
-    c 4.241, 0, 7.5, 3.259, 7.5, 7.5
-    v 35
-    c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
-    v -35
-    C 65.214, 106.082, 68.472, 102.824, 72.714, 102.824
-    z
-
-    M 238.142, 102.824
-    c 4.241, 0, 7.5, 3.259, 7.5, 7.5
-    v 35
-    c 0, 4.241 -3.259, 7.5 -7.5, 7.5s  -7.5 -3.259 -7.5 -7.5
-    v -35
-    C 230.642, 106.082, 233.9, 102.824, 238.142, 102.824
-    z
-    "/>
-
-    <path id="line3" d="
-    M 19.925, 182.861
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.953, 1.953 -1.953, 5.119, 0, 7.072s 5.119, 1.953, 7.072, 0
-    l 6.463 -6.463
-    
-    v 42.926
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
-    C 20.021, 182.859, 19.973, 182.86, 19.925, 182.861
-    z
-
-    M 75.067, 182.861
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.953, 1.953 -1.953, 5.119, 0, 7.072s 5.119, 1.953, 7.072, 0
-    l 6.463 -6.463
-    
-    v 42.926
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.535, 0.088, 1.08, 0.088, 1.615, 0
-    h 9.203
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
-    C 75.163, 182.859, 75.115, 182.86, 75.067, 182.861
-    z
-
-    M 130.21, 182.861
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
-    c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
-    c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
-    l 6.465 -6.465
-    v 42.928
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
-    C 130.306, 182.859, 130.258, 182.86, 130.21, 182.861
-    z
-
-    M 185.352, 182.861
-    c -1.275, 0.037 -2.487, 0.56 -3.389, 1.461
-    l -15, 15
-    c -1.976, 1.93 -2.013, 5.095 -0.084, 7.071
-    c 1.93, 1.976, 5.095, 2.013, 7.071, 0.084
-    c 0.028 -0.027, 0.056 -0.055, 0.083 -0.083
-    l 6.465 -6.465
-    v 42.928
-    h -10
-    c -2.761 -0.039 -5.032, 2.168 -5.071, 4.929
-    c -0.039, 2.761, 2.168, 5.032, 4.929, 5.071
-    c 0.047, 0.001, 0.094, 0.001, 0.141, 0
-    h 14.182
-    c 0.537, 0.088, 1.084, 0.088, 1.621, 0
-    h 9.197
-    c 2.761, 0.039, 5.032 -2.168, 5.071 -4.929
-    c 0.039 -2.761 -2.168 -5.032 -4.929 -5.071
-    c -0.047 -0.001 -0.094 -0.001 -0.141, 0
-    h -5
-    v -55
-    c -0.001 -2.762 -2.241 -4.999 -5.003 -4.998
-    C 185.448, 182.859, 185.4, 182.86, 185.352, 182.861
-    z
-
-    M 238.142, 182.894
-    c -9.609, 0 -17.5, 7.891 -17.5, 17.5
-    v 35
-    c 0, 9.609, 7.891, 17.5, 17.5, 17.5
-    c 9.609, 0, 17.5 -7.891, 17.5 -17.5
-    v -35
-    C 255.642, 190.786, 247.75, 182.894, 238.142, 182.894
-    z
-
-    M 238.142, 192.894
-    c 4.241, 0, 7.5, 3.259, 7.5, 7.5
-    v 35
-    c 0, 4.241 -3.259, 7.5 -7.5, 7.5
-    s  -7.5 -3.259 -7.5 -7.5
-    v -35
-    C 230.642, 196.153, 233.9, 192.894, 238.142, 192.894
-    z
-    "/>
-  </g>
-</svg>
-    <svg id="menu-btn-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
-      <path d="M0 0h24v24H0z" fill="none"/>
-      <path d="M3.293 3.293a1 1 0 0 1 1.414 0L12 10.586l7.293-7.293a1 1 0 0 1 1.414 1.414L13.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 0 1-1.414-1.414L10.586 12 3.293 4.707a1 1 0 0 1 0-1.414z"/>
-    </svg>
-    <ul id="nav-links">
-      <li><h1><a href="#about">About</a></h1></li>
-      <li><h1><a href="#work1">Services</a></h1></li>
-      <li><h1><a href="#contact">Contact</a></h1></li>
-    </ul>
-  </div>
-      
-  <main>
-    <!-- Main Content Section -->
-    <section id="home" class="section-home bg">
-      <video autoplay loop muted playsinline>
-        <source src="assets/vid1.mp4" type="video/mp4">
-      </video>
-      <!--<img src='assets/waves-b.svg' alt="homebg">-->
-      <div class="overlayText white">
-        <h1 class="nopadding">
-          <span id="typewrite">
+    <main>
+      <!-- Main Content Section -->
+      <section id="home" class="section-home bg">
+        <video autoplay loop muted playsinline>
+          <source src="assets/vid1.mp4" type="video/mp4">
+        </video>
+        <!--<img src='assets/waves-b.svg' alt="homebg">-->
+        <div class="overlayText white">
+          <h1 class="nopadding">
+            <span id="typewrite">
             <span id="binary"></span>
             <span id="caret">|</span>
-          </span>
-        </h1>
-        <!--
-        <div class="content">
-          <h1>BitWaves</h1>
-          <h1>BitWaves</h1>
+            </span>
+          </h1>
+          <!--
+            <div class="content">
+              <h1>BitWaves</h1>
+              <h1>BitWaves</h1>
+            </div>
+            -->
         </div>
-        -->
-      </div>
-    </section>
-    <div id="para1" class="nopadding"></div>
-    <section id="about" class="section-about">
-      <div>
-        <div><h1>A Seamless Digital Experience.</h1>
-          <h3 class="nopadding">What we do.<br>Why we do it.</h3>
-          <div class="card">
-            <p>
-            Based in Montreal, QC.<br>We design interfaces that are<br>both reliable and creative.
-            </p>
-            <p class="nopadding toright">We craft for your audience and...<br>We do it all for you &#x2728;<br>because we like browsing<br>and we know you do too.</p>
+      </section>
+      <div id="para1" class="nopadding"></div>
+      <section id="about" class="section-about">
+        <div>
+          <div>
+            <h1>A Seamless Digital Experience.</h1>
+            <h3 class="nopadding">What we do.<br>Why we do it.</h3>
+            <div class="card">
+              <p>
+                Based in Montreal, QC.<br>We design interfaces that are<br>both reliable and creative.
+              </p>
+              <p class="nopadding toright">We craft for your audience and...<br>We do it all for you &#x2728;<br>because we like browsing<br>and we know you do too.</p>
+            </div>
+          </div>
+          <h3>One place.<br>Everything you need.</h3>
+          <ul class="body-list">
+            <li>Web Development</li>
+            <li>IOS/Android App Development</li>
+            <li>Logo Designing</li>
+            <li>IT Support Services</li>
+            <li>Digital Marketing</li>
+          </ul>
+        </div>
+      </section>
+      <div id="para2" class="nopadding"></div>
+      <section id="work1" class="section-work1">
+        <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
+        <div>
+        <h1>WHAT WE OFFER</h1>
+        <h3 class="nopadding">Web Development.</h3>
+        <div class="card">
+          <p>Starting from scratch<br>or well established?</p>
+          <p class="nopadding toright">Our team of developers &#128161;<br>have you covered.</p>
+        </div>
+        <div>
+          <ul class="body-list">
+            <li>Corporate Websites</li>
+            <li>Ecommerce businesses</li>
+            <li>Portfolios</li>
+          </ul>
+        </div>
+        <div class="vidcontainer">
+          <div class="webvid">
+            <p>BNA<br>Consulting<br>Services<br>Ltd</p>
+            <a target="_blank" href="https://bnaconsulting.co.uk/">
+              <video autoplay loop muted playsinline>
+                <source src="assets/website3.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          <div class="webvid">
+            <p>Janson<br>Beauty</p>
+            <a target="_blank" href="https://www.jansonwholesale.com/">
+              <video  autoplay loop muted playsinline>
+                <source src="assets/website1.mp4" type="video/mp4">
+              </video>
+            </a>
+          </div>
+          <div class="webvid">
+            <p>10<br>Out<br>Of<br>10</p>
+            <a target="_blank" href="https://10outof10.com/">
+              <video autoplay loop muted playsinline>
+                <source src="assets/website2.mp4" type="video/mp4">
+              </video>
+            </a>
           </div>
         </div>
-        <h3>One place.<br>Everything you need.</h3>
-        <ul class="body-list">
-          <li>Web Development</li>
-          <li>IOS/Android App Development</li>
-          <li>Logo Designing</li>
-          <li>IT Support Services</li>
-          <li>Digital Marketing</li>
-        </ul>
-      </div>
-    </section>
-    <div id="para2" class="nopadding"></div>
-    <section id="work1" class="section-work1">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <div>
-          <h1>WHAT WE OFFER</h1>
-          <h3 class="nopadding">Web Development.</h3>
+      </section>
+      <!--<div>
+        <img class="imgdef" src="assets/animate-waves2.svg" alt="animate-waves">
+        </div>-->
+      <section id="work2" class="section-work2 white">
+        <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
+          <h3 class="nopadding">IOS/Android App Development.</h3>
+          The immersive mobile experience<br>they want.
+          <img class="imgweb" src="assets/webinterface.svg" alt="webinterface">
+          <div class="nopadding toright">The user engagement<br>you want!</div>
+        </div>
+      </section>
+      <!--<div>
+        <img class="imgdef nopadding" style="transform: rotate(180deg);" src="assets/animate-waves2.svg" alt="animate-waves2">
+        </div>-->
+      <section id="work3" class="section-work3 white">
+        <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
+          <h1>INCLUDES</h1>
+          <h3>Logo Designing.</h3>
+          <img class="imgrebrand nopadding" src="assets/rebrand.svg" alt="rebranding">
           <div class="card">
-            <p>Starting from scratch<br>or well established?</p>
-            <p class="nopadding toright">Our team of developers &#128161;<br>have you covered.</p>
+            <p>Trademark... Update?<br>Revamp? Rebrand? &#127991;</p>
+            <p class="nopadding toright">Our local designers &#127912;<br>bring <b>your vision</b><br>to life!</p>
           </div>
           <div>
             <ul class="body-list">
-              <li>Corporate Websites</li>
-              <li>Ecommerce businesses</li>
-              <li>Portfolios</li>
+              <li>Corporate Logos</li>
+              <li>Gaming Logos</li>
+              <li>Minimalistic Logos</li>
             </ul>
           </div>
-          <div style="text-align:center;">
-            <a target="_blank" href="https://bnaconsulting.co.uk/">
-            <video class="webvid" autoplay loop muted playsinline>
-              <source src="assets/website3.mp4" type="video/mp4">
-            </video></a>
-            <a target="_blank" href="https://www.jansonwholesale.com/">
-            <video class="webvid" autoplay loop muted playsinline>
-              <source src="assets/website1.mp4" type="video/mp4">
-            </video></a>
-            <a target="_blank" href="https://10outof10.com/">
-            <video class="webvid" autoplay loop muted playsinline>
-              <source src="assets/website2.mp4" type="video/mp4">
-            </video></a>
+          <div class="inline-product">
+            <a target="_blank" href="https://www.shibamedia.ca/">
+            <img class="imgproduct" src="assets/shiba.webp" alt="minimal corporate logo"></a>
+            <img class="imgproduct" src="assets/game2.webp" alt="gaming logo">
+          </div>
           <div>
-        </div>
-      </div>
-    </section>
-    <!--<div>
-      <img class="imgdef" src="assets/animate-waves2.svg" alt="animate-waves">
-    </div>-->
-    <section id="work2" class="section-work2 white">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <h3 class="nopadding">IOS/Android App Development.</h3>
-        The immersive mobile experience<br>they want.
-        <img class="imgweb" src="assets/webinterface.svg" alt="webinterface">
-        <div class="nopadding toright">The user engagement<br>you want!</div>
-      </div>
-    </section>
-    <!--<div>
-      <img class="imgdef nopadding" style="transform: rotate(180deg);" src="assets/animate-waves2.svg" alt="animate-waves2">
-    </div>-->
-    <section id="work3" class="section-work3 white">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <h1>INCLUDES</h1>
-        <h3>Logo Designing.</h3>
-        <img class="imgrebrand nopadding" src="assets/rebrand.svg" alt="rebranding">
-        <div class="card">
-          <p>Trademark... Update?<br>Revamp? Rebrand? &#127991;</p>
-          <p class="nopadding toright">Our local designers &#127912;<br>bring <b>your vision</b><br>to life!</p>
-        </div>
-        <div>
-          <ul class="body-list">
-            <li>Corporate Logos</li>
-            <li>Gaming Logos</li>
-            <li>Minimalistic Logos</li>
-          </ul>
-        </div>
-        <div class="inline-product">
-          <a target="_blank" href="https://www.shibamedia.ca/">
-          <img class="imgproduct" src="assets/shiba.webp" alt="minimal corporate logo"></a>
-          <img class="imgproduct" src="assets/game2.webp" alt="gaming logo">
-        </div>
-        <div>
-          <h3>Reliable IT Support Services.</h3>
-          <ul class="body-list">
-            <li>Web and Mobile Support</li>
-            <li>Replies in Under a Day</li>
-          </ul>
-          <br>
-          <img class="imgseo" src="assets/seo.svg" alt="seo">
-        </div>
-      </div>
-    </section>
-    <section id="work4" class="section-work4 white">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <h1>OPT IN FOR</h1>
-        <h3 class="nopadding">Digital Marketing.</h3>
-        <div class="card">
-          <p>Maximize your reach &#128200;<br>with ads, social media<br>and <b>SEO</b> optimization.</p>
-          <p class="nopadding toright">Yes, we do &#x2714; that too.</p>
-        </div>
-        <div>
-          <ul class="body-list">
-            <li>Video Production</li>
-            <li>Product Ads</li>
-            <li>Services Promotion</li>
-          </ul>
-        </div>
-        <div class="inline-product">
-          <img class="imgproduct" src="assets/product1.webp" alt="product 1">
-          <img class="imgproduct" src="assets/product2.webp" alt="product 2">
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="section-contact white">
-      <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
-        <div>
-          <h1>Surf With BitWaves!</h1>
-          <img class="imgcode" id="code" src="assets/code.svg" alt="code">
-          <br>Because, why not?<br>
-          <h1 class="nopadding">Say Hello!</h1>
-          <div class="card" style="text-align: left;">
-            <h4 class="minpadding bold">BitWaves &#x21b4;</h4>
-            <a id="email" title="email" class="tooltip" href="mailto:contact@bitwaves.ca?subject=Inquiry&body=Hello!%0D%0A%0D%0AWe're%20here%20to%20listen%20and%20execute.%0D%0ALet's%20discuss%20over%20a%20cup%20of%20coffee%20☕" class="yellow" title="email">contact@bitwaves.ca
-              <span id="tooltip" class="tooltiptext">email us</span>
-                <!--<div onclick="copyContent()" id="email" title="email" class="tooltip">contact@bitwaves.ca
-                  <span id="tooltip" class="tooltiptext">copy</span>
-                </div>-->
-            </a>
-            <h4 class="minpadding bold"><br>Office &#x21b4;</h4>
-            <p class="nopadding">Suite 1700
-              <br>2001 Boulevard Robert Bourassa
-              <br>Montreal, QC, H3A 2A6.
-            </p>
+            <h3>Reliable IT Support Services.</h3>
+            <ul class="body-list">
+              <li>Web and Mobile Support</li>
+              <li>Replies in Under a Day</li>
+            </ul>
+            <br>
+            <img class="imgseo" src="assets/seo.svg" alt="seo">
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer>
-      <div>
-        <img class="nopadding imgdef" src="assets/computer.svg" alt="computer">
-      </div>
-      <div class="nopadding">&copy; 2023 BitWaves. <b>All rights reserved.</b></div>
-    </footer>
-  </main>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="script.js"></script>
-</body>
+      </section>
+      <section id="work4" class="section-work4 white">
+        <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
+          <h1>OPT IN FOR</h1>
+          <h3 class="nopadding">Digital Marketing.</h3>
+          <div class="card">
+            <p>Maximize your reach &#128200;<br>with ads, social media<br>and <b>SEO</b> optimization.</p>
+            <p class="nopadding toright">Yes, we do &#x2714; that too.</p>
+          </div>
+          <div>
+            <ul class="body-list">
+              <li>Video Production</li>
+              <li>Product Ads</li>
+              <li>Services Promotion</li>
+            </ul>
+          </div>
+          <div class="inline-product">
+            <img class="imgproduct" src="assets/product1.webp" alt="product 1">
+            <img class="imgproduct" src="assets/product2.webp" alt="product 2">
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section-contact white">
+        <div data-aos="fade-up" data-aos-delay="230" data-aos-duration="440">
+          <div>
+            <h1>Surf With BitWaves!</h1>
+            <img class="imgcode" id="code" src="assets/code.svg" alt="code">
+            <br>Because, why not?<br>
+            <h1 class="nopadding">Say Hello!</h1>
+            <div class="card" style="text-align: left;">
+              <h4 class="minpadding bold">BitWaves &#x21b4;</h4>
+              <a id="email" title="email" class="tooltip" href="mailto:contact@bitwaves.ca?subject=Inquiry&body=Hello!%0D%0A%0D%0AWe're%20here%20to%20listen%20and%20execute.%0D%0ALet's%20discuss%20over%20a%20cup%20of%20coffee%20☕" class="yellow" title="email">
+                contact@bitwaves.ca
+                <span id="tooltip" class="tooltiptext">email us</span>
+                <!--<div onclick="copyContent()" id="email" title="email" class="tooltip">contact@bitwaves.ca
+                  <span id="tooltip" class="tooltiptext">copy</span>
+                  </div>-->
+              </a>
+              <h4 class="minpadding bold"><br>Office &#x21b4;</h4>
+              <p class="nopadding">Suite 1700
+                <br>2001 Boulevard Robert Bourassa
+                <br>Montreal, QC, H3A 2A6.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <img class="nopadding imgdef" src="assets/computer.svg" alt="computer">
+        </div>
+        <div class="nopadding">&copy; 2023 BitWaves. <b>All rights reserved.</b></div>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
