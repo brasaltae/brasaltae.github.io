@@ -154,6 +154,7 @@ p, div {
 }
 
 #nav-links li a {
+  font-weight: 600;
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -497,6 +498,7 @@ img {
 }
 
 .webvid p {
+  font-weight: 600;
   text-align: left;
   margin-top: 0.2em;
   margin-left: 0.6em;
