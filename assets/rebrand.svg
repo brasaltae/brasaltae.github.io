@@ -20,7 +20,7 @@
 	.st13{fill:#00A4BD;}
 	.st14{fill:#007CFF;}
 	.st15{fill:#7C98B6;}
-	.st16{fill:lightgrey;}
+	.st16{fill:#181818;}
 	.st17{opacity:0.6;fill:#e94196;}
 	.st18{fill:#FFBCB6;}
 	.st19{fill:#F74F4C;}
@@ -39,7 +39,7 @@
 	.st32{fill:#314456;}
 	.st33{fill:none;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;}
 	.st34{fill:#647D8E;}
-	.st35{fill:black;}
+	.st35{fill:white;}
 	.st36{opacity:0.2;fill:#070707; animation: aaa 2s infinite linear;}
 
 	.st37{fill:#B28769; animation: aaa 2s infinite linear;}
