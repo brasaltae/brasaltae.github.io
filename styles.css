@@ -444,6 +444,24 @@ img {
   height: auto;
 }
 
+#code {
+  max-height: 25vh;
+  width: 100%;
+}
+
+#webinterface {
+  width: min(69%, 55vh);
+}
+
+#rebrand {
+  width: min(88%, 70vh);
+  padding: 0;
+}
+
+#imgseo {
+  width: min(58%, 48vh);
+}
+
 .vidcontainer {
   text-align: center;
 }
