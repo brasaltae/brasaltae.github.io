@@ -98,11 +98,11 @@ window.addEventListener('scroll', () => {
     if ((s === 'about') || (s === 'work1')) {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
-      bitlogo.setAttribute("href", "assets/waves-b.webp");
+      bitlogo.setAttribute("href", "assets/waves-b.svg");
     } else {
       // Apply white color to the SVG logo, menu button, and close button
       navColor.classList.add('white');
-      bitlogo.setAttribute("href", "assets/waves-w.webp");
+      bitlogo.setAttribute("href", "assets/waves-w.svg");
     }
   }
 });
@@ -136,7 +136,7 @@ function toggleNavLinks() {
     document.body.style.overflow = 'hidden';
     opacityStrength = "0.15";
     navColor.classList.add('white');
-    bitlogo.setAttribute("href", "assets/waves-w.webp");
+    bitlogo.setAttribute("href", "assets/waves-w.svg");
   } else {
     main.classList.remove('transparent'); // Add this line to restore the text visibility
     document.body.style.overflow = '';
@@ -144,7 +144,7 @@ function toggleNavLinks() {
     if ((s === 'about') || (s === 'work1')) {
       // Remove white color from the SVG logo, menu button, and close button
       navColor.classList.remove('white');
-      bitlogo.setAttribute("href", "assets/waves-b.webp");
+      bitlogo.setAttribute("href", "assets/waves-b.svg");
       console.log("lit2");
     }
   }
