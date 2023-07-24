@@ -444,28 +444,6 @@ img {
   height: auto;
 }
 
-.imgrebrand {
-  width: min(88%, 70vh);
-}
-
-.imgseo {
-  width: min(58%, 48vh);
-}
-
-.imgweb {
-  width: min(69%, 55vh);
-}
-
-.imgdef {
-  max-height: 25vh;
-  width: 100%;
-}
-
-.imgcode {
-  max-height: 25vh;
-  width: 100%;
-}
-
 .vidcontainer {
   text-align: center;
 }
