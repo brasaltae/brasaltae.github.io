@@ -1,7 +1,7 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cc="http://creativecommons.org/ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" transform="matrix(1,0,0,1,0,0)" id="svg8" viewBox="32 45 170 165">
   <style>
     #g895 {
-      animation: fadeInUp 0.8s;
+      animation: fadeInUp 0.5s;
       filter: drop-shadow(0 2px 2px black);
     }
 
@@ -18,10 +18,10 @@
 
     #g958, #g1057 {
       opacity: 0;
-      animation: dropIn 3s;
+      animation: dropIn 2.7s;
       animation-timing-function: ease;
       animation-fill-mode: forwards;
-      animation-delay: calc(var(--order) * 180ms);
+      animation-delay: calc(var(--order) * 150ms);
       animation-iteration-count: infinite;
     }
 
