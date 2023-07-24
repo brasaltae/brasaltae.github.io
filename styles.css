@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500&display=swap');
 *,
 *:before,
 *:after {
@@ -331,7 +331,7 @@ section {
 
 footer {
   color: black;
-  font-size: min(1.5em,2vw); 
+  font-size: min(1.2em,1.8vw); 
   padding: 1em;
   text-align: center;
 }
