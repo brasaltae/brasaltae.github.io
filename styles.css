@@ -462,6 +462,12 @@ img {
   width: min(58%, 48vh);
 }
 
+#computer {
+  max-height: 25vh;
+  width: 100%;
+  padding: 0;
+}
+
 .vidcontainer {
   text-align: center;
 }
