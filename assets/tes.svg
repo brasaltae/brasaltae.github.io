@@ -7,7 +7,7 @@
   </defs>
   <g id="Group_2" data-name="Group 2" transform="translate(-17.596)">
     <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
-      <circle fill="#FF5F8F" transform="translate(12,200)" cx="50%" cy="50%" r="50%"/>
+      <!--<circle fill="red" transform="translate(12,200)" cx="50%" cy="50%" r="50%"/>-->
       <text x="19" y="425" font-family="Arial" font-size="85" fill="#dcdaab" stroke="#dcdaab">BitWaves</text>
       <path id="Path_1" data-name="Path 1" d="M17.6,64.92c17.206,8.7,31.975,22.6,50.98,27.19,29.957,5.932,58-14.609,76.17-36.51,23.4-26.764,57.907-55.459,95.56-40.869,42.449,12.731,38.21,55.749,78.619,51,22.411-1.208,44.455-1.717,67.211-.691" fill="none" stroke="#dcdaab" stroke-miterlimit="10" stroke-width="4"/>
       <path id="Path_2" data-name="Path 2" d="M17.6,81.13c18.252,6.754,33.258,20.486,52.27,25.2,32.84,7.2,62.7-15.936,81.729-40.43,23-26.844,59.076-51.76,95.122-35.118,33.454,11.032,36.168,53.631,72.618,51.459,22.042-.259,43.728-1.187,66.081-.051" fill="none" stroke="#dcdaab" stroke-miterlimit="10" stroke-width="4"/>
