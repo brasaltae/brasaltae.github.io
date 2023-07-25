@@ -49,6 +49,17 @@ li {
   padding-right: 0.8em;
 }
 
+.body-list2 li {
+  padding-left: 0.8em;
+}
+
+.body-list2 li::before {
+  content: "\2718";
+  font-family: 'Source Code Pro', monospace;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
 #nav-links li {
   opacity: 0.08;
 }
