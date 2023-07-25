@@ -33,31 +33,28 @@ ul {
   list-style: '';
 }
 
-li {
-  padding-left: 1em;
+.body-list li {
   font-weight: 300;
 }
 
 .body-list li {
-  padding: 0;
+  padding-left: 0.4em;
 }
 
 .body-list li::before {
   content: "\2714";
   font-family: 'Source Code Pro', monospace;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+  padding-right: 0.6em;
 }
 
 .body-list2 li {
-  padding-left: 0.8em;
+  padding-left: 1.1em;
 }
 
 .body-list2 li::before {
   content: "\2718";
   font-family: 'Source Code Pro', monospace;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+  padding-right: 0.6em;
 }
 
 #nav-links li {
@@ -108,8 +105,11 @@ body {
 h1, h2, h3, h4, a {
   font-family: 'Montserrat', monospace, sans-serif;
   font-weight: 400;
-  padding-bottom: 1em;
   letter-spacing: 0.1em; /* Adjust as needed */
+}
+
+p, h1 {
+  padding-bottom: 1em;
 }
 
 h1 {
@@ -127,10 +127,6 @@ h1 {
 .minpadding {
   padding: 0;
   padding-bottom: 0.3em;
-}
-
-p, div {
-  padding-bottom: 1em;
 }
 
 .white {
@@ -479,10 +475,6 @@ img {
   padding: 0;
 }
 
-.vidcontainer {
-  text-align: center;
-}
-
 .webvid {
   margin: 2% 1%;
   max-width: min(30%, 40vh);
@@ -525,7 +517,9 @@ img {
   visibility: visible;
 }
 
-.inline-product {
+.inline-product, .vidcontainer {
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
