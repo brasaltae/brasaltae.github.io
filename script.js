@@ -41,22 +41,22 @@ if (ismobile) {
 
 const sectionColors = {
   home: {
-    backgroundColor: 'darkslategray',
+    backgroundColor: '#446570',
   },
   about: {
-    backgroundColor: '#CAB565', // yellow
+    backgroundColor: '#F2C744', // yellow
   },
   work1: {
-    backgroundColor: '#caa365', // pink
+    backgroundColor: '#ff8f00', // orange
   },
   work2: {
-    backgroundColor: '#a37e80', // purple WHITE
+    backgroundColor: '#ab3949', // pink WHITE
   },
   work3: {
-    backgroundColor: '#484470', // brown
+    backgroundColor: '#3949ab', // purple
   },
   work4: {
-    backgroundColor: '#6e7044', // brown
+    backgroundColor: '#44704f', // green
   },
   contact: {
     backgroundColor: '#446570', // blue grey WHITE
