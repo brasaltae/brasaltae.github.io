@@ -50,13 +50,13 @@ const sectionColors = {
     backgroundColor: '#ff8f00', // orange
   },
   work2: {
-    backgroundColor: '#ab3949', // pink WHITE
+    backgroundColor: '#6a263a', // red
   },
   work3: {
     backgroundColor: '#3949ab', // purple
   },
   work4: {
-    backgroundColor: '#44704f', // green
+    backgroundColor: '#44704b', // green
   },
   contact: {
     backgroundColor: '#446570', // blue grey WHITE
