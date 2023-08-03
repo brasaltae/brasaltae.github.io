@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500,700&display=swap');
 *,
 *:before,
@@ -98,12 +98,12 @@ ul {
 
 /* Global styles */
 body {
-  font-family: 'Montserrat', monospace, sans-serif;
+  font-family: 'Inter', monospace, sans-serif;
   background-color: #446570;
 }
 
 h1, h2, h3, h4, a {
-  font-family: 'Montserrat', monospace, sans-serif;
+  font-family: 'Inter', monospace, sans-serif;
   font-weight: 400;
   letter-spacing: 0.1em; /* Adjust as needed */
 }
@@ -165,7 +165,7 @@ h1 {
   cursor: pointer;
   color: white;
   text-decoration: none;
-  font-family: 'Montserrat', monospace, sans-serif;
+  font-family: 'Inter', monospace, sans-serif;
 }
 
 .tooltip {
@@ -270,8 +270,8 @@ section {
   font-size: min(2.5em,3.7vw);
   clear: both;
   padding: 2em;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .section-home {
@@ -692,7 +692,7 @@ img {
 
 
 .content h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 2.5em;
   text-shadow: 5px 5px 10px black;
