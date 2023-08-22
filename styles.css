@@ -545,12 +545,17 @@ img {
   vertical-align: top;
   display: inline;
   margin: 1%;
-  max-width: 15em;
+  max-width: 12em;
   height: auto;
   padding: 1em;
   box-shadow:  0 6px 15px 1px rgba(0,0,0,0.6), 0 0 0 1px rgba(0, 0, 0, 0.3);
   will-change: transform;
   transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.imgsoftware:hover {
+  transform: scale(1.1);
+  box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 #para1 {
