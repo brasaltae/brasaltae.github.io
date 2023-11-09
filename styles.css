@@ -57,6 +57,17 @@ ul {
   padding-right: 0.6em;
 }
 
+#lang-color {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Inter', monospace, sans-serif;
+}
+
+#lang-color, #lang-color:visited, #lang-color:hover, #lang-color:active {
+  color: inherit;
+}
+
 #nav-links li {
   opacity: 0.08;
 }
